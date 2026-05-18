@@ -5,3 +5,8 @@ theme = "PaperMod"
 
 [params]
   description = "Memos about Linux, Raspberry Pi and self-hosting"
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 10
