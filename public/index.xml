@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>My Linux blog</title>
+    <link>http://192.168.1.103:1313/</link>
+    <description>Recent content on My Linux blog</description>
+    <generator>Hugo</generator>
+    <language>ru</language>
+    <lastBuildDate>Tue, 03 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://192.168.1.103:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World</title>
+      <link>http://192.168.1.103:1313/posts/hello-world/</link>
+      <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://192.168.1.103:1313/posts/hello-world/</guid>
+      <description>&lt;p&gt;hey, thats my first project in here!!!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

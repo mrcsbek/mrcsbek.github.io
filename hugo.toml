@@ -1,0 +1,7 @@
+baseURL = "https://mrcsbek.github.io/"
+languageCode = "ru"
+title = "My Linux blog"
+theme = "PaperMod"
+
+[params]
+  description = "Memos about Linux, Raspberry Pi and self-hosting"
