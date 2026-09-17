@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyApp — Умный учет финансов</title>
+    <style>
+        :root { --bg: #09090b; --card: #18181b; --accent: #8b5cf6; --text: #f4f4f5; --muted: #a1a1aa; }
+        body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; overflow-x: hidden; }
+        
+        .hero { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 4rem 2rem 2rem; background: radial-gradient(circle at 50% -20%, #3b0764 0%, var(--bg) 60%); }
+        .hero h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); margin: 0; font-weight: 800; letter-spacing: -0.05em; background: linear-gradient(135deg, #c4b5fd, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: 1.25rem; color: var(--muted); max-width: 600px; margin: 1.5rem 0 2.5rem; }
+        
+        .btn { display: inline-block; background: var(--accent); color: white; padding: 1rem 2.5rem; border-radius: 9999px; font-weight: 600; font-size: 1.1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.4); transition: transform 0.2s, box-shadow 0.2s; }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 20px 25px -5px rgba(139, 92, 246, 0.6); }
+        
+        /* Визуальная заглушка смартфона */
+        .mockup-container { margin-top: 4rem; position: relative; width: 280px; height: 580px; background: #121214; border-radius: 40px; border: 8px solid #27272a; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; }
+        .mockup-container::before { content: ''; position: absolute; top: 0; width: 120px; height: 25px; background: #27272a; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; }
+        .mockup-content { text-align: center; color: #3f3f46; font-weight: 600; }
+        
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; padding: 5rem 2rem; max-width: 1200px; margin: 0 auto; }
+        .card { background: var(--card); border: 1px solid #27272a; padding: 2.5rem 2rem; border-radius: 1.25rem; transition: border-color 0.3s; }
+        .card:hover { border-color: var(--accent); }
+        .card h3 { margin-top: 0; font-size: 1.3rem; margin-bottom: 1rem; color: #e4e4e7; }
+        .card p { color: var(--muted); margin-bottom: 0; font-size: 0.95rem; }
+        
+        .tech-stack { background: var(--card); border-top: 1px solid #27272a; border-bottom: 1px solid #27272a; padding: 4rem 2rem; text-align: center; }
+        .tags { display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap; margin-top: 2rem; max-width: 800px; margin-inline: auto; }
+        .tag { background: rgba(139, 92, 246, 0.1); color: #c4b5fd; border: 1px solid rgba(139, 92, 246, 0.2); padding: 0.5rem 1.25rem; border-radius: 9999px; font-weight: 500; font-size: 0.9rem; }
+        
+        .footer { text-align: center; padding: 3rem 2rem; color: var(--muted); font-size: 0.9rem; }
+        .footer a { color: var(--accent); text-decoration: none; }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>MoneyApp</h1>
+        <p>Умный учет финансов с автоматическим распознаванием чеков. Полный контроль бюджета без рутинного ввода.</p>
+        <a href="https://github.com/mrcsbek/mrcsbek.github.io/releases/download/v1.0.0/application-44bf268d-0f77-4826-a618-2a5741c74e1b.apk" class="btn">Скачать APK (v1.0.0)</a>
+        
+        <!-- Заглушка вместо пустого места -->
+        <div class="mockup-container">
+            <div class="mockup-content">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">📱</div>
+                Здесь будут<br>скриншоты<br>интерфейса
+            </div>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="card">
+            <h3>📷 Мгновенный сканер</h3>
+            <p>Наведите камеру на чек — интеграция CameraX и ML Kit OCR автоматически извлечет позиции и суммы за доли секунды.</p>
+        </div>
+        <div class="card">
+            <h3>📊 Строгая иерархия</h3>
+            <p>Финансовые модели с двухуровневой вложенностью категорий для абсолютной прозрачности аналитики ваших расходов.</p>
+        </div>
+        <div class="card">
+            <h3>🛡 Локальная база</h3>
+            <p>Никакой передачи данных в сеть. Вся обработка чеков и хранение транзакций осуществляются строго на устройстве.</p>
+        </div>
+        <div class="card">
+            <h3>🎯 Лимиты и правила</h3>
+            <p>Настройте жесткие ограничения по каждой категории. Система вовремя предупредит о приближении к лимиту.</p>
+        </div>
+    </section>
+
+    <section class="tech-stack">
+        <h2>Под капотом</h2>
+        <div class="tags">
+            <span class="tag">Android</span>
+            <span class="tag">React Native Expo</span>
+            <span class="tag">CameraX</span>
+            <span class="tag">Google ML Kit OCR</span>
+            <span class="tag">SQLite Local DB</span>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 MoneyApp.<br><a href="privacy.html">Политика конфиденциальности</a></p>
+    </footer>
+</body>
+</html>
