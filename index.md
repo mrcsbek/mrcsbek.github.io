@@ -17,7 +17,7 @@ title: MoneyApp — Умный учет финансов
 # MoneyApp
 Умный учет финансов с автоматическим распознаванием чеков. Полный контроль над бюджетом без рутинного ручного ввода.
 
-<a href="СЮДА_ВСТАВИТЬ_ССЫЛКУ_НА_APK" class="download-btn">Скачать для Android (.apk)</a>
+[<a href="СЮДА_ВСТАВИТЬ_ССЫЛКУ_НА_APK" class="download-btn">Скачать для Android (.apk)</a>](https://expo.dev/artifacts/eas/4VubOTufwuf9VlYcAOdarANVNj0Kpmp7iBY4ETAqWFQ.apk)
 
 ## Ключевые функции
 * **Мгновенный ввод данных:** Интеграция CameraX и ML Kit OCR позволяет парсить кассовые чеки и переносить позиции в базу.
