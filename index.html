@@ -22,21 +22,18 @@
         .btn-primary { background: var(--text); color: var(--bg); }
         .btn-primary:hover { transform: scale(1.02); background: #e5e7eb; }
 
-        /* Главный телефон */
         .mockup-wrapper { margin-top: 4rem; perspective: 1000px; }
         .mockup { width: 300px; height: 620px; background: #0a0a0a; border-radius: 44px; border: 12px solid #1c1c1e; box-shadow: 0 30px 60px -12px rgba(0,0,0,0.8), 0 0 0 1px #333; position: relative; overflow: hidden; transform: rotateX(5deg) scale(0.95); transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); display: flex; align-items: center; justify-content: center; }
         .mockup:hover { transform: rotateX(0deg) scale(1); }
         .mockup::before { content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 100px; height: 28px; background: #1c1c1e; border-bottom-left-radius: 18px; border-bottom-right-radius: 18px; z-index: 10; }
         .mockup img { width: 100%; height: 100%; object-fit: cover; border-radius: 32px; }
 
-        /* Галерея скриншотов */
         .screenshots-section { padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; text-align: center; }
         .screenshots-grid { display: flex; gap: 2rem; overflow-x: auto; padding: 2rem 1rem; scroll-snap-type: x mandatory; justify-content: center; }
         .screen-item { flex: 0 0 auto; width: 250px; height: 540px; border-radius: 36px; border: 8px solid #1c1c1e; overflow: hidden; scroll-snap-align: center; box-shadow: 0 20px 40px -10px rgba(0,0,0,0.6); position: relative; }
         .screen-item img { width: 100%; height: 100%; object-fit: cover; }
         @media (max-width: 1000px) { .screenshots-grid { justify-content: flex-start; } }
         
-        /* Карточки Features */
         .features { padding: 4rem 2rem; max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
         .bento-card { background: var(--card); border: 1px solid var(--border); border-radius: 24px; padding: 2rem; display: flex; flex-direction: column; position: relative; overflow: hidden; transition: border-color 0.3s ease; }
         .bento-card:hover { border-color: rgba(168, 85, 247, 0.5); }
@@ -63,7 +60,7 @@
     <header class="hero">
         <div class="badge">✨ Версия 1.0.0 уже доступна</div>
         <h1>Умный учет финансов.<br><span>Без рутины.</span></h1>
-        <p>Автоматическое распознавание чеков, строгая иерархия категорий и абсолютный контроль данных на вашем собственном сервере.</p>
+        <p>ИИ-распознавание чеков, строгая иерархия категорий, отсутствие рекламы и полный контроль над вашими данными.</p>
         
         <div class="btn-group">
             <a href="https://github.com/mrcsbek/mrcsbek.github.io/releases/download/v1.0.0/application-44bf268d-0f77-4826-a618-2a5741c74e1b.apk" class="btn btn-primary">
@@ -73,7 +70,6 @@
 
         <div class="mockup-wrapper">
             <div class="mockup">
-                <!-- Главный скриншот в Hero-блоке -->
                 <img src="transactions.jpeg" alt="Интерфейс транзакций">
             </div>
         </div>
@@ -91,14 +87,14 @@
 
     <section class="features">
         <div class="bento-card col-span-2">
-            <div class="bento-icon">📸</div>
-            <h3>Нейросетевое сканирование</h3>
-            <p>Забудьте о ручном вводе. Интеграция CameraX и Google ML Kit OCR извлекает позиции и суммы с бумажного чека за доли секунды.</p>
+            <div class="bento-icon">🤖</div>
+            <h3>Облачный ИИ-анализ</h3>
+            <p>Ваши чеки обрабатываются передовыми нейросетями (Gemini). Это обеспечивает безошибочное извлечение позиций, сумм и дат независимо от качества печати.</p>
         </div>
         <div class="bento-card">
-            <div class="bento-icon">🛡️</div>
-            <h3>Self-Hosted архитектура</h3>
-            <p>Ваши финансы — ваши правила. Данные хранятся на вашем личном сервере, а не в облаках IT-корпораций.</p>
+            <div class="bento-icon">🔒</div>
+            <h3>Единый сервер</h3>
+            <p>Данные хранятся на защищенном сервере разработчика. Полное отсутствие рекламы, трекеров и скрытой продажи аналитики.</p>
         </div>
         <div class="bento-card">
             <div class="bento-icon">📊</div>
@@ -106,9 +102,9 @@
             <p>Строгая двухуровневая модель вложенности. Никакого хаоса — только чистая и понятная аналитика расходов.</p>
         </div>
         <div class="bento-card col-span-2">
-            <div class="bento-icon">🔔</div>
-            <h3>Система напоминаний</h3>
-            <p>Базовые настраиваемые уведомления помогут не забыть внести ежедневные расходы, чтобы статистика оставалась точной.</p>
+            <div class="bento-icon">🗑️</div>
+            <h3>Право на забвение</h3>
+            <p>Вы полностью контролируете свои данные. В любой момент можно безвозвратно удалить аккаунт и всю историю транзакций через интерфейс или по запросу.</p>
         </div>
     </section>
 
@@ -116,11 +112,11 @@
         <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2rem;">Частые вопросы</h2>
         <div class="faq-item">
             <h4>Нужен ли интернет для работы приложения?</h4>
-            <p>Да. Приложение синхронизируется с вашим личным сервером. Для сохранения новых транзакций и чеков требуется активное подключение к сети.</p>
+            <p>Да. Постоянное подключение к сети необходимо для синхронизации с базой данных и отправки чеков на обработку нейросети.</p>
         </div>
         <div class="faq-item">
-            <h4>Есть ли версия для iOS?</h4>
-            <p>На данный момент доступен только Android APK. Однако использование React Native Expo позволяет собрать версию для iOS в будущем.</p>
+            <h4>Как удалить свои данные?</h4>
+            <p>Вы можете снести все данные о себе самостоятельно через настройки приложения. Если потребуется, вы можете обратиться напрямую к разработчику для ручной очистки всех хвостов в БД.</p>
         </div>
     </section>
 
