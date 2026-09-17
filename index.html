@@ -3,84 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoneyApp — Умный учет финансов</title>
+    <title>MoneyApp — Ваш личный финансовый интеллект</title>
     <style>
-        :root { --bg: #09090b; --card: #18181b; --accent: #8b5cf6; --text: #f4f4f5; --muted: #a1a1aa; }
-        body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; overflow-x: hidden; }
+        :root { --bg: #050505; --card: #111111; --border: #222222; --accent: #a855f7; --accent-glow: rgba(168, 85, 247, 0.4); --text: #f9fafb; --muted: #9ca3af; }
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.5; overflow-x: hidden; }
         
-        .hero { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 4rem 2rem 2rem; background: radial-gradient(circle at 50% -20%, #3b0764 0%, var(--bg) 60%); }
-        .hero h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); margin: 0; font-weight: 800; letter-spacing: -0.05em; background: linear-gradient(135deg, #c4b5fd, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .hero p { font-size: 1.25rem; color: var(--muted); max-width: 600px; margin: 1.5rem 0 2.5rem; }
+        /* Background Glow */
+        .ambient-light { position: absolute; top: -20%; left: 50%; transform: translateX(-50%); width: 60vw; height: 50vh; background: radial-gradient(circle, var(--accent-glow) 0%, transparent 60%); filter: blur(80px); z-index: -1; pointer-events: none; }
+
+        /* Hero Section */
+        .hero { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 6rem 2rem 4rem; position: relative; }
+        .badge { background: rgba(255,255,255,0.05); border: 1px solid var(--border); padding: 0.5rem 1rem; border-radius: 2rem; font-size: 0.85rem; color: #d1d5db; margin-bottom: 1.5rem; display: inline-flex; align-items: center; gap: 0.5rem; }
+        .hero h1 { font-size: clamp(3rem, 6vw, 5.5rem); margin: 0; font-weight: 800; letter-spacing: -0.04em; line-height: 1.1; }
+        .hero h1 span { background: linear-gradient(135deg, #e9d5ff 0%, var(--accent) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: clamp(1.1rem, 2vw, 1.3rem); color: var(--muted); max-width: 650px; margin: 1.5rem 0 2.5rem; }
         
-        .btn { display: inline-block; background: var(--accent); color: white; padding: 1rem 2.5rem; border-radius: 9999px; font-weight: 600; font-size: 1.1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.4); transition: transform 0.2s, box-shadow 0.2s; }
-        .btn:hover { transform: translateY(-3px); box-shadow: 0 20px 25px -5px rgba(139, 92, 246, 0.6); }
+        /* Buttons */
+        .btn-group { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 1rem 2rem; border-radius: 12px; font-weight: 600; font-size: 1.05rem; text-decoration: none; transition: all 0.2s ease; }
+        .btn-primary { background: var(--text); color: var(--bg); }
+        .btn-primary:hover { transform: scale(1.02); background: #e5e7eb; }
+        .btn-secondary { background: rgba(255,255,255,0.05); border: 1px solid var(--border); color: var(--text); }
+        .btn-secondary:hover { background: rgba(255,255,255,0.1); }
+
+        /* Device Mockup */
+        .mockup-wrapper { margin-top: 4rem; perspective: 1000px; }
+        .mockup { width: 300px; height: 620px; background: #0a0a0a; border-radius: 44px; border: 12px solid #1c1c1e; box-shadow: 0 30px 60px -12px rgba(0,0,0,0.8), 0 0 0 1px #333; position: relative; overflow: hidden; transform: rotateX(5deg) scale(0.95); transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); display: flex; align-items: center; justify-content: center; text-align: center; }
+        .mockup:hover { transform: rotateX(0deg) scale(1); }
+        .mockup::before { content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 100px; height: 28px; background: #1c1c1e; border-bottom-left-radius: 18px; border-bottom-right-radius: 18px; z-index: 10; }
         
-        /* Визуальная заглушка смартфона */
-        .mockup-container { margin-top: 4rem; position: relative; width: 280px; height: 580px; background: #121214; border-radius: 40px; border: 8px solid #27272a; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; }
-        .mockup-container::before { content: ''; position: absolute; top: 0; width: 120px; height: 25px; background: #27272a; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; }
-        .mockup-content { text-align: center; color: #3f3f46; font-weight: 600; }
+        /* Bento Grid Features */
+        .features { padding: 4rem 2rem; max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+        .bento-card { background: var(--card); border: 1px solid var(--border); border-radius: 24px; padding: 2rem; display: flex; flex-direction: column; position: relative; overflow: hidden; transition: border-color 0.3s ease; }
+        .bento-card:hover { border-color: rgba(168, 85, 247, 0.5); }
+        .col-span-2 { grid-column: span 2; }
+        @media (max-width: 900px) { .features { grid-template-columns: 1fr; } .col-span-2 { grid-column: span 1; } }
         
-        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; padding: 5rem 2rem; max-width: 1200px; margin: 0 auto; }
-        .card { background: var(--card); border: 1px solid #27272a; padding: 2.5rem 2rem; border-radius: 1.25rem; transition: border-color 0.3s; }
-        .card:hover { border-color: var(--accent); }
-        .card h3 { margin-top: 0; font-size: 1.3rem; margin-bottom: 1rem; color: #e4e4e7; }
-        .card p { color: var(--muted); margin-bottom: 0; font-size: 0.95rem; }
+        .bento-icon { width: 48px; height: 48px; background: rgba(168, 85, 247, 0.1); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--accent); }
+        .bento-card h3 { margin: 0 0 0.75rem 0; font-size: 1.4rem; font-weight: 600; }
+        .bento-card p { margin: 0; color: var(--muted); font-size: 1rem; }
         
-        .tech-stack { background: var(--card); border-top: 1px solid #27272a; border-bottom: 1px solid #27272a; padding: 4rem 2rem; text-align: center; }
-        .tags { display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap; margin-top: 2rem; max-width: 800px; margin-inline: auto; }
-        .tag { background: rgba(139, 92, 246, 0.1); color: #c4b5fd; border: 1px solid rgba(139, 92, 246, 0.2); padding: 0.5rem 1.25rem; border-radius: 9999px; font-weight: 500; font-size: 0.9rem; }
-        
-        .footer { text-align: center; padding: 3rem 2rem; color: var(--muted); font-size: 0.9rem; }
-        .footer a { color: var(--accent); text-decoration: none; }
+        /* FAQ & Footer */
+        .faq { max-width: 800px; margin: 4rem auto; padding: 0 2rem; }
+        .faq-item { border-bottom: 1px solid var(--border); padding: 1.5rem 0; }
+        .faq-item h4 { margin: 0 0 0.5rem 0; font-size: 1.1rem; }
+        .faq-item p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+        .footer { text-align: center; padding: 4rem 2rem 2rem; border-top: 1px solid var(--border); margin-top: 4rem; color: var(--muted); font-size: 0.9rem; }
+        .footer a { color: var(--text); text-decoration: none; margin: 0 1rem; transition: color 0.2s; }
+        .footer a:hover { color: var(--accent); }
     </style>
 </head>
 <body>
+    <div class="ambient-light"></div>
+    
     <header class="hero">
-        <h1>MoneyApp</h1>
-        <p>Умный учет финансов с автоматическим распознаванием чеков. Полный контроль бюджета без рутинного ввода.</p>
-        <a href="https://github.com/mrcsbek/mrcsbek.github.io/releases/download/v1.0.0/application-44bf268d-0f77-4826-a618-2a5741c74e1b.apk" class="btn">Скачать APK (v1.0.0)</a>
+        <div class="badge">✨ Версия 1.0.0 уже доступна</div>
+        <h1>Умный учет финансов.<br><span>Без рутины.</span></h1>
+        <p>Автоматическое распознавание чеков, строгая иерархия категорий и абсолютный контроль над вашим бюджетом прямо на устройстве.</p>
         
-        <!-- Заглушка вместо пустого места -->
-        <div class="mockup-container">
-            <div class="mockup-content">
-                <div style="font-size: 2.5rem; margin-bottom: 1rem;">📱</div>
-                Здесь будут<br>скриншоты<br>интерфейса
+        <div class="btn-group">
+            <a href="https://github.com/mrcsbek/mrcsbek.github.io/releases/download/v1.0.0/application-44bf268d-0f77-4826-a618-2a5741c74e1b.apk" class="btn btn-primary">
+                ↓ Скачать APK
+            </a>
+        </div>
+
+        <div class="mockup-wrapper">
+            <div class="mockup">
+                <!-- Заглушка, пока нет картинок -->
+                <div style="color: #444; font-weight: 500;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">📱</div>
+                    Место для скриншота<br>(280x600px)
+                </div>
             </div>
         </div>
     </header>
 
     <section class="features">
-        <div class="card">
-            <h3>📷 Мгновенный сканер</h3>
-            <p>Наведите камеру на чек — интеграция CameraX и ML Kit OCR автоматически извлечет позиции и суммы за доли секунды.</p>
+        <div class="bento-card col-span-2">
+            <div class="bento-icon">📸</div>
+            <h3>Нейросетевое сканирование</h3>
+            <p>Забудьте о ручном вводе. Интеграция CameraX и Google ML Kit OCR извлекает все позиции, суммы и даты с бумажного чека за доли секунды с максимальной точностью.</p>
         </div>
-        <div class="card">
-            <h3>📊 Строгая иерархия</h3>
-            <p>Финансовые модели с двухуровневой вложенностью категорий для абсолютной прозрачности аналитики ваших расходов.</p>
+        <div class="bento-card">
+            <div class="bento-icon">🔒</div>
+            <h3>Абсолютная приватность</h3>
+            <p>Никаких облачных серверов. Распознавание чеков и хранение базы SQLite происходит строго локально.</p>
         </div>
-        <div class="card">
-            <h3>🛡 Локальная база</h3>
-            <p>Никакой передачи данных в сеть. Вся обработка чеков и хранение транзакций осуществляются строго на устройстве.</p>
+        <div class="bento-card">
+            <div class="bento-icon">📊</div>
+            <h3>Архитектура категорий</h3>
+            <p>Строгая двухуровневая модель вложенности. Никакого хаоса — только чистая и понятная аналитика расходов.</p>
         </div>
-        <div class="card">
-            <h3>🎯 Лимиты и правила</h3>
-            <p>Настройте жесткие ограничения по каждой категории. Система вовремя предупредит о приближении к лимиту.</p>
+        <div class="bento-card col-span-2">
+            <div class="bento-icon">🎯</div>
+            <h3>Умные лимиты</h3>
+            <p>Задавайте жесткие рамки бюджета для конкретных категорий. Приложение вовремя предупредит, если вы начнете выходить за установленные пределы.</p>
         </div>
     </section>
 
-    <section class="tech-stack">
-        <h2>Под капотом</h2>
-        <div class="tags">
-            <span class="tag">Android</span>
-            <span class="tag">React Native Expo</span>
-            <span class="tag">CameraX</span>
-            <span class="tag">Google ML Kit OCR</span>
-            <span class="tag">SQLite Local DB</span>
+    <section class="faq">
+        <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2rem;">Частые вопросы</h2>
+        <div class="faq-item">
+            <h4>Нужен ли интернет для работы приложения?</h4>
+            <p>Нет. Все функции, включая распознавание чеков (OCR) и работу с базой данных, доступны полностью в офлайн-режиме.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Есть ли версия для iOS?</h4>
+            <p>На данный момент скомпилирован только Android APK, однако архитектура React Native Expo позволяет собрать версию для iOS в будущем.</p>
         </div>
     </section>
 
     <footer class="footer">
-        <p>© 2026 MoneyApp.<br><a href="privacy.html">Политика конфиденциальности</a></p>
+        <div style="margin-bottom: 1.5rem;">
+            <a href="privacy.html">Политика конфиденциальности</a>
+            <a href="https://github.com/mrcsbek/mrcsbek.github.io">GitHub Repository</a>
+        </div>
+        <p>© 2026 MoneyApp. Разработано с использованием React Native Expo.</p>
     </footer>
 </body>
 </html>
