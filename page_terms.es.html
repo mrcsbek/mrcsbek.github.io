@@ -1,0 +1,55 @@
+<!-- ES (page_terms.es.html) -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Términos de Uso — MoneyApp</title>
+    <style>
+        :root { --bg: #09090b; --card: #18181b; --border: #222222; --accent: #ef4444; --text: #f4f4f5; --muted: #a1a1aa; }
+        body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
+        .container { max-width: 800px; margin: 0 auto; background: var(--card); padding: 3rem; border-radius: 1.25rem; border: 1px solid var(--border); }
+        h1 { color: #fca5a5; margin-top: 0; font-size: 2rem; margin-bottom: 0.5rem; }
+        .effective-date { color: var(--muted); font-size: 0.9rem; margin-bottom: 2.5rem; display: block; }
+        h2 { color: #e4e4e7; margin-top: 2.5rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; font-size: 1.25rem; }
+        p, li { color: var(--muted); font-size: 1rem; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .back-link { display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 2rem; font-weight: 600; font-size: 1rem; color: var(--muted); transition: color 0.2s; }
+        .back-link:hover { color: var(--text); text-decoration: none; }
+        @media (max-width: 600px) { body { padding: 1rem; } .container { padding: 1.5rem; } }
+    </style>
+</head>
+<body>
+<a href="index_es.html" style="position: fixed; top: 1.5rem; left: 1.5rem; width: 3.5rem; height: 3.5rem; z-index: 9999; display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease; text-decoration: none;">
+  <img src="transp_icon.png" alt="" style="width: 100%; height: 100%; object-fit: contain;">
+</a>
+    <div class="container">
+        <a href="index_es.html" class="back-link">← Volver al inicio</a>
+        
+        <h1>Términos de Uso</h1>
+        <span class="effective-date">Fecha de entrada en vigor: 18 de septiembre de 2026</span>
+        
+        <h2>1. Disposiciones Generales</h2>
+        <p>Al instalar y utilizar la aplicación MoneyApp, usted acepta estos Términos. Si no está de acuerdo con alguna disposición, deje de usar la aplicación.</p>
+
+        <h2>2. Arquitectura del Servicio</h2>
+        <p>La aplicación se proporciona "tal cual". Las transacciones se sincronizan con el servidor privado del desarrollador. El usuario es responsable de mantener una conexión a internet para guardar los datos correctamente.</p>
+
+        <h2>3. Uso de Servicios de IA</h2>
+        <p>Se utilizan API en la nube de terceros (Gemini) para analizar recibos. El desarrollador no garantiza una precisión del 100% del reconocimiento óptico de caracteres (OCR). El usuario debe verificar visualmente los montos y categorías extraídos antes de guardarlos.</p>
+
+        <h2>4. Limitación de Responsabilidad</h2>
+        <p>El desarrollador no se hace responsable de pérdidas financieras, análisis incorrectos, pérdida de datos o interrupciones temporales del servidor. La aplicación es una herramienta de contabilidad, no un asesor financiero profesional.</p>
+
+        <h2>5. Comentarios</h2>
+        <p>Para preguntas sobre el funcionamiento de la aplicación y soporte técnico, por favor contacte: <strong><a href="mailto:yamaladec@gmail.com">yamaladec@gmail.com</a></strong></p>
+
+        <h3 style="color: #fca5a5; margin-top: 2rem;">Renuncia de Garantías (Versión Beta)</h3>
+        <p>
+          MoneyApp se proporciona "TAL CUAL" (AS IS). La aplicación se encuentra en fase de pruebas beta temprana. El desarrollador no se hace responsable por la pérdida de recibos, fallos de la base de datos local, inexactitudes en cálculos financieros o cualquier otro daño resultante del uso de este software. El usuario asume voluntariamente todos los riesgos técnicos y financieros.
+        </p>
+    
+    </div>
+</body>
+</html>
