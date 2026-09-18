@@ -1,4 +1,3 @@
-<!-- RU (indexes/index.html) -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -6,15 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MoneyApp — Ваш личный финансовый интеллект</title>
     
-    <!-- Мета-теги Open Graph для мессенджеров -->
     <meta property="og:title" content="MoneyApp — Умный учет финансов">
     <meta property="og:description" content="ИИ-распознавание чеков, строгая иерархия категорий и абсолютный контроль данных на защищенном сервере.">
     <meta property="og:image" content="https://mrcsbek.github.io/screen/transactions.jpeg">
     <meta property="og:url" content="https://mrcsbek.github.io/">
     <meta property="og:type" content="website">
     
-    <!-- Подключение иконки -->
-    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="icon" type="image/png" href="favicon.png">
     
     <style>
         :root { --bg: #050505; --card: #111111; --border: #222222; --accent: #ef4444; --accent-glow: rgba(239, 68, 68, 0.4); --text: #f9fafb; --muted: #9ca3af; }
@@ -67,20 +64,19 @@
     </style>
 </head>
 <body>
-    <!-- Переключатель языков (Справа вверху) -->
 <div style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 9999;">
-  <select onchange="window.location.href=this.value;" style="background:<option value="index.html" style="color: #000000;">🇷🇺 RU</option>
-<option value="indexes/index_en.html" style="color: #000000;">🇬🇧 EN</option>
-<option value="indexes/index_tr.html" style="color: #000000;">🇹🇷 TR</option>
-<option value="indexes/index_uz.html" style="color: #000000;">🇺🇿 UZ</option>
-<option value="indexes/index_es.html" style="color: #000000;">🇪🇸 ES</option>
-<option value="indexes/index_de.html" style="color: #000000;">🇩🇪 DE</option>
+  <select onchange="window.location.href=this.value;" style="background: rgba(0, 0, 0, 0.5); color: #ffffff; border: 1px solid rgba(255, 255, 255, 0.2); padding: 0.5rem 2.2rem 0.5rem 1rem; border-radius: 2rem; outline: none; cursor: pointer; font-size: 0.95rem; font-weight: 600; appearance: none; -webkit-appearance: none; backdrop-filter: blur(10px);">
+    <option value="index.html" style="color: #000000;">🇷🇺 RU</option>
+    <option value="indexes/index_en.html" style="color: #000000;">🇬🇧 EN</option>
+    <option value="indexes/index_tr.html" style="color: #000000;">🇹🇷 TR</option>
+    <option value="indexes/index_uz.html" style="color: #000000;">🇺🇿 UZ</option>
+    <option value="indexes/index_es.html" style="color: #000000;">🇪🇸 ES</option>
+    <option value="indexes/index_de.html" style="color: #000000;">🇩🇪 DE</option>
   </select>
-  <!-- Кастомная стрелка для селекта -->
   <div style="position: absolute; right: 0.8rem; top: 50%; transform: translateY(-50%); pointer-events: none; color: #ffffff; font-size: 0.7rem;">▼</div>
 </div>
 <a href="index.html" style="position: fixed; top: 1.5rem; left: 1.5rem; width: 3.5rem; height: 3.5rem; z-index: 9999; display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease; text-decoration: none;">
-  <img src="../transp_icon.png" alt="" style="width: 100%; height: 100%; object-fit: contain;">
+  <img src="transp_icon.png" alt="" style="width: 100%; height: 100%; object-fit: contain;">
 </a>
     <div class="ambient-light"></div>
     
@@ -97,17 +93,18 @@
         
         <div class="mockup-wrapper">
             <div class="screen-item">
-                <img src="../screen/transactions.jpeg" alt="Интерфейс транзакций">
+                <img src="screen/transactions.jpeg" alt="Интерфейс транзакций">
             </div>
         </div>
     </header>
 
     <section class="screenshots-section">
         <h2 style="font-size: 2rem; margin-bottom: 1rem;">Продуманный интерфейс</h2>
-        <div class="screenshots-grid"><img src="screen/transactions.jpeg" alt="Интерфейс транзакций">
-<img src="screen/accounts.jpeg" alt="Счета">
-<img src="screen/new_transaction.jpeg" alt="Новая транзакция">
-<img src="screen/plans.jpeg" alt="Планы">
+        <div class="screenshots-grid">
+            <div class="screen-item"><img src="screen/accounts.jpeg" alt="Счета"></div>
+            <div class="screen-item"><img src="screen/new_transaction.jpeg" alt="Новая транзакция"></div>
+            <div class="screen-item"><img src="screen/plans.jpeg" alt="Планы"></div>
+            <div class="screen-item"><img src="screen/transactions.jpeg" alt="Транзакции"></div>
         </div>
     </section>
 
@@ -134,33 +131,23 @@
         </div>
     </section>
 
-    <!-- Сетка нового функционала и планов -->
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 900px; margin: 4rem auto; padding: 0 1rem;">
-
-  <!-- Карточка 1: Управление -->
   <div style="background: rgba(255, 255, 255, 0.03); padding: 1.5rem; border-radius: 1rem; border: 1px solid rgba(255,255,255,0.05);">
     <h4 style="color: #ffffff; margin-top: 0; font-size: 1.1rem;">Жестовое управление вводом</h4>
     <p style="color: #9ca3af; font-size: 0.9rem; line-height: 1.5;">Свайп красной кнопки плюса влево моментально открывает камеру для сканирования чека. Свайп вправо — загружает банковские выписки (деконты) из файлов устройства.</p>
   </div>
-
-  <!-- Карточка 2: Шаблоны -->
   <div style="background: rgba(255, 255, 255, 0.03); padding: 1.5rem; border-radius: 1rem; border: 1px solid rgba(255,255,255,0.05);">
     <h4 style="color: #ffffff; margin-top: 0; font-size: 1.1rem;">Шаблоны в один тап</h4>
     <p style="color: #9ca3af; font-size: 0.9rem; line-height: 1.5;">Создание регулярных транзакций (например, оплата проезда в автобусе) одним нажатием. Система фиксирует расход мгновенно, исключая рутинный ручный ввод.</p>
   </div>
-
-  <!-- Карточка 3: Конвертация -->
   <div style="background: rgba(255, 255, 255, 0.03); padding: 1.5rem; border-radius: 1rem; border: 1px solid rgba(255,255,255,0.05);">
     <h4 style="color: #ffffff; margin-top: 0; font-size: 1.1rem;">Мультивалютность и металлы</h4>
     <p style="color: #9ca3af; font-size: 0.9rem; line-height: 1.5;">Автоматическая конвертация любых валют и драгметаллов в основную валюту учета. Данные подтягиваются из открытых источников. Указанный курс является ориентировочным для комфортной оценки баланса.</p>
   </div>
-
-  <!-- Карточка 4: Планы -->
   <div style="background: rgba(255, 255, 255, 0.03); padding: 1.5rem; border-radius: 1rem; border: 1px dashed rgba(239,68,68,0.4);">
     <h4 style="color: #ef4444; margin-top: 0; font-size: 1.1rem;">Roadmap: В разработке</h4>
     <p style="color: #9ca3af; font-size: 0.9rem; line-height: 1.5;">Виджеты для рабочего стола, система цифрового возврата товаров в магазин без бумажного чека и интеграция списков покупок с автоматической синхронизацией транзакций.</p>
   </div>
-
 </div>
 
 <div style="margin: 4rem auto; text-align: center; max-width: 700px; padding: 0 1rem;">
@@ -187,8 +174,8 @@
 
     <footer class="footer">
         <div style="margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;">
-            <a href="../pages_p/page_privacy.html">Политика конфиденциальности</a>
-            <a href="../pages_t/page_terms.html">Условия использования</a>
+            <a href="pages_p/page_privacy.html">Политика конфиденциальности</a>
+            <a href="pages_t/page_terms.html">Условия использования</a>
         </div>
         <p style="margin-bottom: 0.5rem;">Служба поддержки: <a href="mailto:yamaladec@gmail.com" style="margin: 0;">yamaladec@gmail.com</a></p>
         <p>© 2026 MoneyApp. Разработано с использованием React Native Expo.</p>
