@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyApp — Tu inteligencia financiera personal</title>
+    
+    <meta property="og:title" content="MoneyApp — Seguimiento inteligente de finanzas">
+    <meta property="og:description" content="Reconocimiento de recibos por IA, estricta jerarquía de categorías y control absoluto de datos en un servidor seguro.">
+    <meta property="og:image" content="https://mrcsbek.github.io/screen_transactions.jpeg">
+    <meta property="og:url" content="https://mrcsbek.github.io/">
+    <meta property="og:type" content="website">
+    
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <style>
+        :root { --bg: #050505; --card: #111111; --border: #222222; --accent: #ef4444; --accent-glow: rgba(239, 68, 68, 0.4); --text: #f9fafb; --muted: #9ca3af; }
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.5; overflow-x: hidden; }
+        
+        .ambient-light { position: absolute; top: -20%; left: 50%; transform: translateX(-50%); width: 60vw; height: 50vh; background: radial-gradient(circle, var(--accent-glow) 0%, transparent 60%); filter: blur(80px); z-index: -1; pointer-events: none; }
+
+        .hero { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 6rem 2rem 4rem; position: relative; }
+        .badge { background: rgba(255,255,255,0.05); border: 1px solid var(--border); padding: 0.5rem 1rem; border-radius: 2rem; font-size: 0.85rem; color: #d1d5db; margin-bottom: 1.5rem; display: inline-flex; align-items: center; gap: 0.5rem; }
+        .hero h1 { font-size: clamp(3rem, 6vw, 5.5rem); margin: 0; font-weight: 800; letter-spacing: -0.04em; line-height: 1.1; }
+        .hero h1 span { background: linear-gradient(135deg, #fca5a5 0%, var(--accent) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: clamp(1.1rem, 2vw, 1.3rem); color: var(--muted); max-width: 650px; margin: 1.5rem 0 2.5rem; }
+        
+        .btn-group { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 1rem 2rem; border-radius: 12px; font-weight: 600; font-size: 1.05rem; text-decoration: none; transition: all 0.2s ease; }
+        .btn-primary { background: var(--text); color: var(--bg); }
+        .btn-primary:hover { transform: scale(1.02); background: #e5e7eb; }
+
+        .mockup-wrapper { margin-top: 4rem; perspective: 1000px; }
+        .mockup { width: 300px; height: 620px; background: #0a0a0a; border-radius: 44px; border: 12px solid #1c1c1e; box-shadow: 0 30px 60px -12px rgba(0,0,0,0.8), 0 0 0 1px #333; position: relative; overflow: hidden; transform: rotateX(5deg) scale(0.95); transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); display: flex; align-items: center; justify-content: center; }
+        .mockup:hover { transform: rotateX(0deg) scale(1); }
+        .mockup::before { content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 100px; height: 28px; background: #1c1c1e; border-bottom-left-radius: 18px; border-bottom-right-radius: 18px; z-index: 10; }
+        .mockup img { width: 100%; height: 100%; object-fit: cover; border-radius: 32px; }
+
+        .screenshots-section { padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; text-align: center; }
+        .screenshots-grid { display: flex; gap: 2rem; overflow-x: auto; padding: 2rem 1rem; scroll-snap-type: x mandatory; justify-content: center; }
+        .screen-item { flex: 0 0 auto; width: 250px; height: 540px; border-radius: 36px; border: 8px solid #1c1c1e; overflow: hidden; scroll-snap-align: center; box-shadow: 0 20px 40px -10px rgba(0,0,0,0.6); position: relative; }
+        .screen-item img { width: 100%; height: 100%; object-fit: cover; }
+        @media (max-width: 1000px) { .screenshots-grid { justify-content: flex-start; } }
+        
+        .features { padding: 4rem 2rem; max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+        .bento-card { background: var(--card); border: 1px solid var(--border); border-radius: 24px; padding: 2rem; display: flex; flex-direction: column; position: relative; overflow: hidden; transition: border-color 0.3s ease; }
+        .bento-card:hover { border-color: rgba(239, 68, 68, 0.5); }
+        .col-span-2 { grid-column: span 2; }
+        @media (max-width: 900px) { .features { grid-template-columns: 1fr; } .col-span-2 { grid-column: span 1; } }
+        
+        .bento-icon { width: 48px; height: 48px; background: rgba(239, 68, 68, 0.1); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--accent); }
+        .bento-card h3 { margin: 0 0 0.75rem 0; font-size: 1.4rem; font-weight: 600; }
+        .bento-card p { margin: 0; color: var(--muted); font-size: 1rem; }
+        
+        .faq { max-width: 800px; margin: 4rem auto; padding: 0 2rem; }
+        .faq-item { border-bottom: 1px solid var(--border); padding: 1.5rem 0; }
+        .faq-item h4 { margin: 0 0 0.5rem 0; font-size: 1.1rem; }
+        .faq-item p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+        .footer { text-align: center; padding: 4rem 2rem 2rem; border-top: 1px solid var(--border); margin-top: 4rem; color: var(--muted); font-size: 0.9rem; }
+        .footer a { color: var(--text); text-decoration: none; margin: 0 1rem; transition: color 0.2s; }
+        .footer a:hover { color: var(--accent); }
+    </style>
+</head>
+<body>
+<div style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 9999;">
+  <select onchange="window.location.href=this.value;" style="background: rgba(0, 0, 0, 0.5); color: #ffffff; border: 1px solid rgba(255, 255, 255, 0.2); padding: 0.5rem 2.2rem 0.5rem 1rem; border-radius: 2rem; outline: none; cursor: pointer; font-size: 0.95rem; font-weight: 600; appearance: none; -webkit-appearance: none; backdrop-filter: blur(10px);">
+    <option value="index_es.html" style="color: #000000;">🇪🇸 ES</option>
+    <option value="index.html" style="color: #000000;">🇷🇺 RU</option>
+    <option value="index_en.html" style="color: #000000;">🇬🇧 EN</option>
+    <option value="index_tr.html" style="color: #000000;">🇹🇷 TR</option>
+    <option value="index_uz.html" style="color: #000000;">🇺🇿 UZ</option>
+    <option value="index_de.html" style="color: #000000;">🇩🇪 DE</option>
+  </select>
+  <div style="position: absolute; right: 0.8rem; top: 50%; transform: translateY(-50%); pointer-events: none; color: #ffffff; font-size: 0.7rem;">▼</div>
+</div>
+<a href="index_es.html" style="position: fixed; top: 1.5rem; left: 1.5rem; width: 3.5rem; height: 3.5rem; z-index: 9999; display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease; text-decoration: none;">
+  <img src="transp_icon.png" alt="Inicio" style="width: 100%; height: 100%; object-fit: contain;">
+</a>
+    <div class="ambient-light"></div>
+    
+    <header class="hero">
+        <div class="badge">✨ La versión 1.0.0 ya está disponible</div>
+        <h1>Seguimiento inteligente de finanzas.<br><span>Sin rutina.</span></h1>
+        <p>Reconocimiento de recibos por IA, estricta jerarquía de categorías, sin anuncios y control total sobre tus datos.</p>
+        
+        <div class="btn-group">
+            <a href="https://github.com/mrcsbek/mrcsbek.github.io/releases/download/v1.0.0/moneyApp.apk" class="btn btn-primary">
+                ↓ Descargar APK
+            </a>
+        </div>
+        
+        <div class="mockup-wrapper">
+            <div class="screen-item">
+                <img src="screen_transactions.jpeg" alt="Interfaz de transacciones">
+            </div>
+        </div>
+    </header>
+
+    <section class="screenshots-section">
+        <h2 style="font-size: 2rem; margin-bottom: 1rem;">Interfaz pensada al detalle</h2>
+        <div class="screenshots-grid">
+            <div class="screen-item"><img src="screen_accounts.jpeg" alt="Cuentas"></div>
+            <div class="screen-item"><img src="screen_new_transaction.jpeg" alt="Nueva transacción"></div>
+            <div class="screen-item"><img src="screen_plans.jpeg" alt="Planes"></div>
+            <div class="screen-item"><img src="screen_transactions.jpeg" alt="Transacciones"></div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="bento-card col-span-2">
+            <div class="bento-icon">🤖</div>
+            <h3>Análisis de IA en la nube</h3>
+            <p>Tus recibos son procesados por redes neuronales avanzadas (Gemini). Esto asegura una extracción impecable de artículos, importes y fechas, independientemente de la calidad de impresión.</p>
+        </div>
+        <div class="bento-card">
+            <div class="bento-icon">🔒</div>
+            <h3>Servidor único</h3>
+            <p>Los datos se almacenan en el servidor seguro del desarrollador. Absolutamente sin anuncios, rastreadores ni ventas ocultas de análisis.</p>
+        </div>
+        <div class="bento-card">
+            <div class="bento-icon">📊</div>
+            <h3>Arquitectura de categorías</h3>
+            <p>Estricto modelo de anidamiento de dos niveles. Sin caos — solo análisis de gastos limpios y comprensibles.</p>
+        </div>
+        <div class="bento-card col-span-2">
+            <div class="bento-icon">🗑️</div>
+            <h3>Derecho al olvido</h3>
+            <p>Tienes control total de tus datos. En cualquier momento puedes eliminar permanentemente tu cuenta y todo el historial de transacciones a través de la interfaz o bajo petición.</p>
+        </div>
+    </section>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 900px; margin: 4rem auto; padding: 0 1rem;">
+  <div style="background: rgba(255, 255, 255, 0.03); padding: 1.5rem; border-radius: 1rem; border: 1px solid rgba(255,255,255,0.05);">
+    <h4 style="color: #ffffff; margin-top: 0; font-size: 1.1rem;">Control de entrada por gestos</h4>
+    <p style="color: #9ca3af; font-size: 0.9rem; line-height: 1.5;">Deslizar el botón rojo de suma hacia la izquierda abre instantáneamente la cámara para escanear recibos. Deslizar hacia la derecha carga extractos bancarios desde los archivos del dispositivo.</p>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.03); padding: 1.5rem; border-radius: 1rem; border: 1px solid rgba(255,255,255,0.05);">
+    <h4 style="color: #ffffff; margin-top: 0; font-size: 1.1rem;">Plantillas con un solo toque</h4>
+    <p style="color: #9ca3af; font-size: 0.9rem; line-height: 1.5;">Crea transacciones regulares (por ejemplo, tarifa de autobús) con un solo toque. El sistema registra el gasto al instante, eliminando la entrada manual rutinaria.</p>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.03); padding: 1.5rem; border-radius: 1rem; border: 1px solid rgba(255,255,255,0.05);">
+    <h4 style="color: #ffffff; margin-top: 0; font-size: 1.1rem;">Multidivisa y metales</h4>
+    <p style="color: #9ca3af; font-size: 0.9rem; line-height: 1.5;">Conversión automática de cualquier divisa y metal precioso a la moneda principal de la cuenta. Los datos se extraen de fuentes abiertas. El tipo de cambio especificado es aproximado para una evaluación cómoda del saldo.</p>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.03); padding: 1.5rem; border-radius: 1rem; border: 1px dashed rgba(239,68,68,0.4);">
+    <h4 style="color: #ef4444; margin-top: 0; font-size: 1.1rem;">Hoja de ruta: En desarrollo</h4>
+    <p style="color: #9ca3af; font-size: 0.9rem; line-height: 1.5;">Widgets de escritorio, sistema de devolución digital de artículos en tienda sin recibo de papel e integración de listas de compras con sincronización automática de transacciones.</p>
+  </div>
+</div>
+
+<div style="margin: 4rem auto; text-align: center; max-width: 700px; padding: 0 1rem;">
+  <p style="color: #9ca3af; font-size: 1rem; line-height: 1.6; margin-bottom: 1rem;">
+    Atención: La aplicación se encuentra en fase beta temprana. Toda la responsabilidad por la seguridad de los datos, posibles fallos de software y el funcionamiento del sistema recae enteramente en el usuario.
+  </p>
+  <p style="color: #e5e7eb; font-size: 1.1rem; margin: 0;">
+    Agradeceré sus comentarios y reportes de errores: 
+    <a href="mailto:твой@email.com" style="color: #ef4444; text-decoration: none; font-weight: 600; margin-left: 0.5rem;">Escribir al desarrollador</a>
+  </p>
+</div>
+    
+    <section class="faq">
+        <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2rem;">Preguntas Frecuentes</h2>
+        <div class="faq-item">
+            <h4>¿Necesito internet para que la aplicación funcione?</h4>
+            <p>Sí. Se requiere una conexión de red persistente para sincronizarse con la base de datos y enviar recibos para el procesamiento de redes neuronales.</p>
+        </div>
+        <div class="faq-item">
+            <h4>¿Cómo elimino mis datos?</h4>
+            <p>Puedes borrar todos tus datos tú mismo a través de la configuración de la aplicación. Si es necesario, puedes contactar al desarrollador directamente para limpiar manualmente todos los rastros en la base de datos.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div style="margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;">
+            <a href="page_privacy.es.html">Política de Privacidad</a>
+            <a href="page_terms.es.html">Términos de Uso</a>
+        </div>
+        <p style="margin-bottom: 0.5rem;">Servicio de Soporte: <a href="mailto:yamaladec@gmail.com" style="margin: 0;">yamaladec@gmail.com</a></p>
+        <p>© 2026 MoneyApp. Desarrollado con React Native Expo.</p>
+    </footer>
+</body>
+</html>
