@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Политика конфиденциальности — MoneyApp</title>
     <style>
-        :root { --bg: #09090b; --card: #18181b; --border: #222222; --accent: #8b5cf6; --text: #f4f4f5; --muted: #a1a1aa; }
+        :root { --bg: #09090b; --card: #18181b; --border: #222222; --accent: #ef4444; --text: #f4f4f5; --muted: #a1a1aa; }
         body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
         .container { max-width: 800px; margin: 0 auto; background: var(--card); padding: 3rem; border-radius: 1.25rem; border: 1px solid var(--border); }
-        h1 { color: #c4b5fd; margin-top: 0; font-size: 2rem; margin-bottom: 0.5rem; }
+        h1 { color: #fca5a5; margin-top: 0; font-size: 2rem; margin-bottom: 0.5rem; }
         .effective-date { color: var(--muted); font-size: 0.9rem; margin-bottom: 2.5rem; display: block; }
         h2 { color: #e4e4e7; margin-top: 2.5rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; font-size: 1.25rem; }
         p, li { color: var(--muted); font-size: 1rem; }
@@ -18,7 +18,7 @@
         a:hover { text-decoration: underline; }
         .back-link { display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 2rem; font-weight: 600; font-size: 1rem; color: var(--muted); transition: color 0.2s; }
         .back-link:hover { color: var(--text); text-decoration: none; }
-        .contact-box { background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.2); padding: 1.5rem; border-radius: 12px; margin-top: 2rem; }
+        .contact-box { background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.1); padding: 1.5rem; border-radius: 12px; margin-top: 2rem; }
         .contact-box p { color: var(--text); margin: 0; }
         
         @media (max-width: 600px) { body { padding: 1rem; } .container { padding: 1.5rem; } }
@@ -73,43 +73,4 @@
         </div>
     </div>
 </body>
-</html>        <p>MoneyApp функционирует по модели независимого сервера (self-hosted). Данные не собираются для продажи или аналитики.</p>
-        <ul>
-            <li><strong>Что мы храним:</strong> Финансовые транзакции, созданные вами категории, настроенные лимиты бюджетов и фотографии отсканированных чеков.</li>
-            <li><strong>Безопасность хранения (Encryption):</strong> Все данные передаются по защищенному протоколу (HTTPS/TLS) и хранятся на частном сервере разработчика. Данные защищены шифрованием в состоянии покоя (encryption at rest), что исключает доступ к ним в открытом виде.</li>
-        </ul>
-
-        <h2>2. Использование камеры и обработка чеков (ИИ)</h2>
-        <p>Приложение требует доступ к камере устройства для функции оптического распознавания символов (OCR). При сканировании чека изображение временно передается по защищенному протоколу на серверы сторонних провайдеров искусственного интеллекта (Gemini). Это необходимо <strong>исключительно</strong> для извлечения сумм и позиций. Изображения чеков не используются провайдерами для обучения публичных ИИ-моделей.</p>
-
-        <h2>3. Уведомления</h2>
-        <p>Приложение использует исключительно локальные push-уведомления (напоминания о необходимости внести расходы). Уведомления генерируются операционной системой вашего телефона на основе таймера. Внешние серверы рассылок не используются.</p>
-
-        <h2>4. Отсутствие аналитики и передачи данных</h2>
-        <p>В приложении <strong>полностью отсутствуют</strong> рекламные интеграции (Ad SDK), маркетинговые трекеры и системы скрытой телеметрии. Ваша финансовая информация никогда не передается третьим лицам.</p>
-
-        <h2>5. Удержание данных (Data Retention)</h2>
-        <p>Ваши финансовые данные хранятся на сервере ровно столько, сколько вы активно используете приложение. Если учетная запись не проявляет активности в течение 24 месяцев, все связанные данные могут быть автоматически и безвозвратно удалены из нашей базы.</p>
-
-        <h2>6. Права пользователя и удаление данных (Право на забвение)</h2>
-        <p>В соответствии с требованиями законодательства о защите данных (GDPR/CCPA), вы имеете право на:</p>
-        <ul>
-            <li>Доступ к вашим данным и их экспорт.</li>
-            <li>Исправление неточностей в транзакциях.</li>
-            <li><strong>Полное удаление данных:</strong> Вы можете запросить безвозвратное удаление вашей учетной записи, истории транзакций и фотографий чеков с нашего сервера.</li>
-        </ul>
-        <p>Для инициации процедуры удаления всех цифровых следов («хвостов») отправьте запрос на электронную почту, указанную в разделе «Контакты». Запрос будет выполнен в течение 3 рабочих дней.</p>
-
-        <h2>7. Политика в отношении детей</h2>
-        <p>Приложение предназначено для управления личными финансами. Мы не собираем личную информацию от лиц младше 13 лет. При выявлении таких данных они немедленно удаляются с сервера.</p>
-
-        <h2>8. Изменения в Политике</h2>
-        <p>Мы можем обновлять данную Политику конфиденциальности. Любые изменения вступают в силу с момента их публикации на этой странице.</p>
-
-        <div class="contact-box">
-            <h3 style="margin-top: 0; color: #c4b5fd;">Контакты для запроса удаления данных</h3>
-            <p>Если у вас есть вопросы или вы хотите запросить полное удаление вашей информации, свяжитесь со мной по адресу: <strong><a href="mailto:120110ac@gmail.com">120110ac@gmail.com</a></strong></p>
-        </div>
-    </div>
-</body>
-</html>
+</html> 
