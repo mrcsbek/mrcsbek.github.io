@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyApp — Sizning shaxsiy moliyaviy intellektingiz</title>
+    
+    <meta property="og:title" content="MoneyApp — Aqlli moliya hisobi">
+    <meta property="og:description" content="Sun'iy intellekt orqali cheklarni aniqlash, qat'iy kategoriya ierarxiyasi va xavfsiz serverda ma'lumotlarni mutlaq nazorat qilish.">
+    <meta property="og:image" content="https://mrcsbek.github.io/screen_transactions.jpeg">
+    <meta property="og:url" content="https://mrcsbek.github.io/">
+    <meta property="og:type" content="website">
+    
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <style>
+        :root { --bg: #050505; --card: #111111; --border: #222222; --accent: #ef4444; --accent-glow: rgba(239, 68, 68, 0.4); --text: #f9fafb; --muted: #9ca3af; }
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.5; overflow-x: hidden; }
+        
+        .ambient-light { position: absolute; top: -20%; left: 50%; transform: translateX(-50%); width: 60vw; height: 50vh; background: radial-gradient(circle, var(--accent-glow) 0%, transparent 60%); filter: blur(80px); z-index: -1; pointer-events: none; }
+
+        .hero { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 6rem 2rem 4rem; position: relative; }
+        .badge { background: rgba(255,255,255,0.05); border: 1px solid var(--border); padding: 0.5rem 1rem; border-radius: 2rem; font-size: 0.85rem; color: #d1d5db; margin-bottom: 1.5rem; display: inline-flex; align-items: center; gap: 0.5rem; }
+        .hero h1 { font-size: clamp(3rem, 6vw, 5.5rem); margin: 0; font-weight: 800; letter-spacing: -0.04em; line-height: 1.1; }
+        .hero h1 span { background: linear-gradient(135deg, #fca5a5 0%, var(--accent) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: clamp(1.1rem, 2vw, 1.3rem); color: var(--muted); max-width: 650px; margin: 1.5rem 0 2.5rem; }
+        
+        .btn-group { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 1rem 2rem; border-radius: 12px; font-weight: 600; font-size: 1.05rem; text-decoration: none; transition: all 0.2s ease; }
+        .btn-primary { background: var(--text); color: var(--bg); }
+        .btn-primary:hover { transform: scale(1.02); background: #e5e7eb; }
+
+        .mockup-wrapper { margin-top: 4rem; perspective: 1000px; }
+        .mockup { width: 300px; height: 620px; background: #0a0a0a; border-radius: 44px; border: 12px solid #1c1c1e; box-shadow: 0 30px 60px -12px rgba(0,0,0,0.8), 0 0 0 1px #333; position: relative; overflow: hidden; transform: rotateX(5deg) scale(0.95); transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); display: flex; align-items: center; justify-content: center; }
+        .mockup:hover { transform: rotateX(0deg) scale(1); }
+        .mockup::before { content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 100px; height: 28px; background: #1c1c1e; border-bottom-left-radius: 18px; border-bottom-right-radius: 18px; z-index: 10; }
+        .mockup img { width: 100%; height: 100%; object-fit: cover; border-radius: 32px; }
+
+        .screenshots-section { padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; text-align: center; }
+        .screenshots-grid { display: flex; gap: 2rem; overflow-x: auto; padding: 2rem 1rem; scroll-snap-type: x mandatory; justify-content: center; }
+        .screen-item { flex: 0 0 auto; width: 250px; height: 540px; border-radius: 36px; border: 8px solid #1c1c1e; overflow: hidden; scroll-snap-align: center; box-shadow: 0 20px 40px -10px rgba(0,0,0,0.6); position: relative; }
+        .screen-item img { width: 100%; height: 100%; object-fit: cover; }
+        @media (max-width: 1000px) { .screenshots-grid { justify-content: flex-start; } }
+        
+        .features { padding: 4rem 2rem; max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+        .bento-card { background: var(--card); border: 1px solid var(--border); border-radius: 24px; padding: 2rem; display: flex; flex-direction: column; position: relative; overflow: hidden; transition: border-color 0.3s ease; }
+        .bento-card:hover { border-color: rgba(239, 68, 68, 0.5); }
+        .col-span-2 { grid-column: span 2; }
+        @media (max-width: 900px) { .features { grid-template-columns: 1fr; } .col-span-2 { grid-column: span 1; } }
+        
+        .bento-icon { width: 48px; height: 48px; background: rgba(239, 68, 68, 0.1); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--accent); }
+        .bento-card h3 { margin: 0 0 0.75rem 0; font-size: 1.4rem; font-weight: 600; }
+        .bento-card p { margin: 0; color: var(--muted); font-size: 1rem; }
+        
+        .faq { max-width: 800px; margin: 4rem auto; padding: 0 2rem; }
+        .faq-item { border-bottom: 1px solid var(--border); padding: 1.5rem 0; }
+        .faq-item h4 { margin: 0 0 0.5rem 0; font-size: 1.1rem; }
+        .faq-item p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+        .footer { text-align: center; padding: 4rem 2rem 2rem; border-top: 1px solid var(--border); margin-top: 4rem; color: var(--muted); font-size: 0.9rem; }
+        .footer a { color: var(--text); text-decoration: none; margin: 0 1rem; transition: color 0.2s; }
+        .footer a:hover { color: var(--accent); }
+    </style>
+</head>
+<body>
+<div style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 9999;">
+  <select onchange="window.location.href=this.value;" style="background: rgba(0, 0, 0, 0.5); color: #ffffff; border: 1px solid rgba(255, 255, 255, 0.2); padding: 0.5rem 2.2rem 0.5rem 1rem; border-radius: 2rem; outline: none; cursor: pointer; font-size: 0.95rem; font-weight: 600; appearance: none; -webkit-appearance: none; backdrop-filter: blur(10px);">
+    <option value="index_uz.html" style="color: #000000;">🇺🇿 UZ</option>
+    <option value="index.html" style="color: #000000;">🇷🇺 RU</option>
+    <option value="index_en.html" style="color: #000000;">🇬🇧 EN</option>
+    <option value="index_tr.html" style="color: #000000;">🇹🇷 TR</option>
+    <option value="index_es.html" style="color: #000000;">🇪🇸 ES</option>
+    <option value="index_de.html" style="color: #000000;">🇩🇪 DE</option>
+  </select>
+  <div style="position: absolute; right: 0.8rem; top: 50%; transform: translateY(-50%); pointer-events: none; color: #ffffff; font-size: 0.7rem;">▼</div>
+</div>
+<a href="index_uz.html" style="position: fixed; top: 1.5rem; left: 1.5rem; width: 3.5rem; height: 3.5rem; z-index: 9999; display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease; text-decoration: none;">
+  <img src="transp_icon.png" alt="Bosh sahifa" style="width: 100%; height: 100%; object-fit: contain;">
+</a>
+    <div class="ambient-light"></div>
+    
+    <header class="hero">
+        <div class="badge">✨ 1.0.0 versiyasi endi mavjud</div>
+        <h1>Aqlli moliya hisobi.<br><span>Rutinsiz.</span></h1>
+        <p>Sun'iy intellekt orqali cheklarni aniqlash, qat'iy kategoriya ierarxiyasi, reklamasiz tajriba va ma'lumotlaringiz ustidan to'liq nazorat.</p>
+        
+        <div class="btn-group">
+            <a href="https://github.com/mrcsbek/mrcsbek.github.io/releases/download/v1.0.0/moneyApp.apk" class="btn btn-primary">
+                ↓ APK yuklab olish
+            </a>
+        </div>
+        
+        <div class="mockup-wrapper">
+            <div class="screen-item">
+                <img src="screen_transactions.jpeg" alt="Tranzaksiyalar interfeysi">
+            </div>
+        </div>
+    </header>
+
+    <section class="screenshots-section">
+        <h2 style="font-size: 2rem; margin-bottom: 1rem;">O'ylangan interfeys</h2>
+        <div class="screenshots-grid">
+            <div class="screen-item"><img src="screen_accounts.jpeg" alt="Hisoblar"></div>
+            <div class="screen-item"><img src="screen_new_transaction.jpeg" alt="Yangi tranzaksiya"></div>
+            <div class="screen-item"><img src="screen_plans.jpeg" alt="Rejalar"></div>
+            <div class="screen-item"><img src="screen_transactions.jpeg" alt="Tranzaksiyalar"></div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="bento-card col-span-2">
+            <div class="bento-icon">🤖</div>
+            <h3>Bulutli SI tahlili</h3>
+            <p>Cheklaringiz ilg'or neyron tarmoqlar (Gemini) orqali qayta ishlanadi. Bu bosib chiqarish sifatidan qat'i nazar, pozitsiyalar, summalar va sanalarni xatosiz ajratib olishni ta'minlaydi.</p>
+        </div>
+        <div class="bento-card">
+            <div class="bento-icon">🔒</div>
+            <h3>Yagona server</h3>
+            <p>Ma'lumotlar dasturchining xavfsiz serverida saqlanadi. Reklama, trekerlar va yashirin analitika savdosi umuman yo'q.</p>
+        </div>
+        <div class="bento-card">
+            <div class="bento-icon">📊</div>
+            <h3>Kategoriya arxitekturasi</h3>
+            <p>Qat'iy ikki bosqichli ichma-ich model. Hech qanday tartibsizlik yo'q — faqat toza va tushunarli xarajatlar tahlili.</p>
+        </div>
+        <div class="bento-card col-span-2">
+            <div class="bento-icon">🗑️</div>
+            <h3>Unutilish huquqi</h3>
+            <p>Siz o'z ma'lumotlaringizni to'liq nazorat qilasiz. Istalgan vaqtda interfeys orqali yoki so'rov bo'yicha hisobingizni va barcha tranzaksiya tarixini butunlay o'chirib tashlashingiz mumkin.</p>
+        </div>
+    </section>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 900px; margin: 4rem auto; padding: 0 1rem;">
+  <div style="background: rgba(255, 255, 255, 0.03); padding: 1.5rem; border-radius: 1rem; border: 1px solid rgba(255,255,255,0.05);">
+    <h4 style="color: #ffffff; margin-top: 0; font-size: 1.1rem;">Imo-ishora kiritish nazorati</h4>
+    <p style="color: #9ca3af; font-size: 0.9rem; line-height: 1.5;">Qizil plyus tugmasini chapga surish chekni skanerlash uchun kamerani darhol ochadi. O'ngga surish qurilma fayllaridan bank ko'chirmalarini (dekontlar) yuklaydi.</p>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.03); padding: 1.5rem; border-radius: 1rem; border: 1px solid rgba(255,255,255,0.05);">
+    <h4 style="color: #ffffff; margin-top: 0; font-size: 1.1rem;">Bir marta bosiladigan shablonlar</h4>
+    <p style="color: #9ca3af; font-size: 0.9rem; line-height: 1.5;">Doimiy tranzaksiyalarni (masalan, avtobus chiptasi) bir marta bosish bilan yarating. Tizim xarajatni darhol qayd etib, muntazam qo'lda kiritishni yo'q qiladi.</p>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.03); padding: 1.5rem; border-radius: 1rem; border: 1px solid rgba(255,255,255,0.05);">
+    <h4 style="color: #ffffff; margin-top: 0; font-size: 1.1rem;">Multivalyuta va metallar</h4>
+    <p style="color: #9ca3af; font-size: 0.9rem; line-height: 1.5;">Har qanday valyuta va qimmatbaho metallarni asosiy hisob valyutasiga avtomatik konvertatsiya qilish. Ma'lumotlar ochiq manbalardan olinadi. Ko'rsatilgan kurs qulay balansni baholash uchun taxminiydir.</p>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.03); padding: 1.5rem; border-radius: 1rem; border: 1px dashed rgba(239,68,68,0.4);">
+    <h4 style="color: #ef4444; margin-top: 0; font-size: 1.1rem;">Yo'l xaritasi: Ishlab chiqilmoqda</h4>
+    <p style="color: #9ca3af; font-size: 0.9rem; line-height: 1.5;">Ish stoli vidjetlari, qog'oz cheksiz do'konga raqamli qaytarish tizimi va tranzaksiyalarni avtomatik sinxronlashtiruvchi xarid ro'yxatlari integratsiyasi.</p>
+  </div>
+</div>
+
+<div style="margin: 4rem auto; text-align: center; max-width: 700px; padding: 0 1rem;">
+  <p style="color: #9ca3af; font-size: 1rem; line-height: 1.6; margin-bottom: 1rem;">
+    Diqqat: Ilova erta beta-versiya bosqichida. Ma'lumotlar xavfsizligi, ehtimoliy dasturiy nosozliklar va tizim ishlashi uchun barcha javobgarlik to'liq foydalanuvchi zimmasida.
+  </p>
+  <p style="color: #e5e7eb; font-size: 1.1rem; margin: 0;">
+    Fikr-mulohazalar va xato xabarlaridan xursand bo'laman: 
+    <a href="mailto:твой@email.com" style="color: #ef4444; text-decoration: none; font-weight: 600; margin-left: 0.5rem;">Dasturchiga yozish</a>
+  </p>
+</div>
+    
+    <section class="faq">
+        <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2rem;">Tez-tez so'raladigan savollar</h2>
+        <div class="faq-item">
+            <h4>Ilova ishlashi uchun internet kerakmi?</h4>
+            <p>Ha. Ma'lumotlar bazasi bilan sinxronlashish va cheklarni neyron tarmoqqa yuborish uchun doimiy tarmoqqa ulanish kerak.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Ma'lumotlarimni qanday o'chirishim mumkin?</h4>
+            <p>Ilova sozlamalari orqali barcha ma'lumotlaringizni o'zingiz o'chirib tashlashingiz mumkin. Agar kerak bo'lsa, ma'lumotlar bazasidagi barcha izlarni qo'lda tozalash uchun to'g'ridan-to'g'ri dasturchiga murojaat qilishingiz mumkin.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div style="margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;">
+            <a href="page_privacy.uz.html">Maxfiylik siyosati</a>
+            <a href="page_terms.uz.html">Foydalanish shartlari</a>
+        </div>
+        <p style="margin-bottom: 0.5rem;">Qo'llab-quvvatlash xizmati: <a href="mailto:yamaladec@gmail.com" style="margin: 0;">yamaladec@gmail.com</a></p>
+        <p>© 2026 MoneyApp. React Native Expo yordamida ishlab chiqilgan.</p>
+    </footer>
+</body>
+</html>
