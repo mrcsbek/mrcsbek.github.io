@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://mrcsbek.github.io/index.html</loc></url>
-  <url><loc>https://mrcsbek.github.io/indexes/index_en.html</loc></url>
-  <url><loc>https://mrcsbek.github.io/indexes/index_tr.html</loc></url>
-  <url><loc>https://mrcsbek.github.io/indexes/index_uz.html</loc></url>
-  <url><loc>https://mrcsbek.github.io/indexes/index_de.html</loc></url>
-  <url><loc>https://mrcsbek.github.io/indexes/index_es.html</loc></url>
+  <url>
+    <loc>https://mrcsbek.github.io/index.html</loc>
+  </url>
+  <url>
+    <loc>https://mrcsbek.github.io/indexes/index_en.html</loc>
+  </url>
+  <url>
+    <loc>https://mrcsbek.github.io/indexes/index_tr.html</loc>
+  </url>
+  <url>
+    <loc>https://mrcsbek.github.io/indexes/index_uz.html</loc>
+  </url>
+  <url>
+    <loc>https://mrcsbek.github.io/indexes/index_de.html</loc>
+  </url>
+  <url>
+    <loc>https://mrcsbek.github.io/indexes/index_es.html</loc>
+  </url>
 </urlset>
