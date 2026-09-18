@@ -1,54 +1,63 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutzungsbedingungen — MoneyApp</title>
-    <style>
-        :root { --bg: #09090b; --card: #18181b; --border: #222222; --accent: #ef4444; --text: #f4f4f5; --muted: #a1a1aa; }
-        body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
-        .container { max-width: 800px; margin: 0 auto; background: var(--card); padding: 3rem; border-radius: 1.25rem; border: 1px solid var(--border); }
-        h1 { color: #fca5a5; margin-top: 0; font-size: 2rem; margin-bottom: 0.5rem; }
-        .effective-date { color: var(--muted); font-size: 0.9rem; margin-bottom: 2.5rem; display: block; }
-        h2 { color: #e4e4e7; margin-top: 2.5rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; font-size: 1.25rem; }
-        p, li { color: var(--muted); font-size: 1rem; }
-        a { color: var(--accent); text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .back-link { display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 2rem; font-weight: 600; font-size: 1rem; color: var(--muted); transition: color 0.2s; }
-        .back-link:hover { color: var(--text); text-decoration: none; }
-        @media (max-width: 600px) { body { padding: 1rem; } .container { padding: 1.5rem; } }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nutzungsbedingungen — MoneyApp</title>
+<style>
+  :root { --bg: #0B0F14; --card: #141416; --text: #FFFFFF; --muted: #9CA3AF; --accent: #B02222; --border: #2A2A2E; }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.65; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { font-size: 30px; margin: 0 0 6px; letter-spacing: -0.5px; }
+  .date { color: var(--muted); font-size: 14px; margin-bottom: 36px; }
+  h2 { font-size: 19px; margin: 34px 0 12px; padding-top: 22px; border-top: 1px solid var(--border); }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  p { margin: 0 0 14px; } ul { margin: 0 0 14px; padding-left: 22px; } li { margin-bottom: 8px; } a { color: var(--accent); }
+  .warn { background: var(--card); border-left: 3px solid var(--accent); border-radius: 0 14px 14px 0; padding: 18px 20px; margin: 22px 0; }
+  .warn h3 { margin: 0 0 10px; font-size: 16px; } .warn p { margin: 0; color: var(--muted); font-size: 15px; }
+  strong { color: var(--text); } footer { margin-top: 50px; padding-top: 22px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+</style>
 </head>
 <body>
-<a href="../indexes/index_de.html" style="position: fixed; top: 1.5rem; left: 1.5rem; width: 3.5rem; height: 3.5rem; z-index: 9999; display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease; text-decoration: none;">
-  <img src="../transp_icon.png" alt="Startseite" style="width: 100%; height: 100%; object-fit: contain;">
-</a>
-    <div class="container">
-        <a href="../indexes/index_de.html" class="back-link">← Zurück zur Startseite</a>
-        
-        <h1>Nutzungsbedingungen</h1>
-        <span class="effective-date">Datum des Inkrafttretens: 18. September 2026</span>
-        
-        <h2>1. Allgemeine Bestimmungen</h2>
-        <p>Durch die Installation und Nutzung der MoneyApp-Anwendung stimmen Sie diesen Bedingungen zu. Wenn Sie mit einer Bestimmung nicht einverstanden sind, beenden Sie die Nutzung der Anwendung.</p>
-
-        <h2>2. Service-Architektur</h2>
-        <p>Die Anwendung wird "wie besehen" bereitgestellt. Transaktionen werden mit dem privaten Server des Entwicklers synchronisiert. Der Benutzer ist für die Aufrechterhaltung einer Internetverbindung verantwortlich, um Daten korrekt zu speichern.</p>
-
-        <h2>3. Nutzung von KI-Diensten</h2>
-        <p>Für das Parsen von Belegen werden Cloud-APIs von Drittanbietern (Gemini) verwendet. Der Entwickler garantiert keine 100%ige Genauigkeit der optischen Zeichenerkennung (OCR). Der Benutzer ist verpflichtet, die extrahierten Beträge und Kategorien vor dem Speichern visuell zu überprüfen.</p>
-
-        <h2>4. Haftungsbeschränkung</h2>
-        <p>Der Entwickler haftet nicht für finanzielle Verluste, fehlerhafte Analysen, Datenverluste oder vorübergehende Serverausfälle. Die Anwendung ist ein Buchhaltungstool, kein professioneller Finanzberater.</p>
-
-        <h2>5. Feedback</h2>
-        <p>Bei Fragen zum Betrieb der Anwendung und zum technischen Support wenden Sie sich bitte an: <strong><a href="mailto:yamaladec@gmail.com">yamaladec@gmail.com</a></strong></p>
-
-        <h3 style="color: #fca5a5; margin-top: 2rem;">Haftungsausschluss (Beta-Version)</h3>
-        <p>
-          MoneyApp wird "WIE BESEHEN" (AS IS) bereitgestellt. Die Anwendung befindet sich in einer frühen Beta-Testphase. Der Entwickler haftet nicht für den Verlust von Belegen, lokale Datenbankfehler, Ungenauigkeiten bei Finanzberechnungen oder sonstige Schäden, die sich aus der Nutzung dieser Software ergeben. Der Benutzer übernimmt freiwillig alle technischen und finanziellen Risiken.
-        </p>
-    
-    </div>
+<div class="wrap">
+<h1>Nutzungsbedingungen</h1>
+<div class="date">Gültig ab: 18. September 2026</div>
+<div class="warn">
+  <h3>Beta-Version</h3>
+  <p>MoneyApp befindet sich im frühen Teststadium. Störungen, Datenverlust und Berechnungsfehler können auftreten. Verwenden Sie die App nicht als einzige Buchhaltungsquelle — bewahren Sie ein Backup wichtiger Datensätze auf.</p>
+</div>
+<h2>1. Annahme der Bedingungen</h2>
+<p>Durch die Installation und Nutzung von MoneyApp erklären Sie sich mit diesen Bedingungen einverstanden. Wenn Sie mit einem Punkt nicht einverstanden sind, stellen Sie die Nutzung der App ein und löschen Sie Ihr Konto.</p>
+<h2>2. Funktionsweise des Dienstes</h2>
+<p>Die App wird „wie besehen“ (AS IS) bereitgestellt. Die Daten werden mit einem privaten Server des Entwicklers synchronisiert. Für das Speichern von Transaktionen ist eine Internetverbindung erforderlich — ohne diese erreichen eingegebene Daten möglicherweise den Server nicht.</p>
+<p>Der Entwickler garantiert keinen ununterbrochenen Serverbetrieb, keine Datensicherheit und keine ständige Verfügbarkeit des Dienstes.</p>
+<h2>3. Belegenerkennung</h2>
+<p>Zur Auswertung von Belegen werden Cloud-Dienste (Google Gemini und Backup-Modelle über OpenRouter) genutzt. Die Erkennungsgenauigkeit wird nicht garantiert: Das Modell kann sich bei Beträgen, Daten, Geschäftsnamen oder Positionen irren.</p>
+<p><strong>Überprüfen Sie erkannte Daten vor dem Speichern.</strong> Die Verantwortung für die Korrektheit eingegebener Beträge liegt beim Benutzer.</p>
+<h2>4. Ihre Verantwortung</h2>
+<ul>
+  <li>Sie sind verantwortlich für die Sicherheit Ihres Passworts und Wiederherstellungscodes;</li>
+  <li>Sie überprüfen die Datenrichtigkeit vor dem Speichern;</li>
+  <li>Sie nutzen die App nicht für illegale Aktivitäten;</li>
+  <li>Sie verstehen, dass Belegbilder an KI-Dienste von Drittanbietern gesendet werden.</li>
+</ul>
+<h2>5. Haftungsbeschränkung</h2>
+<p>Der Entwickler haftet nicht für:</p>
+<ul>
+  <li>finanzielle Verluste jeglicher Art;</li>
+  <li>fehlerhafte Analysen, ungenaue Beträge und falsche Kategorien;</li>
+  <li>Datenverlust, Beschädigung der Datenbank oder Serverausfälle;</li>
+  <li>Entscheidungen, die auf Basis von App-Daten getroffen wurden.</li>
+</ul>
+<p>MoneyApp ist ein persönliches Tracking-Tool, kein Buchhaltungssystem und kein professioneller Finanzberater.</p>
+<h2>6. Beendigung der Nutzung</h2>
+<p>Sie können Ihr Konto und alle Daten jederzeit über den Bereich „Konto“ löschen. Der Entwickler behält sich das Recht vor, den Zugriff bei Missbrauch des Dienstes zu sperren.</p>
+<h2>7. Änderungen der Bedingungen</h2>
+<p>Die Bedingungen können sich ändern. Die Neufassung tritt mit der Veröffentlichung auf dieser Seite in Kraft. Durch die fortgesetzte Nutzung der App akzeptieren Sie die aktualisierten Bedingungen.</p>
+<h2>Feedback</h2>
+<p>Fragen und technischer Support: <a href="mailto:yamaladec@gmail.com">yamaladec@gmail.com</a></p>
+<footer>Siehe auch <a href="../pages_p/page_privacy_de.html">Datenschutzerklärung</a>.</footer>
+</div>
 </body>
 </html>
