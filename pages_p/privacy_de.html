@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung — MoneyApp</title>
+<style>
+  :root { --bg: #0B0F14; --card: #141416; --text: #FFFFFF; --muted: #9CA3AF; --accent: #B02222; --border: #2A2A2E; }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.65; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { font-size: 30px; margin: 0 0 6px; letter-spacing: -0.5px; }
+  .date { color: var(--muted); font-size: 14px; margin-bottom: 36px; }
+  h2 { font-size: 19px; margin: 34px 0 12px; padding-top: 22px; border-top: 1px solid var(--border); }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  p { margin: 0 0 14px; } ul { margin: 0 0 14px; padding-left: 22px; } li { margin-bottom: 8px; } a { color: var(--accent); }
+  .note { background: var(--card); border-radius: 14px; padding: 16px 18px; margin: 18px 0; font-size: 15px; color: var(--muted); }
+  strong { color: var(--text); } footer { margin-top: 50px; padding-top: 22px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Datenschutzerklärung</h1>
+<div class="date">Gültig ab: 18. September 2026</div>
+<p>Der Entwickler der MoneyApp respektiert Ihre Privatsphäre. Im Folgenden wird beschrieben, welche Daten die App erfasst, wohin sie fließen und wie Sie diese löschen können.</p>
+<h2>1. Wo Daten gespeichert werden</h2>
+<p>MoneyApp läuft auf einem privaten Server des Entwicklers (Self-Hosted-Modell). Es gibt keinen Cloud-Anbieter zwischen Ihnen und Ihren Daten.</p>
+<p><strong>Was gespeichert wird:</strong></p>
+<ul>
+  <li>Finanztransaktionen: Beträge, Daten, Beschreibungen, Konten und Kategorien;</li>
+  <li>Fotos von gescannten Belegen und daraus erkannte Positionen;</li>
+  <li>Hochgeladene Kontoauszüge für den Import;</li>
+  <li>Einstellungen: Währung, Sprache, Budgetlimits, Vorlagen, Einkaufsliste;</li>
+  <li>Benutzername und Passwort-Hash (das Passwort selbst wird nicht gespeichert);</li>
+  <li>E-Mail-Adresse, falls zur Wiederherstellung angegeben.</li>
+</ul>
+<p>Die Daten jedes Benutzers liegen in einer separaten Datenbank. Belegfotos werden in einem Ordner gespeichert, auf den nur der Besitzer Zugriff hat.</p>
+<h2>2. Belegenerkennung & KI-Dienste von Drittanbietern</h2>
+<p>Die App benötigt Kamera- und Galeriezugriff, um Belege und Kontoauszüge zu erkennen.</p>
+<p>Beim Scannen werden Bilder an Cloud-Erkennungsdienste übermittelt: <strong>Google Gemini</strong> und bei Nichtverfügbarkeit über Backup-Modelle via <strong>OpenRouter</strong>. Die Verarbeitung unterliegt den Richtlinien dieser Anbieter, die übermittelte Bilder möglicherweise zum Training ihrer Modelle verwenden.</p>
+<div class="note">Wenn Sie nicht möchten, dass Ihr Beleg an Drittanbieterdienste gesendet wird, erfassen Sie die Transaktion manuell — die Erkennung wird dabei nicht ausgelöst.</div>
+<h2>3. Fehlerberichte</h2>
+<p>Die App verwendet <strong>Sentry</strong> zur Erfassung von Absturzdaten: Fehlerart, Code-Position, App-Version und Gerätemodell. Dies dient dem Finden und Beheben von Fehlern.</p>
+<p>Berichte enthalten keine Beträge, Transaktionsnamen, Belegfotos oder Ihre IP-Adresse — die Übertragung persönlicher Daten ist deaktiviert. Es wird keine Bildschirmaufzeichnung durchgeführt.</p>
+<h2>4. E-Mail</h2>
+<p>Wenn Sie eine E-Mail zur Passwortwiederherstellung angegeben haben, wird der Code per <strong>Brevo</strong> versendet. Es werden lediglich die Empfängeradresse und der Text des Codes übermittelt. Die App versendet keine Newsletter oder Marketing-E-Mails.</p>
+<h2>5. Benachrichtigungen</h2>
+<p>Erinnerungen zur Expense-Erfassung werden vom Betriebssystem Ihres Telefons über Timer erstellt. Es werden keine Push-Server verwendet.</p>
+<h2>6. Was die App nicht enthält</h2>
+<ul>
+  <li>Werbung und Werbe-SDKs;</li>
+  <li>Marketing-Tracker und Profiling;</li>
+  <li>Übertragung oder Verkauf Ihrer Daten an Dritte;</li>
+  <li>Zugriff auf Kontakte, Standort, Mikrofon oder Nachrichten.</li>
+</ul>
+<h2>7. Speicherdauer</h2>
+<p>Daten werden gespeichert, solange Sie die App nutzen. Ist das Konto 24 Monate lang inaktiv, können zugehörige Daten unwiderruflich gelöscht werden.</p>
+<h2>8. Ihre Rechte</h2>
+<p>Sie können jederzeit:</p>
+<ul>
+  <li>jede Transaktion einsehen und korrigieren;</li>
+  <li>den Transaktionsverlauf in den App-Einstellungen zurücksetzen;</li>
+  <li><strong>Ihr Konto mit allen Daten löschen</strong> — über die Schaltfläche im Bereich „Konto“. Die Löschung erfolgt sofort und unwiderruflich: Transaktionen, Belege, Konten und das Konto selbst werden gelöscht;</li>
+  <li>einen Datenexport oder eine Löschung per E-Mail anfordern (siehe unten) — die Bearbeitung erfolgt innerhalb von 3 Werktagen.</li>
+</ul>
+<h2>9. Kinder</h2>
+<p>Die App ist nicht für Personen unter 13 Jahren bestimmt und sammelt deren Daten nicht wissentlich. Werden solche Daten entdeckt, werden sie gelöscht.</p>
+<h2>10. Änderungen</h2>
+<p>Die Richtlinie kann aktualisiert werden. Die Neufassung tritt mit der Veröffentlichung auf dieser Seite in Kraft.</p>
+<h2>Kontakt</h2>
+<p>Fragen, Datenexport und Löschung: <a href="mailto:yamaladec@gmail.com">yamaladec@gmail.com</a></p>
+<footer>MoneyApp — App zur persönlichen Finanzverwaltung. Beta-Version.</footer>
+</div>
+</body>
+</html>

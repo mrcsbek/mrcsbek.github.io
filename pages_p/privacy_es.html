@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — MoneyApp</title>
+<style>
+  :root { --bg: #0B0F14; --card: #141416; --text: #FFFFFF; --muted: #9CA3AF; --accent: #B02222; --border: #2A2A2E; }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.65; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { font-size: 30px; margin: 0 0 6px; letter-spacing: -0.5px; }
+  .date { color: var(--muted); font-size: 14px; margin-bottom: 36px; }
+  h2 { font-size: 19px; margin: 34px 0 12px; padding-top: 22px; border-top: 1px solid var(--border); }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  p { margin: 0 0 14px; } ul { margin: 0 0 14px; padding-left: 22px; } li { margin-bottom: 8px; } a { color: var(--accent); }
+  .note { background: var(--card); border-radius: 14px; padding: 16px 18px; margin: 18px 0; font-size: 15px; color: var(--muted); }
+  strong { color: var(--text); } footer { margin-top: 50px; padding-top: 22px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Política de privacidad</h1>
+<div class="date">Fecha de entrada en vigor: 18 de septiembre de 2026</div>
+<p>El desarrollador de MoneyApp respeta su privacidad. A continuación se describe qué datos recopila la aplicación, dónde se almacenan y cómo eliminarlos.</p>
+<h2>1. Dónde se almacenan los datos</h2>
+<p>MoneyApp funciona en un servidor privado del desarrollador (modelo self-hosted). No existen proveedores de nube intermediarios entre usted y sus datos.</p>
+<p><strong>Qué se almacena:</strong></p>
+<ul>
+  <li>operaciones financieras: importes, fechas, descripciones, cuentas y categorías;</li>
+  <li>fotos de recibos escaneados y elementos reconocidos en ellos;</li>
+  <li>extractos bancarios subidos para importación;</li>
+  <li>configuraciones: moneda, idioma, límites de presupuesto, plantillas, lista de la compra;</li>
+  <li>nombre de usuario y hash de contraseña (la contraseña en sí no se almacena);</li>
+  <li>dirección de correo electrónico, si se proporcionó para la recuperación de acceso.</li>
+</ul>
+<p>Los datos de cada usuario residen en una base de datos independiente. Las fotos de los recibos se almacenan en una carpeta accesible únicamente para el propietario.</p>
+<h2>2. Reconocimiento de recibos y servicios de IA de terceros</h2>
+<p>La aplicación requiere acceso a la cámara y galería para reconocer recibos y extractos bancarios.</p>
+<p>Durante el escaneo, las imágenes se transmiten a servicios de reconocimiento en la nube: <strong>Google Gemini</strong>, y mediante modelos de respaldo a través de <strong>OpenRouter</strong> si no está disponible. El procesamiento se rige por las políticas de dichos proveedores, que pueden utilizar las imágenes transmitidas para entrenar sus modelos.</p>
+<div class="note">Si no desea que su recibo sea enviado a servicios de terceros, introduzca la operación manualmente; el reconocimiento no se iniciará.</div>
+<h2>3. Informes de errores</h2>
+<p>La aplicación utiliza <strong>Sentry</strong> para recopilar datos de fallos: tipo de error, ubicación en el código, versión de la aplicación y modelo de dispositivo. Esto es necesario para encontrar y solucionar fallos.</p>
+<p>Los informes no contienen importes, nombres de operaciones, fotos de recibos ni su dirección IP; la transmisión de datos personales está desactivada. No se realizan grabaciones de pantalla.</p>
+<h2>4. Correo electrónico</h2>
+<p>Si indicó un correo electrónico para la recuperación de contraseña, el mensaje con el código se envía a través del servicio <strong>Brevo</strong>. Solo se transmiten la dirección del destinatario y el texto del código. La aplicación no envía boletines ni correos de marketing.</p>
+<h2>5. Notificaciones</h2>
+<p>Los recordatorios de registro de gastos son creados por el sistema operativo de su teléfono mediante temporizadores. No se utilizan servidores de notificaciones push.</p>
+<h2>6. Qué no incluye la aplicación</h2>
+<ul>
+  <li>anuncios y SDKs de publicidad;</li>
+  <li>rastreadores de marketing y perfiles;</li>
+  <li>transferencia o venta de sus datos a terceros;</li>
+  <li>acceso a contactos, ubicación, micrófono o mensajería.</li>
+</ul>
+<h2>7. Período de retención</h2>
+<p>Los datos se almacenan mientras usted utilice la aplicación. Si la cuenta permanece inactiva durante 24 meses, los datos asociados podrán eliminarse de forma permanente.</p>
+<h2>8. Sus derechos</h2>
+<p>Puede en cualquier momento:</p>
+<ul>
+  <li>ver y corregir cualquier operación;</li>
+  <li>restablecer el historial de operaciones en los ajustes de la aplicación;</li>
+  <li><strong>eliminar su cuenta con todos los datos</strong> desde la sección "Cuenta". La eliminación es inmediata e irreversible: se borran operaciones, recibos, cuentas y la propia cuenta;</li>
+  <li>solicitar la exportación o eliminación de datos a través del correo electrónico indicado más abajo; la solicitud se procesa en un plazo de 3 días laborables.</li>
+</ul>
+<h2>9. Menores</h2>
+<p>La aplicación no está destinada a menores de 13 años ni recopila conscientemente sus datos. Si se descubren tales datos, serán eliminados.</p>
+<h2>10. Modificaciones</h2>
+<p>La política puede actualizarse. La nueva versión entra en vigor desde el momento de su publicación en esta página.</p>
+<h2>Contactos</h2>
+<p>Preguntas, exportación y eliminación de datos: <a href="mailto:yamaladec@gmail.com">yamaladec@gmail.com</a></p>
+<footer>MoneyApp — Aplicación de control de finanzas personales. Versión beta.</footer>
+</div>
+</body>
+</html>

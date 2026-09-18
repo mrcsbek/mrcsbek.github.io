@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maxfiylik siyosati — MoneyApp</title>
+<style>
+  :root { --bg: #0B0F14; --card: #141416; --text: #FFFFFF; --muted: #9CA3AF; --accent: #B02222; --border: #2A2A2E; }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.65; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { font-size: 30px; margin: 0 0 6px; letter-spacing: -0.5px; }
+  .date { color: var(--muted); font-size: 14px; margin-bottom: 36px; }
+  h2 { font-size: 19px; margin: 34px 0 12px; padding-top: 22px; border-top: 1px solid var(--border); }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  p { margin: 0 0 14px; } ul { margin: 0 0 14px; padding-left: 22px; } li { margin-bottom: 8px; } a { color: var(--accent); }
+  .note { background: var(--card); border-radius: 14px; padding: 16px 18px; margin: 18px 0; font-size: 15px; color: var(--muted); }
+  strong { color: var(--text); } footer { margin-top: 50px; padding-top: 22px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Maxfiylik siyosati</h1>
+<div class="date">Kuchga kirish sanasi: 2026-yil 18-sentyabr</div>
+<p>MoneyApp ilovasi ishlab chiqaruvchisi sizning maxfiyligingizni hurmat qiladi. Quyida ilova qanday ma'lumotlarni to'plashi, ular qayerga borishi va ularni qanday o'chirish mumkinligi tasvirlangan.</p>
+<h2>1. Ma'lumotlar qayerda saqlanadi</h2>
+<p>MoneyApp ishlab chiqaruvchining xususiy serverida (self-hosted model) ishlaydi. Siz va ma'lumotlaringiz o'rtasida hech qanday bulutli provayder yo'q.</p>
+<p><strong>Nima saqlanadi:</strong></p>
+<ul>
+  <li>moliyaviy amallar: summalar, sanalar, tavsiflar, hisoblar va kategoriyalar;</li>
+  <li>skanerlangan chek fotosuratlari va ulardan aniqlangan pozitsiyalar;</li>
+  <li>import qilish uchun yuklagan bank ko'chirmalari;</li>
+  <li>sozlamalar: valyuta, til, byudjet limitlari, namunalar, xaridlar ro'yxati;</li>
+  <li>foydalanuvchi nomi va parol xeshi (parolning o'zi saqlanmaydi);</li>
+  <li>kirishni tiklash uchun ko'rsatgan bo'lsangiz, elektron pochta manzili.</li>
+</ul>
+<p>Har bir foydalanuvchining ma'lumotlari alohida ma'lumotlar bazasida saqlanadi. Chek fotosuratlari faqat egasiga ruxsat etilgan papkada saqlanadi.</p>
+<h2>2. Cheklarni aniqlash va uchinchi tomon sun'iy intellekt xizmatlari</h2>
+<p>Cheklar va bank kvitansiyalarini aniqlash uchun ilovaga kamera va galereyaga kirish huquqi kerak.</p>
+<p>Skanerlash vaqtida tasvir bulutli aniqlash xizmatlariga uzatiladi: <strong>Google Gemini</strong>, mavjud bo'lmaganda <strong>OpenRouter</strong> orqali zaxira modellar. Qayta ishlash ushbu provayderlarning siyosatlari bilan tartibga solinadi, ular uzatilgan tasvirlardan o'z modellarini o'qitish uchun foydalanishi mumkin.</p>
+<div class="note">Agar chekingiz uchinchi tomon xizmatlariga tushishini xohlamasangiz, amalni qo'lda kiriting — bunda tanib olish ishga tushmaydi.</div>
+<h2>3. Xatolar haqida hisobotlar</h2>
+<p>Ilova nosozliklar haqida ma'lumot yig'ish uchun <strong>Sentry</strong>'dan foydalanadi: xato turi, kodDagi joylashuvi, ilova versiyasi va qurilma modeli. Bu xatoliklarni topish va bartaraf etish uchun kerak.</p>
+<p>Hisobotlarda summalar, amallar nomlari, chek fotosuratlari va IP-manzilingiz bo'lmaydi — shaxsiy ma'lumotlarni yuborish o'chirilgan. Ekran yozib olinmaydi.</p>
+<h2>4. Elektron pochta</h2>
+<p>Parolni tiklash uchun pochta ko'rsatgan bo'lsangiz, kod bilan xat <strong>Brevo</strong> xizmati orqali yuboriladi. Unga faqat qabul qiluvchining manzili va kodli xat matni uzatiladi. Ilova reklama va marketing xatlarini yubormaydi.</p>
+<h2>5. Bildirishnomalar</h2>
+<p>Xarajatlarni kiritish haqidagi eslatmalar telefoningiz operatsion tizimi tomonidan taymer bo'yicha yaratiladi. Push-xabarnoma serverlaridan foydalanilmaydi.</p>
+<h2>6. Ilovada nimalar yo'q</h2>
+<ul>
+  <li>reklama va reklama SDK'lari;</li>
+  <li>marketing trekerlari va profillash;</li>
+  <li>ma'lumotlaringizni uchinchi shaxslarga berish yoki sotish;</li>
+  <li>kontaktlar, joylashuv, mikrofon va yozishmalarga kirish.</li>
+</ul>
+<h2>7. Saqlash muddati</h2>
+<p>Ma'lumotlar ilovadan foydalanganingizcha saqlanadi. Agar hisob 24 oy davomida faol bo'lmasa, unga bog'langan ma'lumotlar qaytarib bo'lmaydigan tarzda o'chirib yuborilishi mumkin.</p>
+<h2>8. Sizning huquqlaringiz</h2>
+<p>Istalgan vaqtda quyidagilarni amalga oshirishingiz mumkin:</p>
+<ul>
+  <li>istalgan amalni ko'rish va to'g'rilash;</li>
+  <li>amal tarixini noldan boshlash — ilova sozlamalarida;</li>
+  <li><strong>barcha ma'lumotlar bilan birga hisobni o'chirish</strong> — "Hisob" bo'limidagi tugma. O'chirish darhol va qaytarib bo'lmaydigan tarzda sodir bo'ladi: amallar, cheklar, hisoblar va yozuvning o'zi o'chib ketadi;</li>
+  <li>ma'lumotlarni chiqarib olish yoki quyida ko'rsatilgan pochta orqali o'chirishni so'rash — so'rov 3 ish kuni ichida bajariladi.</li>
+</ul>
+<h2>9. Bolalar</h2>
+<p>Ilova 13 yoshga to'lmagan shaxslarga mo'ljallanmagan va ularning ma'lumotlarini o'z xohishi bilan to'plamaydi. Agar bunday ma'lumotlar aniqlansa, ular o'chirib tashlanadi.</p>
+<h2>10. O'zgartirishlar</h2>
+<p>Siyosat yangilanishi mumkin. Yangi tahrir ushbu sahifada e'lon qilingan paytdan boshlab kuchga kiradi.</p>
+<h2>Aloqa</h2>
+<p>Savollar, ma'lumotlarni chiqarib olish va o'chirish: <a href="mailto:yamaladec@gmail.com">yamaladec@gmail.com</a></p>
+<footer>MoneyApp — Shaxsiy moliya hisobi ilovasi. Beta-versiya.</footer>
+</div>
+</body>
+</html>
