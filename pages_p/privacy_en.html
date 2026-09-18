@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — MoneyApp</title>
+<style>
+  :root { --bg: #0B0F14; --card: #141416; --text: #FFFFFF; --muted: #9CA3AF; --accent: #B02222; --border: #2A2A2E; }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.65; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { font-size: 30px; margin: 0 0 6px; letter-spacing: -0.5px; }
+  .date { color: var(--muted); font-size: 14px; margin-bottom: 36px; }
+  h2 { font-size: 19px; margin: 34px 0 12px; padding-top: 22px; border-top: 1px solid var(--border); }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  p { margin: 0 0 14px; } ul { margin: 0 0 14px; padding-left: 22px; } li { margin-bottom: 8px; } a { color: var(--accent); }
+  .note { background: var(--card); border-radius: 14px; padding: 16px 18px; margin: 18px 0; font-size: 15px; color: var(--muted); }
+  strong { color: var(--text); } footer { margin-top: 50px; padding-top: 22px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Privacy Policy</h1>
+<div class="date">Effective date: September 18, 2026</div>
+<p>MoneyApp developer respects your privacy. Below is a description of what data the app collects, where it goes, and how to delete it.</p>
+<h2>1. Where Data is Stored</h2>
+<p>MoneyApp operates on a private developer server (self-hosted model). There are no cloud providers between you and your data.</p>
+<p><strong>What is stored:</strong></p>
+<ul>
+  <li>financial operations: amounts, dates, descriptions, accounts, and categories;</li>
+  <li>scanned receipt photos and recognized items;</li>
+  <li>bank statements uploaded for import;</li>
+  <li>settings: currency, language, budget limits, templates, shopping list;</li>
+  <li>username and password hash (the password itself is not stored);</li>
+  <li>email address, if provided for access recovery.</li>
+</ul>
+<p>Each user's data resides in a separate database. Receipt photos are stored in a folder accessible only to the owner.</p>
+<h2>2. Receipt Recognition & Third-Party AI Services</h2>
+<p>The app requires camera and gallery access to recognize receipts and bank statements.</p>
+<p>During scanning, images are transmitted to cloud recognition services: <strong>Google Gemini</strong>, and via backup models through <strong>OpenRouter</strong> if unavailable. Processing is governed by these providers' policies, which may use transmitted images to train their models.</p>
+<div class="note">If you do not want your receipt sent to third-party services, enter the transaction manually — recognition will not be triggered.</div>
+<h2>3. Error Reporting</h2>
+<p>The app uses <strong>Sentry</strong> to collect crash data: error type, code location, app version, and device model. This helps find and fix crashes.</p>
+<p>Reports do not contain amounts, operation names, receipt photos, or your IP address — personal data transmission is disabled. No screen recording is performed.</p>
+<h2>4. Email</h2>
+<p>If you specified an email for password recovery, the verification code letter is sent via <strong>Brevo</strong>. Only the recipient's address and the code letter text are transmitted. The app sends no newsletters or marketing emails.</p>
+<h2>5. Notifications</h2>
+<p>Expense entry reminders are created by your phone's operating system via timers. Push notification servers are not used.</p>
+<h2>6. What the App Does Not Have</h2>
+<ul>
+  <li>ads and advertising SDKs;</li>
+  <li>marketing trackers and profiling;</li>
+  <li>transfer or sale of your data to third parties;</li>
+  <li>access to contacts, location, microphone, or correspondence.</li>
+</ul>
+<h2>7. Retention Period</h2>
+<p>Data is stored as long as you use the app. If the account is inactive for 24 months, associated data may be permanently deleted.</p>
+<h2>8. Your Rights</h2>
+<p>You can at any time:</p>
+<ul>
+  <li>view and correct any operation;</li>
+  <li>reset operation history in app settings;</li>
+  <li><strong>delete your account with all data</strong> via the "Account" section. Deletion is immediate and irreversible: operations, receipts, accounts, and the account itself are erased;</li>
+  <li>request data export or deletion via email below — requests are processed within 3 business days.</li>
+</ul>
+<h2>9. Children</h2>
+<p>The app is not intended for individuals under 13 years old and does not knowingly collect their data. If such data is discovered, it will be deleted.</p>
+<h2>10. Changes</h2>
+<p>The policy may be updated. The new edition takes effect upon publication on this page.</p>
+<h2>Contacts</h2>
+<p>Questions, data export, and deletion: <a href="mailto:yamaladec@gmail.com">yamaladec@gmail.com</a></p>
+<footer>MoneyApp — Personal finance tracking app. Beta version.</footer>
+</div>
+</body>
+</html>
