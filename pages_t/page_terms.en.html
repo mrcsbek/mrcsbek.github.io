@@ -1,54 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Use — MoneyApp</title>
-    <style>
-        :root { --bg: #09090b; --card: #18181b; --border: #222222; --accent: #ef4444; --text: #f4f4f5; --muted: #a1a1aa; }
-        body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
-        .container { max-width: 800px; margin: 0 auto; background: var(--card); padding: 3rem; border-radius: 1.25rem; border: 1px solid var(--border); }
-        h1 { color: #fca5a5; margin-top: 0; font-size: 2rem; margin-bottom: 0.5rem; }
-        .effective-date { color: var(--muted); font-size: 0.9rem; margin-bottom: 2.5rem; display: block; }
-        h2 { color: #e4e4e7; margin-top: 2.5rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; font-size: 1.25rem; }
-        p, li { color: var(--muted); font-size: 1rem; }
-        a { color: var(--accent); text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .back-link { display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 2rem; font-weight: 600; font-size: 1rem; color: var(--muted); transition: color 0.2s; }
-        .back-link:hover { color: var(--text); text-decoration: none; }
-        @media (max-width: 600px) { body { padding: 1rem; } .container { padding: 1.5rem; } }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Use — MoneyApp</title>
+<style>
+  :root { --bg: #0B0F14; --card: #141416; --text: #FFFFFF; --muted: #9CA3AF; --accent: #B02222; --border: #2A2A2E; }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.65; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { font-size: 30px; margin: 0 0 6px; letter-spacing: -0.5px; }
+  .date { color: var(--muted); font-size: 14px; margin-bottom: 36px; }
+  h2 { font-size: 19px; margin: 34px 0 12px; padding-top: 22px; border-top: 1px solid var(--border); }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  p { margin: 0 0 14px; } ul { margin: 0 0 14px; padding-left: 22px; } li { margin-bottom: 8px; } a { color: var(--accent); }
+  .warn { background: var(--card); border-left: 3px solid var(--accent); border-radius: 0 14px 14px 0; padding: 18px 20px; margin: 22px 0; }
+  .warn h3 { margin: 0 0 10px; font-size: 16px; } .warn p { margin: 0; color: var(--muted); font-size: 15px; }
+  strong { color: var(--text); } footer { margin-top: 50px; padding-top: 22px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+</style>
 </head>
 <body>
-<a href="../indexes/index_en.html" style="position: fixed; top: 1.5rem; left: 1.5rem; width: 3.5rem; height: 3.5rem; z-index: 9999; display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease; text-decoration: none;">
-  <img src="../transp_icon.png" alt="Home" style="width: 100%; height: 100%; object-fit: contain;">
-</a>
-    <div class="container">
-        <a href="../indexes/index_en.html" class="back-link">← Back to Home</a>
-        
-        <h1>Terms of Use</h1>
-        <span class="effective-date">Effective Date: September 18, 2026</span>
-        
-        <h2>1. General Provisions</h2>
-        <p>By installing and using the MoneyApp application, you agree to these Terms. If you do not agree with any provision, stop using the application.</p>
-
-        <h2>2. Service Architecture</h2>
-        <p>The application is provided "as is". Transactions are synchronized with the developer's private server. The user is responsible for maintaining an internet connection to properly save data.</p>
-
-        <h2>3. Use of AI Services</h2>
-        <p>Third-party cloud APIs (Gemini) are used for receipt parsing. The developer does not guarantee 100% accuracy of optical character recognition (OCR). The user must visually verify the extracted amounts and categories before saving.</p>
-
-        <h2>4. Limitation of Liability</h2>
-        <p>The developer is not responsible for financial losses, incorrect analytics, data loss, or temporary server outages. The application is an accounting tool, not a professional financial advisor.</p>
-
-        <h2>5. Feedback</h2>
-        <p>For questions regarding the operation of the application and technical support, please contact: <strong><a href="mailto:yamaladec@gmail.com">yamaladec@gmail.com</a></strong></p>
-
-        <h3 style="color: #fca5a5; margin-top: 2rem;">Disclaimer of Warranties (Beta Version)</h3>
-        <p>
-          MoneyApp is provided on an "AS IS" basis. The application is in early beta testing. The developer is not liable for the loss of receipts, local database failures, inaccuracies in financial calculations, or any other damages resulting from the use of this software. The user voluntarily assumes all technical and financial risks.
-        </p>
-    
-    </div>
+<div class="wrap">
+<h1>Terms of Use</h1>
+<div class="date">Effective date: September 18, 2026</div>
+<div class="warn">
+  <h3>Beta Version</h3>
+  <p>MoneyApp is in early testing. Glitches, data loss, and calculation errors may occur. Do not use the app as your sole accounting source — keep a backup of important records.</p>
+</div>
+<h2>1. Acceptance of Terms</h2>
+<p>By installing and using MoneyApp, you agree to these Terms. If you disagree with any part, stop using the app and delete your account.</p>
+<h2>2. How the Service Works</h2>
+<p>The app is provided "AS IS". Data synchronizes with a private developer server. An internet connection is required to save operations — without it, entered data may not reach the server.</p>
+<p>The developer does not guarantee uninterrupted server operation, data integrity, or service availability at any time.</p>
+<h2>3. Receipt Recognition</h2>
+<p>Cloud services (Google Gemini and backup models via OpenRouter) are used to parse receipts. Recognition accuracy is not guaranteed: the model may make errors in amounts, dates, store names, or items.</p>
+<p><strong>Verify parsed data before saving.</strong> You are responsible for the correctness of entered amounts.</p>
+<h2>4. Your Responsibility</h2>
+<ul>
+  <li>you are responsible for keeping your password and recovery code safe;</li>
+  <li>you verify data accuracy before saving;</li>
+  <li>you do not use the app for illegal activities;</li>
+  <li>you understand receipt images are sent to third-party AI services.</li>
+</ul>
+<h2>5. Limitation of Liability</h2>
+<p>The developer is not liable for:</p>
+<ul>
+  <li>financial losses of any kind;</li>
+  <li>incorrect analytics, inaccurate amounts, and erroneous categories;</li>
+  <li>data loss, database damage, or server failures;</li>
+  <li>decisions made based on app data.</li>
+</ul>
+<p>MoneyApp is a personal tracking tool, not an accounting system and not a professional financial advisor.</p>
+<h2>6. Termination</h2>
+<p>You can delete your account and all data at any time via the "Account" section. The developer reserves the right to suspend access upon service abuse.</p>
+<h2>7. Changes to Terms</h2>
+<p>Terms may change. The new edition takes effect upon publication on this page. By continuing to use the app, you accept the updated terms.</p>
+<h2>Feedback</h2>
+<p>Questions and technical support: <a href="mailto:yamaladec@gmail.com">yamaladec@gmail.com</a></p>
+<footer>See also <a href="../pages_p/page_privacy_en.html">Privacy Policy</a>.</footer>
+</div>
 </body>
 </html>
