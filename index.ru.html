@@ -66,6 +66,19 @@
     </style>
 </head>
 <body>
+    <!-- Переключатель языков (Справа вверху) -->
+<div style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 9999;">
+  <select onchange="window.location.href=this.value;" style="background: rgba(0, 0, 0, 0.5); color: #ffffff; border: 1px solid rgba(255, 255, 255, 0.2); padding: 0.5rem 2.2rem 0.5rem 1rem; border-radius: 2rem; outline: none; cursor: pointer; font-size: 0.95rem; font-weight: 600; appearance: none; -webkit-appearance: none; backdrop-filter: blur(10px);">
+    <option value="index.html" style="color: #000000;">🇷🇺 RU</option>
+    <option value="index_en.html" style="color: #000000;">🇬🇧 EN</option>
+    <option value="index_tr.html" style="color: #000000;">🇹🇷 TR</option>
+    <option value="index_uz.html" style="color: #000000;">🇺🇿 UZ</option>
+    <option value="index_es.html" style="color: #000000;">🇪🇸 ES</option>
+    <option value="index_de.html" style="color: #000000;">🇩🇪 DE</option>
+  </select>
+  <!-- Кастомная стрелка для селекта -->
+  <div style="position: absolute; right: 0.8rem; top: 50%; transform: translateY(-50%); pointer-events: none; color: #ffffff; font-size: 0.7rem;">▼</div>
+</div>
 <a href="index.html" style="position: fixed; top: 1.5rem; left: 1.5rem; width: 3.5rem; height: 3.5rem; z-index: 9999; display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease; text-decoration: none;">
   <img src="transp_icon.png" alt="" style="width: 100%; height: 100%; object-fit: contain;">
 </a>
