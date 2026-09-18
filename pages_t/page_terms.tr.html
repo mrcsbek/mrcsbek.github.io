@@ -1,54 +1,63 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kullanım Koşulları — MoneyApp</title>
-    <style>
-        :root { --bg: #09090b; --card: #18181b; --border: #222222; --accent: #ef4444; --text: #f4f4f5; --muted: #a1a1aa; }
-        body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
-        .container { max-width: 800px; margin: 0 auto; background: var(--card); padding: 3rem; border-radius: 1.25rem; border: 1px solid var(--border); }
-        h1 { color: #fca5a5; margin-top: 0; font-size: 2rem; margin-bottom: 0.5rem; }
-        .effective-date { color: var(--muted); font-size: 0.9rem; margin-bottom: 2.5rem; display: block; }
-        h2 { color: #e4e4e7; margin-top: 2.5rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; font-size: 1.25rem; }
-        p, li { color: var(--muted); font-size: 1rem; }
-        a { color: var(--accent); text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .back-link { display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 2rem; font-weight: 600; font-size: 1rem; color: var(--muted); transition: color 0.2s; }
-        .back-link:hover { color: var(--text); text-decoration: none; }
-        @media (max-width: 600px) { body { padding: 1rem; } .container { padding: 1.5rem; } }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kullanım Şartları — MoneyApp</title>
+<style>
+  :root { --bg: #0B0F14; --card: #141416; --text: #FFFFFF; --muted: #9CA3AF; --accent: #B02222; --border: #2A2A2E; }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.65; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { font-size: 30px; margin: 0 0 6px; letter-spacing: -0.5px; }
+  .date { color: var(--muted); font-size: 14px; margin-bottom: 36px; }
+  h2 { font-size: 19px; margin: 34px 0 12px; padding-top: 22px; border-top: 1px solid var(--border); }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  p { margin: 0 0 14px; } ul { margin: 0 0 14px; padding-left: 22px; } li { margin-bottom: 8px; } a { color: var(--accent); }
+  .warn { background: var(--card); border-left: 3px solid var(--accent); border-radius: 0 14px 14px 0; padding: 18px 20px; margin: 22px 0; }
+  .warn h3 { margin: 0 0 10px; font-size: 16px; } .warn p { margin: 0; color: var(--muted); font-size: 15px; }
+  strong { color: var(--text); } footer { margin-top: 50px; padding-top: 22px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+</style>
 </head>
 <body>
-<a href="../indexes/index_tr.html" style="position: fixed; top: 1.5rem; left: 1.5rem; width: 3.5rem; height: 3.5rem; z-index: 9999; display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease; text-decoration: none;">
-  <img src="../transp_icon.png" alt="Ana Sayfa" style="width: 100%; height: 100%; object-fit: contain;">
-</a>
-    <div class="container">
-        <a href="../indexes/index_tr.html" class="back-link">← Ana Sayfaya Dön</a>
-        
-        <h1>Kullanım Koşulları</h1>
-        <span class="effective-date">Yürürlük Tarihi: 18 Eylül 2026</span>
-        
-        <h2>1. Genel Hükümler</h2>
-        <p>MoneyApp uygulamasını yükleyerek ve kullanarak bu Koşulları kabul etmiş olursunuz. Herhangi bir maddeyi kabul etmiyorsanız, uygulamayı kullanmayı bırakın.</p>
-
-        <h2>2. Hizmet Mimarisi</h2>
-        <p>Uygulama "olduğu gibi" sağlanmaktadır. İşlemler geliştiricinin özel sunucusuyla senkronize edilir. Verilerin doğru bir şekilde kaydedilmesi için internet bağlantısını sürdürmek kullanıcının sorumluluğundadır.</p>
-
-        <h2>3. Yapay Zeka Hizmetlerinin Kullanımı</h2>
-        <p>Fiş ayrıştırma için üçüncü taraf bulut API'leri (Gemini) kullanılır. Geliştirici, optik karakter tanımanın (OCR) %100 doğruluğunu garanti etmez. Kullanıcı, kaydetmeden önce çıkarılan tutarları ve kategorileri görsel olarak doğrulamakla yükümlüdür.</p>
-
-        <h2>4. Sorumluluğun Sınırlandırılması</h2>
-        <p>Geliştirici; finansal kayıplardan, yanlış analitiklerden, veri kaybından veya geçici sunucu kesintilerinden sorumlu değildir. Uygulama bir muhasebe aracıdır, profesyonel bir finansal danışman değildir.</p>
-
-        <h2>5. Geri Bildirim</h2>
-        <p>Uygulamanın çalışması ve teknik destek ile ilgili sorularınız için iletişime geçin: <strong><a href="mailto:yamaladec@gmail.com">yamaladec@gmail.com</a></strong></p>
-
-        <h3 style="color: #fca5a5; margin-top: 2rem;">Garanti Reddi (Beta Sürümü)</h3>
-        <p>
-          MoneyApp "OLDUĞU GİBİ" (AS IS) esasına göre sunulmaktadır. Uygulama erken beta testi aşamasındadır. Geliştirici, fişlerin kaybolmasından, yerel veritabanı arızalarından, finansal hesaplamalardaki yanlışlıklardan veya bu yazılımın kullanımından kaynaklanan diğer herhangi bir zarardan sorumlu tutulamaz. Kullanıcı tüm teknik ve finansal riskleri gönüllü olarak üstlenir.
-        </p>
-    
-    </div>
+<div class="wrap">
+<h1>Kullanım Şartları</h1>
+<div class="date">Yürürlük tarihi: 18 Eylül 2026</div>
+<div class="warn">
+  <h3>Beta Sürümü</h3>
+  <p>MoneyApp erken test aşamasındadır. Hatalar, veri kaybı ve hesaplama yanlışlıkları oluşabilir. Uygulamayı tek muhasebe kaynağı olarak kullanmayın — önemli kayıtların yedeğini saklayın.</p>
+</div>
+<h2>1. Şartların Kabulü</h2>
+<p>MoneyApp'i yükleyerek ve kullanarak bu Şartları kabul etmiş olursunuz. Herhangi bir noktayı kabul etmiyorsanız, uygulamayı kullanmayı bırakın ve hesabınızı silin.</p>
+<h2>2. Servis Nasıl Çalışır</h2>
+<p>Uygulama "olduğu gibi" (AS IS) sağlanmaktadır. Veriler geliştiricinin özel sunucusuyla senkronize edilir. İşlemleri kaydetmek için internet bağlantısı gereklidir — bağlantı olmadan girilen veriler sunucuya ulaşmayabilir.</p>
+<p>Geliştirici, kesintisiz sunucu çalışmasını, veri bütünlüğünü veya her an hizmet kullanılabilirliğini garanti etmez.</p>
+<h2>3. Fiş Tanıma</h2>
+<p>Fişleri ayrıştırmak için bulut servisleri (Google Gemini ve OpenRouter üzerinden yedek modeller) kullanılır. Tanıma doğruluğu garanti edilmez: model tutar, tarih, mağaza adı veya kalemlerde hata yapabilir.</p>
+<p><strong>Kaydetmeden önce tanınan verileri kontrol edin.</strong> Girilen tutarların doğruluğunun sorumluluğu kullanıcıya aittir.</p>
+<h2>4. Sorumluluğunuz</h2>
+<ul>
+  <li>şifrenizi ve kurtarma kodunuzu güvenli tutmaktan siz sorumlusunuz;</li>
+  <li>kaydetmeden önce veri doğruluğunu kontrol edersiniz;</li>
+  <li>uygulamayı yasadışı faaliyetler için kullanmazsınız;</li>
+  <li>fiş görsellerinin üçüncü taraf yapay zeka servislerine gönderildiğini anlarsınız.</li>
+</ul>
+<h2>5. Sorumluluğun Sınırlandırılması</h2>
+<p>Geliştirici aşağıdakilerden sorumlu tutulamaz:</p>
+<ul>
+  <li>her türlü finansal zarar;</li>
+  <li>yanlış analitik, hatalı tutarlar ve yanlış kategoriler;</li>
+  <li>veri kaybı, veritabanı hasarı veya sunucu arızaları;</li>
+  <li>uygulama verilerine dayanarak alınan kararlar.</li>
+</ul>
+<p>MoneyApp bir muhasebe sistemi veya profesyonel finansal danışman değil, kişisel takip aracıdır.</p>
+<h2>6. Kullanımın Sonlandırılması</h2>
+<p>Hesabınızı ve tüm verilerinizi "Hesap" bölümündeki düğme ile istediğiniz zaman silebilirsiniz. Geliştirici, hizmetin kötüye kullanımı durumunda erişimi askıya alma hakkını saklı tutar.</p>
+<h2>7. Şartlardaki Değişiklikler</h2>
+<p>Şartlar değişebilir. Yeni sürüm, bu sayfada yayınlandığı anda yürürlüğe girer. Uygulamayı kullanmaya devam ederek güncellenmiş şartları kabul etmiş olursunuz.</p>
+<h2>Geri Bildirim</h2>
+<p>Sorular ve teknik destek: <a href="mailto:yamaladec@gmail.com">yamaladec@gmail.com</a></p>
+<footer>Ayrıca bkz. <a href="../pages_p/page_privacy_tr.html">Gizlilik Politikası</a>.</footer>
+</div>
 </body>
 </html>
