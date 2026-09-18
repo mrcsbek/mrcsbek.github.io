@@ -1,54 +1,63 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Условия использования — MoneyApp</title>
-    <style>
-        :root { --bg: #09090b; --card: #18181b; --border: #222222; --accent: #ef4444; --text: #f4f4f5; --muted: #a1a1aa; }
-        body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; }
-        .container { max-width: 800px; margin: 0 auto; background: var(--card); padding: 3rem; border-radius: 1.25rem; border: 1px solid var(--border); }
-        h1 { color: #fca5a5; margin-top: 0; font-size: 2rem; margin-bottom: 0.5rem; }
-        .effective-date { color: var(--muted); font-size: 0.9rem; margin-bottom: 2.5rem; display: block; }
-        h2 { color: #e4e4e7; margin-top: 2.5rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; font-size: 1.25rem; }
-        p, li { color: var(--muted); font-size: 1rem; }
-        a { color: var(--accent); text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .back-link { display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 2rem; font-weight: 600; font-size: 1rem; color: var(--muted); transition: color 0.2s; }
-        .back-link:hover { color: var(--text); text-decoration: none; }
-        @media (max-width: 600px) { body { padding: 1rem; } .container { padding: 1.5rem; } }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Условия использования — MoneyApp</title>
+<style>
+  :root { --bg: #0B0F14; --card: #141416; --text: #FFFFFF; --muted: #9CA3AF; --accent: #B02222; --border: #2A2A2E; }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.65; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { font-size: 30px; margin: 0 0 6px; letter-spacing: -0.5px; }
+  .date { color: var(--muted); font-size: 14px; margin-bottom: 36px; }
+  h2 { font-size: 19px; margin: 34px 0 12px; padding-top: 22px; border-top: 1px solid var(--border); }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  p { margin: 0 0 14px; } ul { margin: 0 0 14px; padding-left: 22px; } li { margin-bottom: 8px; } a { color: var(--accent); }
+  .warn { background: var(--card); border-left: 3px solid var(--accent); border-radius: 0 14px 14px 0; padding: 18px 20px; margin: 22px 0; }
+  .warn h3 { margin: 0 0 10px; font-size: 16px; } .warn p { margin: 0; color: var(--muted); font-size: 15px; }
+  strong { color: var(--text); } footer { margin-top: 50px; padding-top: 22px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+</style>
 </head>
 <body>
-<a href="../index.html" style="position: fixed; top: 1.5rem; left: 1.5rem; width: 3.5rem; height: 3.5rem; z-index: 9999; display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease; text-decoration: none;">
-  <img src="../transp_icon.png" alt="" style="width: 100%; height: 100%; object-fit: contain;">
-</a>
-    <div class="container">
-        <a href="../index.html" class="back-link">← Вернуться на главную</a>
-        
-        <h1>Условия использования</h1>
-        <span class="effective-date">Дата вступления в силу: 18 сентября 2026 г.</span>
-        
-        <h2>1. Общие положения</h2>
-        <p>Устанавливая и используя приложение MoneyApp, вы соглашаетесь с настоящими Условиями. Если вы не согласны с каким-либо пунктом, прекратите использование приложения.</p>
-
-        <h2>2. Архитектура сервиса</h2>
-        <p>Приложение предоставляется «как есть». Транзакции синхронизируются с частным сервером разработчика. Пользователь несет ответственность за поддержание интернет-соединения для корректного сохранения данных.</p>
-
-        <h2>3. Использование ИИ-сервисов</h2>
-        <p>Для парсинга чеков используются сторонние облачные API (Gemini). Разработчик не гарантирует 100% точность оптического распознавания (OCR). Пользователь обязан визуально сверять извлеченные суммы и категории перед сохранением.</p>
-
-        <h2>4. Ограничение ответственности</h2>
-        <p>Разработчик не несет ответственности за финансовые убытки, неверную аналитику, потерю данных или временные сбои в работе сервера. Приложение является инструментом учета, а не профессиональным финансовым советником.</p>
-
-        <h2>5. Обратная связь</h2>
-        <p>По вопросам работы приложения и технической поддержки обращайтесь по адресу: <strong><a href="mailto:yamaladec@gmail.com">yamaladec@gmail.com</a></strong></p>
-
-        <h3 style="color: #fca5a5; margin-top: 2rem;">Отказ от гарантий (Beta-версия)</h3>
-        <p>
-          MoneyApp предоставляется по принципу «как есть» (AS IS). Приложение находится на стадии раннего бета-тестирования. Разработчик не несет ответственности за потерю чеков, сбои в локальной базе данных, неточности в финансовых расчетах или любой другой ущерб, возникший в результате использования данного ПО. Пользователь добровольно принимает на себя все технические и финансовые риски.
-        </p>
-    
-    </div>
+<div class="wrap">
+<h1>Условия использования</h1>
+<div class="date">Дата вступления в силу: 18 сентября 2026 г.</div>
+<div class="warn">
+  <h3>Бета-версия</h3>
+  <p>MoneyApp находится на стадии раннего тестирования. Возможны сбои, потеря данных и ошибки в расчётах. Не используйте приложение как единственный источник учёта — держите резервную копию важных записей.</p>
+</div>
+<h2>1. Принятие условий</h2>
+<p>Устанавливая и используя MoneyApp, вы соглашаетесь с настоящими Условиями. Если вы не согласны с любым пунктом, прекратите использование приложения и удалите учётную запись.</p>
+<h2>2. Как устроен сервис</h2>
+<p>Приложение предоставляется «как есть» (AS IS). Данные синхронизируются с частным сервером разработчика. Для сохранения операций нужно интернет-соединение — без него внесённое может не попасть на сервер.</p>
+<p>Разработчик не гарантирует непрерывную работу сервера, сохранность данных и доступность сервиса в любой момент времени.</p>
+<h2>3. Распознавание чеков</h2>
+<p>Для разбора чеков используются сторонние облачные сервисы (Google Gemini и резервные модели через OpenRouter). Точность распознавания не гарантируется: модель может ошибиться в сумме, дате, названии магазина или позициях.</p>
+<p><strong>Проверяйте распознанные данные перед сохранением.</strong> Ответственность за корректность внесённых сумм лежит на пользователе.</p>
+<h2>4. Ваша ответственность</h2>
+<ul>
+  <li>вы отвечаете за сохранность пароля и кода восстановления;</li>
+  <li>вы проверяете точность данных перед сохранением;</li>
+  <li>вы не используете приложение для незаконной деятельности;</li>
+  <li>вы понимаете, что изображения чеков передаются сторонним ИИ-сервисам.</li>
+</ul>
+<h2>5. Ограничение ответственности</h2>
+<p>Разработчик не несёт ответственности за:</p>
+<ul>
+  <li>финансовые убытки любого рода;</li>
+  <li>неверную аналитику, неточные суммы и ошибочные категории;</li>
+  <li>потерю данных, повреждение базы или сбои сервера;</li>
+  <li>решения, принятые на основе данных приложения.</li>
+</ul>
+<p>MoneyApp — инструмент личного учёта, а не бухгалтерская система и не профессиональный финансовый советник.</p>
+<h2>6. Прекращение использования</h2>
+<p>Вы можете в любой момент удалить учётную запись со всеми данными — кнопка в разделе «Аккаунт». Разработчик оставляет за собой право приостановить доступ при злоупотреблении сервисом.</p>
+<h2>7. Изменения условий</h2>
+<p>Условия могут меняться. Новая редакция вступает в силу с момента публикации на этой странице. Продолжая пользоваться приложением, вы принимаете обновлённые условия.</p>
+<h2>Обратная связь</h2>
+<p>Вопросы и техническая поддержка: <a href="mailto:yamaladec@gmail.com">yamaladec@gmail.com</a></p>
+<footer>См. также <a href="../pages_p/page_privacy.html">Политику конфиденциальности</a>.</footer>
+</div>
 </body>
 </html>
