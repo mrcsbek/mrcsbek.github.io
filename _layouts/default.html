@@ -169,8 +169,8 @@
 
     <footer class="footer">
         <div style="margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;">
-            <a href="{% if page.lang == 'ru' %}/pages_p/page_privacy.html{% else %}/{{ page.lang }}/pages_p/page_privacy.html{% endif %}">{{ site.data[page.lang].footer_privacy }}</a>
-            <a href="{% if page.lang == 'ru' %}/pages_t/page_terms.html{% else %}/{{ page.lang }}/pages_t/page_terms.html{% endif %}">{{ site.data[page.lang].footer_terms }}</a>
+            <a href="{% if page.lang == 'ru' %}/pages_p/page_privacy.html?v=2{% else %}/{{ page.lang }}/pages_p/page_privacy.html?v=2{% endif %}">{{ site.data[page.lang].footer_privacy }}</a>
+            <a href="{% if page.lang == 'ru' %}/pages_t/page_terms.html?v=2{% else %}/{{ page.lang }}/pages_t/page_terms.html?v=2{% endif %}">{{ site.data[page.lang].footer_terms }}</a>
         </div>
         <p style="margin-bottom: 0.5rem;">{{ site.data[page.lang].footer_support }} <a href="mailto:yamaladec@gmail.com" style="margin: 0;">yamaladec@gmail.com</a></p>
         <p>© 2026 MoneyApp.</p>
