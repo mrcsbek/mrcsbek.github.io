@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MoneyApp</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
-    <link rel="shortcut icon" type="image/png" href="/favicon.png">
+    
+    <!-- Расширенный и жесткий кэш-бастер для всех типов браузеров и ОС -->
+    <link rel="icon" href="/favicon.ico?v=5" sizes="any">
+    <link rel="icon" href="/favicon.png?v=5" type="image/png">
+    <link rel="apple-touch-icon" href="/favicon.png?v=5">
+    
     <style>
         :root { --bg: #050505; --card: #111111; --border: #222222; --accent: #ef4444; --accent-glow: rgba(239, 68, 68, 0.4); --text: #f9fafb; --muted: #9ca3af; }
         * { box-sizing: border-box; }
@@ -16,29 +20,22 @@
         .hero h1 { font-size: clamp(3rem, 6vw, 5.5rem); margin: 0; font-weight: 800; letter-spacing: -0.04em; line-height: 1.1; }
         .hero h1 span { background: linear-gradient(135deg, #fca5a5 0%, var(--accent) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .hero p { font-size: clamp(1.1rem, 2vw, 1.3rem); color: var(--muted); max-width: 650px; margin: 1.5rem 0 2.5rem; }
+        
         .btn-group { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; margin-bottom: 3rem; }
         .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 1rem 2rem; border-radius: 12px; font-weight: 600; font-size: 1.05rem; text-decoration: none; transition: all 0.2s ease; }
         .btn-primary { background: var(--text); color: var(--bg); }
         .btn-primary:hover { transform: scale(1.02); background: #e5e7eb; }
+        .btn-secondary { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: var(--text); }
+        .btn-secondary:hover { background: rgba(255,255,255,0.15); transform: scale(1.02); border-color: rgba(255,255,255,0.3); }
+
         .mockup-wrapper { perspective: 1000px; display: flex; justify-content: center; }
         .screen-item { flex: 0 0 auto; width: 280px; height: 560px; border-radius: 40px; border: 8px solid #1c1c1e; background: #09090b; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.7); position: relative; text-align: left; display: flex; flex-direction: column; }
         .screen-inner { padding: 1.5rem 1.25rem; overflow-y: auto; height: 100%; }
         .screen-inner::-webkit-scrollbar { width: 4px; }
         .screen-inner::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 4px; }
         .screenshots-section { padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; text-align: center; }
-        .screenshots-grid { 
-            display: flex; 
-            gap: 2rem; 
-            overflow-x: auto; 
-            padding: 2rem 1rem; 
-            scroll-snap-type: x mandatory; 
-            justify-content: flex-start; 
-            scrollbar-width: none; /* Firefox */
-            -ms-overflow-style: none; /* IE and Edge */
-        }
-        .screenshots-grid::-webkit-scrollbar { 
-            display: none; /* Chrome, Safari, Opera */
-        }
+        .screenshots-grid { display: flex; gap: 2rem; overflow-x: auto; padding: 2rem 1rem; scroll-snap-type: x mandatory; justify-content: flex-start; scrollbar-width: none; -ms-overflow-style: none; }
+        .screenshots-grid::-webkit-scrollbar { display: none; }
         .screenshots-grid .screen-item { height: 540px; border: 8px solid #1c1c1e; }
         .screenshots-grid .screen-item img { width: 100%; height: 100%; object-fit: cover; }
         @media (min-width: 1100px) { .screenshots-grid { justify-content: center; } }
@@ -72,7 +69,7 @@
   <div style="position: absolute; right: 0.8rem; top: 50%; transform: translateY(-50%); pointer-events: none; color: #ffffff; font-size: 0.7rem;">▼</div>
 </div>
 <a href="/" style="position: fixed; top: 1.5rem; left: 1.5rem; width: 3.5rem; height: 3.5rem; z-index: 9999; display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease; text-decoration: none;">
-  <img src="/favicon.png" alt="" style="width: 100%; height: 100%; object-fit: contain;">
+  <img src="/favicon.png?v=5" alt="" style="width: 100%; height: 100%; object-fit: contain;">
 </a>
     <div class="ambient-light"></div>
     
@@ -80,11 +77,23 @@
         <div class="badge">{{ site.data[page.lang].badge }}</div>
         <h1>{{ site.data[page.lang].h1_1 }}</h1>
         <p>{{ site.data[page.lang].subtitle }}</p>
+        
+        <!-- Блок с кнопками: Скачать и Донат -->
         <div class="btn-group">
             <a href="{{ site.data[page.lang].dl_link }}" class="btn btn-primary">
                 {{ site.data[page.lang].dl_text }}
             </a>
+            
+            <a href="https://boosty.to/твой_профиль" target="_blank" class="btn btn-secondary">
+                {% if page.lang == 'ru' %}☕ Поддержать проект
+                {% elsif page.lang == 'tr' %}☕ Projeyi destekle
+                {% elsif page.lang == 'uz' %}☕ Qo'llab-quvvatlash
+                {% elsif page.lang == 'es' %}☕ Apoyar el proyecto
+                {% elsif page.lang == 'de' %}☕ Projekt unterstützen
+                {% else %}☕ Support project{% endif %}
+            </a>
         </div>
+
         <div class="mockup-wrapper">
             <div class="screen-item">
                 <div class="screen-inner">
@@ -184,7 +193,7 @@
             <a href="{% if page.lang == 'ru' %}/pages_t/page_terms.html{% else %}/{{ page.lang }}/pages_t/page_terms.html{% endif %}">{{ site.data[page.lang].footer_terms }}</a>
         </div>
         <p style="margin-bottom: 0.5rem;">{{ site.data[page.lang].footer_support }} <a href="mailto:yamaladec@gmail.com" style="margin: 0;">yamaladec@gmail.com</a></p>
-        <p>© 2026 MoneyApp.</p>
+        <p>© 2026 MoneyApp. v3.0</p>
     </footer>
 </body>
 </html>
