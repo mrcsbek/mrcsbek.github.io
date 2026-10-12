@@ -43,3 +43,9 @@ faq2_a: "Sie können alle Ihre Daten selbst über die App-Einstellungen löschen
 footer_privacy: "Datenschutzrichtlinie"
 footer_terms: "Nutzungsbedingungen"
 footer_support: "Kundendienst:"
+
+# ── SEO (search results & link previews) ──
+og_locale: "de_DE"
+seo_title: "KI-Kassenbon-Scanner & Ausgaben-Tracker für Android"
+seo_desc: "Haushaltsbuch für Android: Kassenbons per KI scannen, Konten in mehreren Währungen, Budgets und Import von Kontoauszügen. Ohne Werbung und Tracker. APK kostenlos herunterladen."
+shots: ["Konten", "Neue Buchung", "Pläne und Budgets", "Buchungen"]

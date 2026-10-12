@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang }}">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoneyApp</title>
-    
-    <link rel="icon" href="/transp_icon.png?v=6" type="image/png">
-    <link rel="apple-touch-icon" href="/transp_icon.png?v=6">
+{% include head.html %}
+{%- assign d = site.data[page.lang] %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": {{ site.app_name | jsonify }},
+      "operatingSystem": "Android",
+      "applicationCategory": "FinanceApplication",
+      "description": {{ d.seo_desc | jsonify }},
+      "url": "{{ site.url }}{{ page.url }}",
+      "image": "{{ site.url }}/transp_icon.png",
+      "screenshot": "{{ site.url }}/screen/accounts.jpeg",
+      "downloadUrl": {{ d.dl_link | jsonify }},
+      "inLanguage": {{ site.languages | jsonify }},
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    }
+    </script>
     
     <style>
         :root { --bg: #050505; --card: #111111; --border: #222222; --accent: #ef4444; --accent-glow: rgba(239, 68, 68, 0.4); --text: #f9fafb; --muted: #9ca3af; }
@@ -56,18 +68,18 @@
 </head>
 <body>
 <div style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 9999;">
-  <select onchange="window.location.href=this.value;" style="background: rgba(0, 0, 0, 0.5); color: #ffffff; border: 1px solid rgba(255, 255, 255, 0.2); padding: 0.5rem 2.2rem 0.5rem 1rem; border-radius: 2rem; outline: none; cursor: pointer; font-size: 0.95rem; font-weight: 600; appearance: none; -webkit-appearance: none; backdrop-filter: blur(10px);">
-    <option value="/" {% if page.lang == 'ru' %}selected{% endif %} style="color: #000000;">🇷🇺 RU</option>
-    <option value="/en/" {% if page.lang == 'en' %}selected{% endif %} style="color: #000000;">🇬🇧 EN</option>
-    <option value="/tr/" {% if page.lang == 'tr' %}selected{% endif %} style="color: #000000;">🇹🇷 TR</option>
-    <option value="/uz/" {% if page.lang == 'uz' %}selected{% endif %} style="color: #000000;">🇺🇿 UZ</option>
-    <option value="/es/" {% if page.lang == 'es' %}selected{% endif %} style="color: #000000;">🇪🇸 ES</option>
-    <option value="/de/" {% if page.lang == 'de' %}selected{% endif %} style="color: #000000;">🇩🇪 DE</option>
+  <select aria-label="Language" onchange="try{localStorage.setItem('lang',this.options[this.selectedIndex].dataset.l)}catch(e){};window.location.href=this.value;" style="background: rgba(0, 0, 0, 0.5); color: #ffffff; border: 1px solid rgba(255, 255, 255, 0.2); padding: 0.5rem 2.2rem 0.5rem 1rem; border-radius: 2rem; outline: none; cursor: pointer; font-size: 0.95rem; font-weight: 600; appearance: none; -webkit-appearance: none; backdrop-filter: blur(10px);">
+    <option value="/" data-l="en" {% if page.lang == 'en' %}selected{% endif %} style="color: #000000;">🇬🇧 EN</option>
+    <option value="/ru/" data-l="ru" {% if page.lang == 'ru' %}selected{% endif %} style="color: #000000;">🇷🇺 RU</option>
+    <option value="/tr/" data-l="tr" {% if page.lang == 'tr' %}selected{% endif %} style="color: #000000;">🇹🇷 TR</option>
+    <option value="/uz/" data-l="uz" {% if page.lang == 'uz' %}selected{% endif %} style="color: #000000;">🇺🇿 UZ</option>
+    <option value="/es/" data-l="es" {% if page.lang == 'es' %}selected{% endif %} style="color: #000000;">🇪🇸 ES</option>
+    <option value="/de/" data-l="de" {% if page.lang == 'de' %}selected{% endif %} style="color: #000000;">🇩🇪 DE</option>
   </select>
   <div style="position: absolute; right: 0.8rem; top: 50%; transform: translateY(-50%); pointer-events: none; color: #ffffff; font-size: 0.7rem;">▼</div>
 </div>
-<a href="/" style="position: fixed; top: 1.5rem; left: 1.5rem; width: 3.5rem; height: 3.5rem; z-index: 9999; display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease; text-decoration: none;">
-  <img src="/transp_icon.png?v=6" alt="" style="width: 100%; height: 100%; object-fit: contain;">
+<a href="{% if page.lang == site.default_lang %}/{% else %}/{{ page.lang }}/{% endif %}" style="position: fixed; top: 1.5rem; left: 1.5rem; width: 3.5rem; height: 3.5rem; z-index: 9999; display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease; text-decoration: none;">
+  <img src="/transp_icon.png" alt="{{ site.app_name }}" width="56" height="56" style="width: 100%; height: 100%; object-fit: contain;">
 </a>
     <div class="ambient-light"></div>
     
@@ -77,11 +89,11 @@
         <p>{{ site.data[page.lang].subtitle }}</p>
         
         <div class="btn-group">
-            <a href="{{ site.data[page.lang].dl_link }}" class="btn btn-primary">
+            <a href="{{ site.data[page.lang].dl_link }}" class="btn btn-primary" data-goatcounter-click="download-apk-{{ page.lang }}" data-goatcounter-title="APK download ({{ page.lang }})">
                 {{ site.data[page.lang].dl_text }}
             </a>
             
-            <a href="https://buymeacoffee.com/mrcsbek" target="_blank" class="btn btn-secondary">
+            <a href="https://buymeacoffee.com/mrcsbek" target="_blank" rel="noopener" class="btn btn-secondary" data-goatcounter-click="donate-{{ page.lang }}">
                 {% if page.lang == 'ru' %}☕ Поддержать проект
                 {% elsif page.lang == 'tr' %}☕ Projeyi destekle
                 {% elsif page.lang == 'uz' %}☕ Qo'llab-quvvatlash
@@ -113,10 +125,10 @@
     <section class="screenshots-section">
         <h2 style="font-size: 2rem; margin-bottom: 1rem;">{{ site.data[page.lang].interface_title }}</h2>
         <div class="screenshots-grid">
-            <div class="screen-item"><img src="/screen/accounts.jpeg" alt="Accounts"></div>
-            <div class="screen-item"><img src="/screen/new_transaction.jpeg" alt="New"></div>
-            <div class="screen-item"><img src="/screen/plans.jpeg" alt="Plans"></div>
-            <div class="screen-item"><img src="/screen/transactions.jpeg" alt="Transactions"></div>
+            <div class="screen-item"><img src="/screen/accounts.jpeg" alt="{{ site.app_name }} — {{ site.data[page.lang].shots[0] }}" width="264" height="524" loading="lazy"></div>
+            <div class="screen-item"><img src="/screen/new_transaction.jpeg" alt="{{ site.app_name }} — {{ site.data[page.lang].shots[1] }}" width="264" height="524" loading="lazy"></div>
+            <div class="screen-item"><img src="/screen/plans.jpeg" alt="{{ site.app_name }} — {{ site.data[page.lang].shots[2] }}" width="264" height="524" loading="lazy"></div>
+            <div class="screen-item"><img src="/screen/transactions.jpeg" alt="{{ site.app_name }} — {{ site.data[page.lang].shots[3] }}" width="264" height="524" loading="lazy"></div>
         </div>
     </section>
 
@@ -186,11 +198,11 @@
 
     <footer class="footer">
         <div style="margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;">
-            <a href="{% if page.lang == 'ru' %}/pages_p/page_privacy.html{% else %}/{{ page.lang }}/pages_p/page_privacy.html{% endif %}">{{ site.data[page.lang].footer_privacy }}</a>
-            <a href="{% if page.lang == 'ru' %}/pages_t/page_terms.html{% else %}/{{ page.lang }}/pages_t/page_terms.html{% endif %}">{{ site.data[page.lang].footer_terms }}</a>
+            <a href="{% if page.lang == site.default_lang %}/pages_p/page_privacy.html{% else %}/{{ page.lang }}/pages_p/page_privacy.html{% endif %}">{{ site.data[page.lang].footer_privacy }}</a>
+            <a href="{% if page.lang == site.default_lang %}/pages_t/page_terms.html{% else %}/{{ page.lang }}/pages_t/page_terms.html{% endif %}">{{ site.data[page.lang].footer_terms }}</a>
         </div>
         <p style="margin-bottom: 0.5rem;">{{ site.data[page.lang].footer_support }} <a href="mailto:yamaladec@gmail.com" style="margin: 0;">yamaladec@gmail.com</a></p>
-        <p>© 2026 MoneyApp. v3.0</p>
+        <p>© 2026 {{ site.app_name }}</p>
     </footer>
 </body>
 </html>

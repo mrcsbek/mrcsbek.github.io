@@ -43,3 +43,9 @@ faq2_a: "You can wipe all your data yourself through the app settings. If necess
 footer_privacy: "Privacy Policy"
 footer_terms: "Terms of Use"
 footer_support: "Support Service:"
+
+# ── SEO (search results & link previews) ──
+og_locale: "en_US"
+seo_title: "AI Receipt Scanner & Expense Tracker for Android"
+seo_desc: "Free Android expense tracker with AI receipt scanning, multi-currency accounts, budgets and bank statement import. No ads, no trackers. Download the APK."
+shots: ["Accounts", "New transaction", "Plans and budgets", "Transactions"]
