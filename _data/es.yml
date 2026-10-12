@@ -43,3 +43,9 @@ faq2_a: "Puedes borrar todos tus datos tú mismo a través de la configuración 
 footer_privacy: "Política de Privacidad"
 footer_terms: "Términos de Uso"
 footer_support: "Servicio de Soporte:"
+
+# ── SEO (search results & link previews) ──
+og_locale: "es_ES"
+seo_title: "Escáner de tickets con IA y control de gastos para Android"
+seo_desc: "Control de gastos para Android: escaneo de tickets con IA, cuentas multidivisa, presupuestos e importación de extractos bancarios. Sin anuncios ni rastreadores. Descarga el APK gratis."
+shots: ["Cuentas", "Nueva transacción", "Planes y presupuestos", "Transacciones"]

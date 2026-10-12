@@ -43,3 +43,9 @@ faq2_a: "Ilova sozlamalari orqali barcha ma'lumotlaringizni o'zingiz o'chirib ta
 footer_privacy: "Maxfiylik siyosati"
 footer_terms: "Foydalanish shartlari"
 footer_support: "Qo'llab-quvvatlash xizmati:"
+
+# ── SEO (search results & link previews) ──
+og_locale: "uz_UZ"
+seo_title: "Sun'iy intellektli chek skaneri va xarajatlar hisobi (Android)"
+seo_desc: "Android uchun moliya hisobi: cheklarni sun'iy intellekt bilan aniqlash, ko'p valyutali hisoblar, byudjetlar va bank ko'chirmalari importi. Reklamasiz. APK'ni bepul yuklab oling."
+shots: ["Hisoblar", "Yangi operatsiya", "Rejalar va byudjetlar", "Operatsiyalar"]

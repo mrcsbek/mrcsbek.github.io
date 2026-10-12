@@ -1,0 +1,20 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{%- assign paths = "/|/pages_p/page_privacy.html|/pages_t/page_terms.html" | split: "|" -%}
+{%- for p in paths -%}
+{%- for l in site.languages %}
+  <url>
+    <loc>{{ site.url }}{% if l != site.default_lang %}/{{ l }}{% endif %}{{ p }}</loc>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+    <priority>{% if p == "/" %}1.0{% else %}0.3{% endif %}</priority>
+{%- for a in site.languages %}
+    <xhtml:link rel="alternate" hreflang="{{ a }}" href="{{ site.url }}{% if a != site.default_lang %}/{{ a }}{% endif %}{{ p }}"/>
+{%- endfor %}
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ p }}"/>
+  </url>
+{%- endfor -%}
+{%- endfor %}
+</urlset>

@@ -1,3 +1,19 @@
+# ── Site identity ─────────────────────────────────────────
+# Rename the app in ONE place: change app_name below.
+app_name: MoneyApp
+url: https://mrcsbek.github.io
+baseurl: ""
+
+# English lives at the site root; other languages in /ru/, /tr/, ...
+default_lang: en
+languages: [en, ru, tr, uz, es, de]
+
+# ── Analytics & search (leave empty to disable) ───────────
+# GoatCounter site code, e.g. "clearslip" for clearslip.goatcounter.com
+goatcounter: ""
+# Google Search Console "HTML tag" verification value (only the content="..." part)
+google_site_verification: ""
+
 markdown: kramdown
 exclude:
   - README.md
