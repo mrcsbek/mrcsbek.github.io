@@ -2,7 +2,7 @@
 
 Официальная веб-страница и дистрибутив мобильного приложения ClearSlip. 
 
-🔗 **Сайт:** [mrcsbek.github.io](https://mrcsbek.github.io)
+🔗 **Сайт:** [clearslip.app](https://clearslip.app)
 📦 **Скачать APK:** [Последний релиз](https://github.com/mrcsbek/mrcsbek.github.io/releases)
 
 ## О проекте

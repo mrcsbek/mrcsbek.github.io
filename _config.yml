@@ -1,7 +1,7 @@
 # ── Site identity ─────────────────────────────────────────
 # Rename the app in ONE place: change app_name below.
 app_name: ClearSlip
-url: https://mrcsbek.github.io
+url: https://clearslip.app
 baseurl: ""
 
 # English lives at the site root; other languages in /ru/, /tr/, ...
