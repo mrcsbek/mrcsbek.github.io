@@ -1,12 +1,12 @@
-# MoneyApp — Landing Page & Releases
+# ClearSlip — Landing Page & Releases
 
-Официальная веб-страница и дистрибутив мобильного приложения MoneyApp. 
+Официальная веб-страница и дистрибутив мобильного приложения ClearSlip. 
 
 🔗 **Сайт:** [mrcsbek.github.io](https://mrcsbek.github.io)
 📦 **Скачать APK:** [Последний релиз](https://github.com/mrcsbek/mrcsbek.github.io/releases)
 
 ## О проекте
-MoneyApp — приложение для умного учета финансов с автоматическим сканированием чеков.
+ClearSlip — приложение для умного учета финансов с автоматическим сканированием чеков.
 * **Платформа:** Android (React Native Expo)
 * **Архитектура:** Self-hosted (синхронизация с личным сервером разработчика)
 * **Стек:** CameraX + Google ML Kit OCR + облачный ИИ-парсинг (Gemini)
