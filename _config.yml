@@ -1,6 +1,6 @@
 # ── Site identity ─────────────────────────────────────────
 # Rename the app in ONE place: change app_name below.
-app_name: MoneyApp
+app_name: ClearSlip
 url: https://mrcsbek.github.io
 baseurl: ""
 

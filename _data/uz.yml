@@ -3,7 +3,7 @@ h1_1: "Aqlli moliya hisobi.<br><span>Rutinsiz.</span>"
 subtitle: "Sun'iy intellekt orqali cheklarni aniqlash, qat'iy kategoriya ierarxiyasi, reklamasiz tajriba va ma'lumotlaringiz ustidan to'liq nazorat."
 dl_text: "↓ APK yuklab olish"
 dl_link: "https://github.com/mrcsbek/mrcsbek.github.io/releases/download/v.1.1.0/moneyApp.apk"
-changelog_title: "MoneyApp O'zgarishlar tarixi"
+changelog_title: "ClearSlip O'zgarishlar tarixi"
 changelog:
   - date: "Versiya 1.0 (21 Sentabr 2026)"
     text: "Yirik yangilanish. 5 ta vidjet. Orqa fonda cheklarni skanerlash va summani avtomatik tasdiqlash. Balans uchun raqamli panel. Ilova hajmi kichraytirildi."

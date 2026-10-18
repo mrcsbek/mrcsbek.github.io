@@ -3,7 +3,7 @@ h1_1: "Intelligente Finanzverfolgung.<br><span>Ohne Routine.</span>"
 subtitle: "KI-Belegerkennung, strikte Kategoriehierarchie, keine Werbung und volle Kontrolle über Ihre Daten."
 dl_text: "↓ APK herunterladen"
 dl_link: "https://github.com/mrcsbek/mrcsbek.github.io/releases/download/v.1.1.0/moneyApp.apk"
-changelog_title: "MoneyApp Änderungsprotokoll"
+changelog_title: "ClearSlip Änderungsprotokoll"
 changelog:
   - date: "Version 1.0 (21. September 2026)"
     text: "Großes Update. 5 Widgets. Hintergrund-Belegscan mit automatischer Summenvalidierung. Ziffernblock für Kontostände. App-Größe reduziert."
