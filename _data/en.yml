@@ -7,11 +7,11 @@ nav_how: "How it works"
 nav_privacy: "Privacy"
 nav_faq: "Questions"
 
-version: "1.1.0"
-version_note: "Version 1.1.0 for Android, free"
+version: "1.2.0"
+version_note: "Version 1.2.0 for Android, free"
 dl_text: "Download APK"
 dl_short: "Download"
-dl_link: "https://github.com/mrcsbek/mrcsbek.github.io/releases/download/v.1.1.0/moneyApp.apk"
+dl_link: "https://github.com/mrcsbek/mrcsbek.github.io/releases/latest/download/ClearSlip.apk"
 back_home: "Home"
 install_link: "How to install"
 
@@ -97,6 +97,8 @@ faq:
 
 changelog_title: "What's new"
 changelog:
+  - date: "1.2.0, October 2026"
+    text: "Fixes from beta testing: the right account and currency when adding, safe date entry, transfers that stay paired, working “Mark as paid” and “Clear history”. The whole app is now translated into six languages. A sign-out button and new server address."
   - date: "1.1.0, September 2026"
     text: "Home screen widgets in 4×1, 1×4 and 1×1 sizes. Background receipt scanning with a “Review” mark. A number pad for correcting balances. A smaller app."
   - date: "1.0, September 2026"
