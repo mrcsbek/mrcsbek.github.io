@@ -7,8 +7,8 @@ nav_how: "How it works"
 nav_privacy: "Privacy"
 nav_faq: "Questions"
 
-version: "1.2.0"
-version_note: "Version 1.2.0 for Android, free"
+version: "1.2.1"
+version_note: "Version 1.2.1 for Android, free"
 dl_text: "Download APK"
 dl_short: "Download"
 dl_link: "https://github.com/mrcsbek/mrcsbek.github.io/releases/latest/download/ClearSlip.apk"
@@ -97,6 +97,8 @@ faq:
 
 changelog_title: "What's new"
 changelog:
+  - date: "1.2.1, October 2026"
+    text: "Account archive and filtering transactions by category. Swipe-to-delete now asks for confirmation. Reminders arrive right on time, with a new notification icon. Stronger protection for your data and the server."
   - date: "1.2.0, October 2026"
     text: "Fixes from beta testing: the right account and currency when adding, safe date entry, transfers that stay paired, working “Mark as paid” and “Clear history”. The whole app is now translated into six languages. A sign-out button and new server address."
   - date: "1.1.0, September 2026"
