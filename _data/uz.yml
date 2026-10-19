@@ -7,11 +7,11 @@ nav_how: "Qanday ishlaydi"
 nav_privacy: "Maxfiylik"
 nav_faq: "Savollar"
 
-version: "1.1.0"
-version_note: "Android uchun 1.1.0 versiya, bepul"
+version: "1.2.0"
+version_note: "Android uchun 1.2.0 versiya, bepul"
 dl_text: "APK yuklab olish"
 dl_short: "Yuklab olish"
-dl_link: "https://github.com/mrcsbek/mrcsbek.github.io/releases/download/v.1.1.0/moneyApp.apk"
+dl_link: "https://github.com/mrcsbek/mrcsbek.github.io/releases/latest/download/ClearSlip.apk"
 back_home: "Bosh sahifa"
 install_link: "Qanday o'rnatiladi"
 
@@ -97,6 +97,8 @@ faq:
 
 changelog_title: "Yangiliklar"
 changelog:
+  - date: "1.2.0, oktyabr 2026"
+    text: "Beta-test bo'yicha tuzatishlar: qo'shishda to'g'ri hisob va valyuta, sanani ishonchli kiritish, o'tkazmalar endi ikkiga bo'linmaydi, «To'landi» va «Tarixni tozalash» ishlaydi. Ilova oltita tilga to'liq tarjima qilindi. Chiqish tugmasi va yangi server manzili."
   - date: "1.1.0, sentyabr 2026"
     text: "4×1, 1×4 va 1×1 o'lchamdagi bosh ekran vidjetlari. «Tekshirish» belgili fonda chek skanerlash. Balansni tuzatish uchun raqamli klaviatura. Ilova hajmi kichraydi."
   - date: "1.0, sentyabr 2026"

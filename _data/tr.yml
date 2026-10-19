@@ -7,11 +7,11 @@ nav_how: "Nasıl çalışır"
 nav_privacy: "Gizlilik"
 nav_faq: "Sorular"
 
-version: "1.1.0"
-version_note: "Android için sürüm 1.1.0, ücretsiz"
+version: "1.2.0"
+version_note: "Android için sürüm 1.2.0, ücretsiz"
 dl_text: "APK'yı indir"
 dl_short: "İndir"
-dl_link: "https://github.com/mrcsbek/mrcsbek.github.io/releases/download/v.1.1.0/moneyApp.apk"
+dl_link: "https://github.com/mrcsbek/mrcsbek.github.io/releases/latest/download/ClearSlip.apk"
 back_home: "Ana sayfa"
 install_link: "Nasıl kurulur"
 
@@ -97,6 +97,8 @@ faq:
 
 changelog_title: "Yenilikler"
 changelog:
+  - date: "1.2.0, Ekim 2026"
+    text: "Beta testinden düzeltmeler: eklerken doğru hesap ve para birimi, güvenli tarih girişi, transferler artık bölünmüyor, «Ödendi» ve «Geçmişi temizle» çalışıyor. Uygulama altı dile tamamen çevrildi. Çıkış düğmesi ve yeni sunucu adresi."
   - date: "1.1.0, Eylül 2026"
     text: "4×1, 1×4 ve 1×1 boyutlarında ana ekran widget'ları. “Kontrol et” işaretli arka planda fiş tarama. Bakiye düzeltmek için sayı tuş takımı. Daha küçük uygulama boyutu."
   - date: "1.0, Eylül 2026"
