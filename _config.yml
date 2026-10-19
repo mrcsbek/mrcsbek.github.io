@@ -15,5 +15,7 @@ goatcounter: ""
 google_site_verification: ""
 
 markdown: kramdown
+include:
+  - .well-known
 exclude:
   - README.md
