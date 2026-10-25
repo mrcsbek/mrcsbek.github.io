@@ -19,3 +19,4 @@ include:
   - .well-known
 exclude:
   - README.md
+cf_beacon: c97e0001125d441fbb7e28cbd023057f

@@ -50,3 +50,6 @@
 {%- if site.goatcounter != "" %}
     <script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 {%- endif %}
+{%- if site.cf_beacon %}
+    <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ site.cf_beacon }}"}'></script>
+{%- endif %}
