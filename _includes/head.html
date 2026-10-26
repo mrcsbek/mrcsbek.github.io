@@ -36,6 +36,9 @@
        A manual choice in the language menu is remembered and always wins. */
     (function () {
       var L = [{% for l in site.languages %}{% if l != site.default_lang %}"{{ l }}"{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}], t = null, s = null;
+      /* ?lang=xx в ссылке (например, из приложения) — выбор языка, запоминаем */
+      var q = (location.search.match(/[?&]lang=([a-z]{2})/) || [])[1];
+      if (q) { try { localStorage.setItem("lang", q); } catch (e) {} }
       try { s = localStorage.getItem("lang"); } catch (e) {}
       if (s === "{{ site.default_lang }}") return;
       if (s && L.indexOf(s) > -1) t = s;
