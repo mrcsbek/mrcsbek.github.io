@@ -7,8 +7,8 @@ nav_how: "So funktioniert's"
 nav_privacy: "Datenschutz"
 nav_faq: "Fragen"
 
-version: "1.2.1"
-version_note: "Version 1.2.1 für Android, kostenlos"
+version: "1.2.4"
+version_note: "Version 1.2.4 für Android, kostenlos"
 dl_text: "APK herunterladen"
 dl_short: "Herunterladen"
 dl_link: "https://github.com/mrcsbek/mrcsbek.github.io/releases/latest/download/ClearSlip.apk"
@@ -97,6 +97,8 @@ faq:
 
 changelog_title: "Neuigkeiten"
 changelog:
+  - date: "1.2.4, Oktober 2026"
+    text: "Funktioniert offline: Buchungen, Schulden, Überweisungen und Belege werden auf dem Telefon gespeichert und automatisch gesendet; ein pulsierender Saldo zeigt fehlende Verbindung. Kontenarchiv, Kategoriefilter, Schulden mit einem Tipp begleichen, Kurs und Gutschrift bei Überweisungen zwischen Währungen. Korrekturen für gemeinsame Einkäufe, Vorlagen, Orte und viele Kleinigkeiten."
   - date: "1.2.1, Oktober 2026"
     text: "Kontenarchiv und Filtern von Buchungen nach Kategorie. Löschen per Wischen fragt jetzt nach. Erinnerungen kommen pünktlich, mit neuem Benachrichtigungssymbol. Besserer Schutz für deine Daten und den Server."
   - date: "1.2.0, Oktober 2026"

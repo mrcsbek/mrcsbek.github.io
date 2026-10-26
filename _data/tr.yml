@@ -7,8 +7,8 @@ nav_how: "Nasıl çalışır"
 nav_privacy: "Gizlilik"
 nav_faq: "Sorular"
 
-version: "1.2.1"
-version_note: "Android için sürüm 1.2.1, ücretsiz"
+version: "1.2.4"
+version_note: "Android için sürüm 1.2.4, ücretsiz"
 dl_text: "APK'yı indir"
 dl_short: "İndir"
 dl_link: "https://github.com/mrcsbek/mrcsbek.github.io/releases/latest/download/ClearSlip.apk"
@@ -97,6 +97,8 @@ faq:
 
 changelog_title: "Yenilikler"
 changelog:
+  - date: "1.2.4, Ekim 2026"
+    text: "İnternetsiz çalışma: işlemler, borçlar, transferler ve fişler telefona kaydedilir ve kendiliğinden gönderilir; yanıp sönen toplam bağlantı olmadığını gösterir. Hesap arşivi, kategori filtresi, tek dokunuşla borç kapatma, döviz transferlerinde kur ve gelen tutar. Ortak alışverişler, şablonlar, yerler ve onlarca küçük düzeltme."
   - date: "1.2.1, Ekim 2026"
     text: "Hesap arşivi ve işlemleri kategoriye göre filtreleme. Kaydırarak silme artık onay istiyor. Hatırlatıcılar tam zamanında geliyor, yeni bildirim simgesi. Veri ve sunucu güvenliği güçlendirildi."
   - date: "1.2.0, Ekim 2026"

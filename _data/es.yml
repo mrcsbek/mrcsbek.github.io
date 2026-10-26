@@ -7,8 +7,8 @@ nav_how: "Cómo funciona"
 nav_privacy: "Privacidad"
 nav_faq: "Preguntas"
 
-version: "1.2.1"
-version_note: "Versión 1.2.1 para Android, gratis"
+version: "1.2.4"
+version_note: "Versión 1.2.4 para Android, gratis"
 dl_text: "Descargar APK"
 dl_short: "Descargar"
 dl_link: "https://github.com/mrcsbek/mrcsbek.github.io/releases/latest/download/ClearSlip.apk"
@@ -97,6 +97,8 @@ faq:
 
 changelog_title: "Novedades"
 changelog:
+  - date: "1.2.4, octubre de 2026"
+    text: "Funciona sin conexión: movimientos, deudas, transferencias y recibos se guardan en el teléfono y se envían solos; el total parpadea cuando no hay conexión. Archivo de cuentas, filtro por categoría, saldar deudas con un toque, tipo de cambio e importe recibido en transferencias entre monedas. Correcciones en compras compartidas, plantillas, lugares y decenas de detalles."
   - date: "1.2.1, octubre de 2026"
     text: "Archivo de cuentas y filtro de movimientos por categoría. Borrar deslizando ahora pide confirmación. Los recordatorios llegan a su hora, con un nuevo icono de notificación. Más protección para tus datos y el servidor."
   - date: "1.2.0, octubre de 2026"
