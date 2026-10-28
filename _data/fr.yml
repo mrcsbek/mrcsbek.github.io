@@ -7,8 +7,8 @@ nav_how: "Comment ça marche"
 nav_privacy: "Confidentialité"
 nav_faq: "Questions"
 
-version: "1.2.6"
-version_note: "Version 1.2.6 pour Android, gratuite"
+version: "1.2.7"
+version_note: "Version 1.2.7 pour Android, gratuite"
 dl_text: "Télécharger l’APK"
 dl_short: "Télécharger"
 dl_link: "https://github.com/mrcsbek/mrcsbek.github.io/releases/latest/download/ClearSlip.apk"
@@ -97,8 +97,10 @@ faq:
 
 changelog_title: "Nouveautés"
 changelog:
+  - date: "1.2.7, octobre 2026"
+    text: "L’application est désormais disponible en français et en arabe, avec une interface entièrement inversée de droite à gauche pour l’arabe. Politique de confidentialité et conditions d’utilisation mises à jour : la saisie vocale et le mode hors ligne y sont décrits précisément. Les dépenses partagées ont désormais un bouton « Réglé » qui solde une dette d’une touche ; le règlement peut être annulé."
   - date: "1.2.6, octobre 2026"
-    text: "Mode hors ligne complet : comptes, opérations et le reste s’ouvrent instantanément, et toute modification — édition, suppression, liste de courses — est conservée sur le téléphone puis envoyée automatiquement au retour de la connexion. Partage d’un ticket par articles, liste de courses commune au groupe avec « qui achète », pièces ou kilos dans la liste. Import des relevés VakıfBank et PDF. Courte présentation au premier lancement. Application disponible en français et en arabe."
+    text: "Mode hors ligne complet : comptes, opérations et le reste s’ouvrent instantanément, et toute modification — édition, suppression, liste de courses — est conservée sur le téléphone puis envoyée automatiquement au retour de la connexion. Partage d’un ticket par articles, liste de courses commune au groupe avec « qui achète », pièces ou kilos dans la liste. Import des relevés VakıfBank et PDF. Courte présentation au premier lancement."
   - date: "1.2.4, octobre 2026"
     text: "Fonctionnement hors ligne : opérations, dettes, virements et tickets sont enregistrés sur le téléphone et envoyés automatiquement ; un total qui clignote indique l’absence de connexion. Archives des comptes, filtre par catégorie, règlement d’une dette en une touche, taux et montant reçu pour les virements entre devises. Corrections des achats partagés, modèles, lieux et dizaines de détails."
   - date: "1.2.1, octobre 2026"
