@@ -6,7 +6,7 @@ baseurl: ""
 
 # English lives at the site root; other languages in /ru/, /tr/, ...
 default_lang: en
-languages: [en, ru, tr, uz, es, de]
+languages: [en, ru, tr, uz, es, de, fr, ar]
 
 # ── Analytics & search (leave empty to disable) ───────────
 # GoatCounter site code, e.g. "clearslip" for clearslip.goatcounter.com

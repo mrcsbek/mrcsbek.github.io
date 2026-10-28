@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang }}">
+<html lang="{{ page.lang }}"{% if page.lang == "ar" %} dir="rtl"{% endif %}>
 <head>
 {% include head.html %}
 {%- assign d = site.data[page.lang] -%}
@@ -25,6 +25,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+    {% if page.lang == "ar" %}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">{% endif %}
     <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
