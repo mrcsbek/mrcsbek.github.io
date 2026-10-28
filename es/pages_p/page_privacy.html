@@ -4,7 +4,7 @@ lang: es
 title: "Política de privacidad"
 ---
 <h1>Política de privacidad</h1>
-<div class="effective-date">Fecha de entrada en vigor: 25 de octubre de 2026</div>
+<div class="effective-date">Fecha de entrada en vigor: 28 de octubre de 2026</div>
 <p>El desarrollador de ClearSlip respeta su privacidad. A continuación se describe qué datos recopila la aplicación, dónde se almacenan y cómo eliminarlos.</p>
 <h2>1. Dónde se almacenan los datos</h2>
 <p>ClearSlip funciona en un servidor privado del desarrollador (modelo self-hosted). Sus datos se almacenan solo en este servidor; no se utiliza almacenamiento en la nube de terceros. Las conexiones al servidor pasan por <strong>Cloudflare</strong>, que cifra la transmisión y protege contra ataques; no almacena sus datos financieros.</p>
@@ -18,9 +18,10 @@ title: "Política de privacidad"
 <li>dirección de correo electrónico, si se proporcionó para la recuperación de acceso.</li>
 </ul>
 <p>Los datos de cada usuario residen en una base de datos independiente. Las fotos de los recibos se almacenan en una carpeta accesible únicamente para el propietario.</p>
+<p>Todo lo que introduzca sin conexión se guarda temporalmente en su teléfono y se envía al servidor en cuanto vuelve la conexión.</p>
 <h2>2. Reconocimiento de recibos y servicios de IA de terceros</h2>
-<p>La aplicación requiere acceso a la cámara y galería para reconocer recibos y extractos bancarios.</p>
-<p>Durante el escaneo, las imágenes se transmiten a servicios de reconocimiento en la nube: <strong>Google Gemini</strong>, y mediante modelos de respaldo a través de <strong>OpenRouter</strong> si no está disponible. El procesamiento se rige por las políticas de dichos proveedores, que pueden utilizar las imágenes transmitidas para entrenar sus modelos.</p>
+<p>La aplicación requiere acceso a la cámara y galería para reconocer recibos y extractos bancarios, y al micrófono solo cuando usa la entrada por voz.</p>
+<p>Durante el reconocimiento, las imágenes y las notas de voz se transmiten a servicios de reconocimiento en la nube: <strong>Google Gemini</strong>, y mediante modelos de respaldo a través de <strong>OpenRouter</strong> si no está disponible. El procesamiento se rige por las políticas de dichos proveedores, que pueden utilizar las imágenes transmitidas para entrenar sus modelos.</p>
 <div class="note"><p>Si no desea que su recibo sea enviado a servicios de terceros, introduzca la operación manualmente; el reconocimiento no se iniciará.</p></div>
 <h2>3. Informes de errores</h2>
 <p>La aplicación utiliza <strong>Sentry</strong> para recopilar datos de fallos: tipo de error, ubicación en el código, versión de la aplicación y modelo de dispositivo. Esto es necesario para encontrar y solucionar fallos.</p>
@@ -34,7 +35,7 @@ title: "Política de privacidad"
 <li>anuncios y SDKs de publicidad;</li>
 <li>rastreadores de marketing y perfiles;</li>
 <li>transferencia o venta de sus datos a terceros;</li>
-<li>acceso a contactos, ubicación, micrófono o mensajería.</li>
+<li>acceso a contactos, ubicación o mensajería.</li>
 </ul>
 <h2>7. Período de retención</h2>
 <p>Los datos se almacenan mientras usted utilice la aplicación. Si la cuenta permanece inactiva durante 24 meses, los datos asociados podrán eliminarse de forma permanente.</p>

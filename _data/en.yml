@@ -31,7 +31,7 @@ features:
     text: "Amount, date, store, items and category are filled in from a photo. A receipt in another currency is converted to the account's currency."
   - icon: bank
     title: "Import bank statements"
-    text: "Load a Ziraat Bankası statement and each line is matched to your receipts, with bank fees attached. PDF transfer receipts from any bank are read too."
+    text: "Load a Ziraat Bankası or VakıfBank statement (Excel or PDF) and each line is matched to your receipts, with bank fees attached. PDF transfer receipts from any bank are read too."
   - icon: currency
     title: "Any currency, and gold"
     text: "Keep cash, cards, savings and credit cards in different currencies. Totals use current exchange rates, which are approximate."
@@ -43,10 +43,10 @@ features:
     text: "See spending by category, by store and by product, including how the price of a product changes from receipt to receipt."
   - icon: cart
     title: "Shopping list"
-    text: "Plan what to buy and get price estimates from your own past receipts."
+    text: "Plan what to buy with price estimates from your own past receipts, and share a list with your group so everyone sees who buys what."
   - icon: users
     title: "Shared costs and debts"
-    text: "Split a purchase with family or friends, see who owes whom and keep track of money you lent or borrowed."
+    text: "Split a purchase with family or friends — equally or by receipt items — see who owes whom and keep track of money you lent or borrowed."
   - icon: bolt
     title: "One-tap entries"
     text: "Save regular payments, like a bus fare, as templates. Add them in the app or from a home screen widget."
@@ -68,7 +68,7 @@ privacy_lead: "ClearSlip is developed by one person and shows no ads. Here is ex
 privacy_more: "Read the privacy policy"
 privacy:
   - "Data is kept on the developer's own server, in a separate database for each user. No ads and no advertising trackers."
-  - "To read a receipt, its photo is sent to Google Gemini, or to a backup AI model through OpenRouter. Type the expense in by hand if you prefer not to send it."
+  - "To read a receipt or a voice note, the photo or recording is sent to Google Gemini, or to a backup AI model through OpenRouter. Type the expense in by hand if you prefer not to send it."
   - "Crash reports (Sentry) contain no amounts, names or receipt photos."
   - "You can delete your account with all its data from the app at any time."
 
@@ -83,13 +83,13 @@ install:
 faq_title: "Questions"
 faq:
   - q: "Is ClearSlip free?"
-    a: "Yes. There are no ads and no subscriptions. Receipt recognition is limited to 50 scans per day per account so the service can stay free. If you want to help, use the support button below."
+    a: "Yes. There are no ads and no subscriptions. Receipt recognition is limited to 20 scans per day per account so the service can stay free. If you want to help, use the support button below."
   - q: "Is there an iPhone version?"
     a: "Not yet. For now ClearSlip is available for Android only."
   - q: "Does it work without internet?"
-    a: "You can add expenses offline; they are sent as soon as the connection returns. Scanning receipts and importing statements need internet."
+    a: "Yes. Accounts and transactions open from your phone, and anything you add, edit or delete offline is kept and sent as soon as the connection returns. Scanning receipts and importing statements need internet."
   - q: "Which banks are supported?"
-    a: "Full statement import works with Ziraat Bankası for now. PDF transfer receipts from other banks are read by AI, and accounts at any bank can be kept by hand."
+    a: "Full statement import works with Ziraat Bankası and VakıfBank; PDF statements from other banks are read when they contain a table. PDF transfer receipts are read by AI, and accounts at any bank can be kept by hand."
   - q: "How accurate is receipt recognition?"
     a: "Clear receipts are read well, but AI can make mistakes on faded or crumpled paper. Receipts sent for background scanning are marked “Review” so you can check them."
   - q: "How do I delete my data?"

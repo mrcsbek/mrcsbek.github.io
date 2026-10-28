@@ -31,7 +31,7 @@ features:
     text: "Summa, sana, do'kon, mahsulotlar va kategoriya suratdan to'ldiriladi. Boshqa valyutadagi chek hisob valyutasiga o'tkaziladi."
   - icon: bank
     title: "Ko'chirmalarni import qilish"
-    text: "Ziraat Bankası ko'chirmasini yuklang: har bir qator cheklaringiz bilan solishtiriladi, bank komissiyalari operatsiyalarga biriktiriladi. Istalgan bankning PDF o'tkazma kvitansiyalari ham o'qiladi."
+    text: "Ziraat Bankası yoki VakıfBank ko'chirmasini (Excel yoki PDF) yuklang: har bir qator cheklaringiz bilan solishtiriladi, bank komissiyalari operatsiyalarga biriktiriladi. Istalgan bankning PDF o'tkazma kvitansiyalari ham o'qiladi."
   - icon: currency
     title: "Istalgan valyuta va oltin"
     text: "Naqd pul, kartalar, jamg'armalar va kredit kartalarini turli valyutalarda yuriting. Jami joriy kurs bo'yicha hisoblanadi, kurs taxminiy."
@@ -43,10 +43,10 @@ features:
     text: "Xarajatlarni kategoriya, do'kon va mahsulot bo'yicha ko'ring, shu jumladan mahsulot narxi chekdan chekka qanday o'zgarishini."
   - icon: cart
     title: "Xaridlar ro'yxati"
-    text: "Xaridlarni rejalashtiring va o'tgan cheklaringiz asosida taxminiy narxlarni ko'ring."
+    text: "O'tgan cheklaringiz asosidagi taxminiy narxlar bilan xaridlarni rejalashtiring va guruh bilan umumiy ro'yxat yuriting — kim nima olishi ko'rinadi."
   - icon: users
     title: "Umumiy xarajatlar va qarzlar"
-    text: "Xaridni oila yoki do'stlar bilan bo'lishing, kim kimga qarzdorligini ko'ring, bergan va olgan qarzlaringizni kuzating."
+    text: "Xaridni oila yoki do'stlar bilan teng yoki chek pozitsiyalari bo'yicha bo'lishing, kim kimga qarzdorligini ko'ring, bergan va olgan qarzlaringizni kuzating."
   - icon: bolt
     title: "Bir bosishda yozuv"
     text: "Avtobus yo'l haqi kabi muntazam to'lovlarni shablon sifatida saqlang. Ularni ilovadan yoki bosh ekran vidjetidan qo'shing."
@@ -68,7 +68,7 @@ privacy_lead: "ClearSlip'ni bir kishi ishlab chiqadi, ilovada reklama yo'q. Ma'l
 privacy_more: "Maxfiylik siyosatini o'qish"
 privacy:
   - "Ma'lumotlar ishlab chiquvchining o'z serverida, har bir foydalanuvchi uchun alohida bazada saqlanadi. Reklama va reklama kuzatuvchilari yo'q."
-  - "Chekni o'qish uchun uning surati Google Gemini'ga yoki OpenRouter orqali zaxira sun'iy intellekt modeliga yuboriladi. Yubormoqchi bo'lmasangiz, xarajatni qo'lda kiriting."
+  - "Chek yoki ovozli eslatmani o'qish uchun surat yoki yozuv Google Gemini'ga yoki OpenRouter orqali zaxira sun'iy intellekt modeliga yuboriladi. Yubormoqchi bo'lmasangiz, xarajatni qo'lda kiriting."
   - "Nosozlik hisobotlari (Sentry) summalar, operatsiya nomlari va chek suratlarini o'z ichiga olmaydi."
   - "Hisobingizni barcha ma'lumotlari bilan istalgan vaqtda ilovadan o'chirishingiz mumkin."
 
@@ -83,13 +83,13 @@ install:
 faq_title: "Savollar"
 faq:
   - q: "ClearSlip bepulmi?"
-    a: "Ha. Reklama ham, obuna ham yo'q. Xizmat bepul qolishi uchun cheklarni aniqlash har bir hisob uchun kuniga 50 ta skaner bilan cheklangan. Yordam bermoqchi bo'lsangiz, quyidagi qo'llab-quvvatlash tugmasidan foydalaning."
+    a: "Ha. Reklama ham, obuna ham yo'q. Xizmat bepul qolishi uchun cheklarni aniqlash har bir hisob uchun kuniga 20 ta skaner bilan cheklangan. Yordam bermoqchi bo'lsangiz, quyidagi qo'llab-quvvatlash tugmasidan foydalaning."
   - q: "iPhone uchun versiya bormi?"
     a: "Hozircha yo'q. ClearSlip hozir faqat Android uchun mavjud."
   - q: "Internetsiz ishlaydimi?"
-    a: "Xarajatlarni internetsiz qo'shish mumkin, aloqa paydo bo'lishi bilan ular yuboriladi. Cheklarni skanerlash va ko'chirmalarni import qilish uchun internet kerak."
+    a: "Ha. Hisoblar va operatsiyalar telefondan ochiladi, internetsiz qo'shgan, o'zgartirgan yoki o'chirgan hamma narsangiz saqlanadi va aloqa paydo bo'lishi bilan yuboriladi. Cheklarni skanerlash va ko'chirmalarni import qilish uchun internet kerak."
   - q: "Qaysi banklar qo'llab-quvvatlanadi?"
-    a: "To'liq ko'chirma importi hozircha Ziraat Bankası bilan ishlaydi. Boshqa banklarning PDF kvitansiyalarini sun'iy intellekt o'qiydi, istalgan bankdagi hisobni esa qo'lda yuritish mumkin."
+    a: "To'liq ko'chirma importi Ziraat Bankası va VakıfBank bilan ishlaydi; boshqa banklarning PDF ko'chirmalari jadval bo'lsa o'qiladi. PDF kvitansiyalarni sun'iy intellekt o'qiydi, istalgan bankdagi hisobni esa qo'lda yuritish mumkin."
   - q: "Cheklar qanchalik aniq o'qiladi?"
     a: "Aniq cheklar yaxshi o'qiladi, lekin rangi o'chgan yoki g'ijimlangan qog'ozda sun'iy intellekt xato qilishi mumkin. Fonda skanerlangan cheklar tekshirib chiqishingiz uchun «Tekshirish» belgisi bilan belgilanadi."
   - q: "Ma'lumotlarimni qanday o'chiraman?"

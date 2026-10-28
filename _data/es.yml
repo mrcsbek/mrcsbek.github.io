@@ -31,7 +31,7 @@ features:
     text: "Importe, fecha, tienda, productos y categoría se rellenan a partir de una foto. Un ticket en otra moneda se convierte a la moneda de la cuenta."
   - icon: bank
     title: "Importar extractos"
-    text: "Carga un extracto de Ziraat Bankası y cada línea se empareja con tus tickets, con las comisiones del banco incluidas. También se leen los justificantes PDF de transferencias de cualquier banco."
+    text: "Carga un extracto de Ziraat Bankası o VakıfBank (Excel o PDF) y cada línea se empareja con tus tickets, con las comisiones del banco incluidas. También se leen los justificantes PDF de transferencias de cualquier banco."
   - icon: currency
     title: "Cualquier moneda, y oro"
     text: "Lleva efectivo, tarjetas, ahorros y tarjetas de crédito en distintas monedas. Los totales usan el tipo de cambio actual, que es aproximado."
@@ -43,10 +43,10 @@ features:
     text: "Mira el gasto por categoría, por tienda y por producto, incluido cómo cambia el precio de un producto de un ticket a otro."
   - icon: cart
     title: "Lista de la compra"
-    text: "Planifica lo que vas a comprar y consulta precios estimados según tus tickets anteriores."
+    text: "Planifica tus compras con precios estimados según tus tickets anteriores y comparte una lista con tu grupo para ver quién compra qué."
   - icon: users
     title: "Gastos compartidos y deudas"
-    text: "Reparte una compra con la familia o los amigos, mira quién debe a quién y controla el dinero que prestaste o pediste prestado."
+    text: "Reparte una compra con la familia o los amigos, a partes iguales o por artículos del ticket, mira quién debe a quién y controla el dinero que prestaste o pediste prestado."
   - icon: bolt
     title: "Movimientos con un toque"
     text: "Guarda pagos habituales, como el billete de autobús, como plantillas. Añádelos desde la app o desde un widget de la pantalla de inicio."
@@ -68,7 +68,7 @@ privacy_lead: "ClearSlip lo desarrolla una sola persona y no muestra anuncios. E
 privacy_more: "Leer la política de privacidad"
 privacy:
   - "Los datos se guardan en el servidor propio del desarrollador, en una base de datos separada para cada usuario. Sin anuncios ni rastreadores publicitarios."
-  - "Para leer un ticket, su foto se envía a Google Gemini o a un modelo de IA de reserva a través de OpenRouter. Si prefieres no enviarla, introduce el gasto a mano."
+  - "Para leer un ticket o una nota de voz, la foto o la grabación se envía a Google Gemini o a un modelo de IA de reserva a través de OpenRouter. Si prefieres no enviarla, introduce el gasto a mano."
   - "Los informes de errores (Sentry) no contienen importes, nombres de movimientos ni fotos de tickets."
   - "Puedes borrar tu cuenta con todos sus datos desde la app en cualquier momento."
 
@@ -83,13 +83,13 @@ install:
 faq_title: "Preguntas"
 faq:
   - q: "¿ClearSlip es gratis?"
-    a: "Sí. No hay anuncios ni suscripciones. El reconocimiento de tickets está limitado a 50 escaneos al día por cuenta para que el servicio siga siendo gratuito. Si quieres ayudar, usa el botón de apoyo de abajo."
+    a: "Sí. No hay anuncios ni suscripciones. El reconocimiento de tickets está limitado a 20 escaneos al día por cuenta para que el servicio siga siendo gratuito. Si quieres ayudar, usa el botón de apoyo de abajo."
   - q: "¿Hay versión para iPhone?"
     a: "Todavía no. Por ahora ClearSlip solo está disponible para Android."
   - q: "¿Funciona sin internet?"
-    a: "Puedes añadir gastos sin conexión; se envían en cuanto vuelve la conexión. Escanear tickets e importar extractos requiere internet."
+    a: "Sí. Las cuentas y los movimientos se abren desde el teléfono, y todo lo que añadas, cambies o borres sin conexión se guarda y se envía en cuanto vuelve la conexión. Escanear tickets e importar extractos requiere internet."
   - q: "¿Qué bancos son compatibles?"
-    a: "La importación completa de extractos funciona por ahora con Ziraat Bankası. La IA lee los justificantes PDF de otros bancos, y las cuentas de cualquier banco se pueden llevar a mano."
+    a: "La importación completa de extractos funciona con Ziraat Bankası y VakıfBank; los extractos PDF de otros bancos se leen si contienen una tabla. La IA lee los justificantes PDF de transferencias, y las cuentas de cualquier banco se pueden llevar a mano."
   - q: "¿Qué tan preciso es el reconocimiento?"
     a: "Los tickets nítidos se leen bien, pero con papel desteñido o arrugado la IA puede equivocarse. Los tickets escaneados en segundo plano se marcan con «Revisar» para que los compruebes."
   - q: "¿Cómo borro mis datos?"

@@ -31,7 +31,7 @@ features:
     text: "Betrag, Datum, Geschäft, Artikel und Kategorie werden aus dem Foto übernommen. Ein Bon in fremder Währung wird in die Kontowährung umgerechnet."
   - icon: bank
     title: "Kontoauszüge importieren"
-    text: "Lade einen Auszug der Ziraat Bankası: Jede Zeile wird mit deinen Bons abgeglichen, Bankgebühren werden den Buchungen zugeordnet. PDF-Überweisungsbelege jeder Bank werden ebenfalls gelesen."
+    text: "Lade einen Auszug der Ziraat Bankası oder VakıfBank (Excel oder PDF): Jede Zeile wird mit deinen Bons abgeglichen, Bankgebühren werden den Buchungen zugeordnet. PDF-Überweisungsbelege jeder Bank werden ebenfalls gelesen."
   - icon: currency
     title: "Jede Währung, auch Gold"
     text: "Bargeld, Karten, Ersparnisse und Kreditkarten in verschiedenen Währungen. Summen werden zum aktuellen Kurs berechnet, der Kurs ist ein Näherungswert."
@@ -43,10 +43,10 @@ features:
     text: "Ausgaben nach Kategorie, Geschäft und Produkt, auch wie sich der Preis eines Produkts von Bon zu Bon ändert."
   - icon: cart
     title: "Einkaufsliste"
-    text: "Plane deine Einkäufe und sieh geschätzte Preise aus deinen bisherigen Bons."
+    text: "Plane deine Einkäufe mit geschätzten Preisen aus deinen bisherigen Bons und teile eine Liste mit deiner Gruppe — man sieht, wer was kauft."
   - icon: users
     title: "Geteilte Kosten und Schulden"
-    text: "Teile einen Einkauf mit Familie oder Freunden, sieh, wer wem etwas schuldet, und behalte verliehenes oder geliehenes Geld im Blick."
+    text: "Teile einen Einkauf mit Familie oder Freunden — gleichmäßig oder nach Bon-Positionen —, sieh, wer wem etwas schuldet, und behalte verliehenes oder geliehenes Geld im Blick."
   - icon: bolt
     title: "Einträge mit einem Tipp"
     text: "Speichere regelmäßige Zahlungen wie eine Busfahrt als Vorlagen. Trage sie in der App oder über ein Widget auf dem Startbildschirm ein."
@@ -68,7 +68,7 @@ privacy_lead: "ClearSlip wird von einer Person entwickelt und zeigt keine Werbun
 privacy_more: "Datenschutzerklärung lesen"
 privacy:
   - "Die Daten liegen auf dem eigenen Server des Entwicklers, für jeden Nutzer in einer eigenen Datenbank. Keine Werbung und keine Werbe-Tracker."
-  - "Zum Lesen eines Bons wird sein Foto an Google Gemini oder über OpenRouter an ein KI-Ersatzmodell gesendet. Wenn du das nicht möchtest, trage die Ausgabe von Hand ein."
+  - "Zum Lesen eines Bons oder einer Sprachnotiz wird das Foto oder die Aufnahme an Google Gemini oder über OpenRouter an ein KI-Ersatzmodell gesendet. Wenn du das nicht möchtest, trage die Ausgabe von Hand ein."
   - "Absturzberichte (Sentry) enthalten keine Beträge, Buchungsnamen oder Fotos von Bons."
   - "Du kannst dein Konto mit allen Daten jederzeit in der App löschen."
 
@@ -83,13 +83,13 @@ install:
 faq_title: "Fragen"
 faq:
   - q: "Ist ClearSlip kostenlos?"
-    a: "Ja. Es gibt keine Werbung und keine Abos. Die Bon-Erkennung ist auf 50 Scans pro Tag und Konto begrenzt, damit der Dienst kostenlos bleiben kann. Wenn du helfen möchtest, nutze den Unterstützen-Button unten."
+    a: "Ja. Es gibt keine Werbung und keine Abos. Die Bon-Erkennung ist auf 20 Scans pro Tag und Konto begrenzt, damit der Dienst kostenlos bleiben kann. Wenn du helfen möchtest, nutze den Unterstützen-Button unten."
   - q: "Gibt es eine iPhone-Version?"
     a: "Noch nicht. ClearSlip gibt es vorerst nur für Android."
   - q: "Funktioniert es ohne Internet?"
-    a: "Ausgaben kannst du offline eintragen; sie werden gesendet, sobald wieder Verbindung besteht. Für das Scannen von Bons und den Import von Auszügen braucht es Internet."
+    a: "Ja. Konten und Buchungen öffnen sich vom Telefon, und alles, was du offline hinzufügst, änderst oder löschst, bleibt gespeichert und wird gesendet, sobald wieder Verbindung besteht. Für das Scannen von Bons und den Import von Auszügen braucht es Internet."
   - q: "Welche Banken werden unterstützt?"
-    a: "Der vollständige Import von Auszügen funktioniert vorerst mit der Ziraat Bankası. PDF-Belege anderer Banken liest die KI, und Konten bei jeder Bank lassen sich von Hand führen."
+    a: "Der vollständige Import von Auszügen funktioniert mit der Ziraat Bankası und der VakıfBank; PDF-Auszüge anderer Banken werden gelesen, wenn sie eine Tabelle enthalten. PDF-Belege liest die KI, und Konten bei jeder Bank lassen sich von Hand führen."
   - q: "Wie genau ist die Erkennung?"
     a: "Klare Bons werden gut gelesen, auf verblasstem oder zerknittertem Papier kann sich die KI irren. Im Hintergrund gescannte Bons werden mit „Prüfen“ markiert, damit du sie kontrollieren kannst."
   - q: "Wie lösche ich meine Daten?"
