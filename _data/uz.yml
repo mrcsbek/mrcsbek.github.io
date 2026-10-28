@@ -52,7 +52,7 @@ features:
     text: "Avtobus yo'l haqi kabi muntazam to'lovlarni shablon sifatida saqlang. Ularni ilovadan yoki bosh ekran vidjetidan qo'shing."
 
 interface_title: "Ko'rinishi"
-shots: ["Hisoblar", "Yangi xarajat", "Obunalar", "Operatsiyalar"]
+shots: ["Hisoblar", "Operatsiyalar", "Yangi xarajat", "Obunalar", "Tahlil", "Xaridlar ro'yxati"]
 
 how_title: "Chekdan byudjetgacha uch qadamda"
 how:
