@@ -52,7 +52,7 @@ features:
     text: "Save regular payments, like a bus fare, as templates. Add them in the app or from a home screen widget."
 
 interface_title: "What it looks like"
-shots: ["Accounts", "New expense", "Subscriptions", "Transactions"]
+shots: ["Accounts", "Transactions", "New expense", "Subscriptions", "Analytics", "Shopping list"]
 
 how_title: "From receipt to budget in three steps"
 how:
