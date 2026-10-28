@@ -199,11 +199,14 @@
   <section id="changes" class="section">
     <div class="wrap narrow">
       <h2>{{ d.changelog_title }}</h2>
-      <ol class="changelog">
+      <div class="changelog">
         {%- for c in d.changelog %}
-        <li><h3>{{ c.date }}</h3><p>{{ c.text }}</p></li>
+        <details{% if forloop.first %} open{% endif %}>
+          <summary>{{ c.date }}</summary>
+          <p>{{ c.text }}</p>
+        </details>
         {%- endfor %}
-      </ol>
+      </div>
     </div>
   </section>
 
