@@ -7,8 +7,8 @@ nav_how: "Nasıl çalışır"
 nav_privacy: "Gizlilik"
 nav_faq: "Sorular"
 
-version: "1.2.7"
-version_note: "Android için sürüm 1.2.7, ücretsiz"
+version: "1.2.8"
+version_note: "Android için sürüm 1.2.8, ücretsiz"
 dl_text: "APK'yı indir"
 dl_short: "İndir"
 dl_link: "https://github.com/mrcsbek/mrcsbek.github.io/releases/latest/download/ClearSlip.apk"
@@ -97,6 +97,8 @@ faq:
 
 changelog_title: "Yenilikler"
 changelog:
+  - date: "1.2.8, Ekim 2026"
+    text: "Telefon testinden sonra düzeltmeler: işlem kartı internetsiz açılır ve düzenlenir, çevrimdışı silme bakiyeyi hemen günceller, “Ödeşildi” sonrası ortak harcama tablosu doğru kalır. Fişten “Yer” alanına mağaza adı gelir, tutarlar her zaman iki ondalıkla gösterilir, klavye açıkken ilk dokunuş artık kaybolmaz."
   - date: "1.2.7, Ekim 2026"
     text: "Uygulama artık Fransızca ve Arapça; Arapça için arayüz tamamen sağdan sola çevrildi. Gizlilik politikası ve kullanım koşulları güncellendi: sesli giriş ve çevrimdışı çalışma doğru şekilde anlatılıyor. Ortak harcamalarda “Ödeşildi” düğmesi: borç tek dokunuşla kapanır, ödeşme geri alınabilir."
   - date: "1.2.6, Ekim 2026"

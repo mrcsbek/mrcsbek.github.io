@@ -7,8 +7,8 @@ nav_how: "Cómo funciona"
 nav_privacy: "Privacidad"
 nav_faq: "Preguntas"
 
-version: "1.2.7"
-version_note: "Versión 1.2.7 para Android, gratis"
+version: "1.2.8"
+version_note: "Versión 1.2.8 para Android, gratis"
 dl_text: "Descargar APK"
 dl_short: "Descargar"
 dl_link: "https://github.com/mrcsbek/mrcsbek.github.io/releases/latest/download/ClearSlip.apk"
@@ -97,6 +97,8 @@ faq:
 
 changelog_title: "Novedades"
 changelog:
+  - date: "1.2.8, octubre de 2026"
+    text: "Correcciones tras la prueba en el teléfono: los movimientos se abren y se editan sin conexión, borrar sin conexión actualiza el saldo al instante y la tabla de gastos compartidos sigue siendo correcta tras «Saldado». Los tickets ponen el nombre de la tienda en «Lugar», los importes siempre con dos decimales y el primer toque con el teclado abierto ya no se pierde."
   - date: "1.2.7, octubre de 2026"
     text: "La app ya está en francés y árabe, con la interfaz totalmente reflejada de derecha a izquierda para el árabe. Política de privacidad y condiciones de uso actualizadas: describen con precisión la entrada por voz y el modo sin conexión. Los gastos compartidos tienen ahora un botón «Saldado» que cierra una deuda con un toque; el pago se puede deshacer."
   - date: "1.2.6, octubre de 2026"
