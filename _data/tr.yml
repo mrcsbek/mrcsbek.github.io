@@ -31,7 +31,7 @@ features:
     text: "Tutar, tarih, mağaza, ürünler ve kategori fotoğraftan doldurulur. Başka para birimindeki fiş, hesabın para birimine çevrilir."
   - icon: bank
     title: "Ekstre içe aktarma"
-    text: "Ziraat Bankası ekstresini yükleyin; her satır fişlerinizle eşleşir, banka masrafları işlemlere eklenir. Her bankanın PDF dekontları da okunur."
+    text: "Ziraat Bankası veya VakıfBank ekstresini (Excel ya da PDF) yükleyin; her satır fişlerinizle eşleşir, banka masrafları işlemlere eklenir. Her bankanın PDF dekontları da okunur."
   - icon: currency
     title: "Her para birimi ve altın"
     text: "Nakit, kart, birikim ve kredi kartlarını farklı para birimlerinde tutun. Toplamlar güncel kurla hesaplanır, kur yaklaşıktır."
@@ -43,10 +43,10 @@ features:
     text: "Harcamaları kategoriye, mağazaya ve ürüne göre görün; bir ürünün fiyatının fişten fişe nasıl değiştiğini de."
   - icon: cart
     title: "Alışveriş listesi"
-    text: "Alacaklarınızı planlayın, geçmiş fişlerinize göre yaklaşık fiyatları görün."
+    text: "Geçmiş fişlerinize göre yaklaşık fiyatlarla alışverişinizi planlayın ve grubunuzla ortak liste tutun — kimin ne alacağı görünür."
   - icon: users
     title: "Ortak harcamalar ve borçlar"
-    text: "Alışverişi ailenizle ya da arkadaşlarınızla bölüşün, kimin kime borçlu olduğunu görün, verdiğiniz ve aldığınız borçları takip edin."
+    text: "Alışverişi ailenizle ya da arkadaşlarınızla eşit veya fiş kalemlerine göre bölüşün, kimin kime borçlu olduğunu görün, verdiğiniz ve aldığınız borçları takip edin."
   - icon: bolt
     title: "Tek dokunuşla kayıt"
     text: "Otobüs ücreti gibi düzenli ödemeleri şablon olarak kaydedin. Uygulamadan ya da ana ekran widget'ından ekleyin."
@@ -68,7 +68,7 @@ privacy_lead: "ClearSlip'i tek bir kişi geliştiriyor ve uygulamada reklam yok.
 privacy_more: "Gizlilik politikasını okuyun"
 privacy:
   - "Veriler geliştiricinin kendi sunucusunda, her kullanıcı için ayrı bir veritabanında tutulur. Reklam ve reklam takipçisi yok."
-  - "Fişi okumak için fotoğrafı Google Gemini'ye ya da OpenRouter üzerinden yedek bir yapay zekâ modeline gönderilir. Göndermek istemezseniz harcamayı elle girin."
+  - "Bir fişi veya sesli notu okumak için fotoğraf ya da kayıt Google Gemini'ye veya OpenRouter üzerinden yedek bir yapay zekâ modeline gönderilir. Göndermek istemezseniz harcamayı elle girin."
   - "Hata raporları (Sentry) tutar, işlem adı veya fiş fotoğrafı içermez."
   - "Hesabınızı tüm verileriyle birlikte istediğiniz zaman uygulamadan silebilirsiniz."
 
@@ -83,13 +83,13 @@ install:
 faq_title: "Sorular"
 faq:
   - q: "ClearSlip ücretsiz mi?"
-    a: "Evet. Reklam ve abonelik yok. Hizmetin ücretsiz kalabilmesi için fiş tanıma hesap başına günde 50 taramayla sınırlıdır. Destek olmak isterseniz aşağıdaki destek düğmesini kullanın."
+    a: "Evet. Reklam ve abonelik yok. Hizmetin ücretsiz kalabilmesi için fiş tanıma hesap başına günde 20 taramayla sınırlıdır. Destek olmak isterseniz aşağıdaki destek düğmesini kullanın."
   - q: "iPhone sürümü var mı?"
     a: "Henüz yok. ClearSlip şimdilik yalnızca Android için."
   - q: "İnternetsiz çalışır mı?"
-    a: "Harcamaları çevrimdışı ekleyebilirsiniz, bağlantı gelince gönderilirler. Fiş tarama ve ekstre aktarma için internet gerekir."
+    a: "Evet. Hesaplar ve işlemler telefondan açılır; çevrimdışıyken eklediğiniz, değiştirdiğiniz veya sildiğiniz her şey saklanır ve bağlantı gelince gönderilir. Fiş tarama ve ekstre aktarma için internet gerekir."
   - q: "Hangi bankalar destekleniyor?"
-    a: "Tam ekstre aktarma şimdilik Ziraat Bankası ile çalışıyor. Diğer bankaların PDF dekontlarını yapay zekâ okur, her bankadaki hesabı elle de tutabilirsiniz."
+    a: "Tam ekstre aktarma Ziraat Bankası ve VakıfBank ile çalışır; diğer bankaların PDF ekstreleri tablo içeriyorsa okunur. PDF dekontları yapay zekâ okur, her bankadaki hesabı elle de tutabilirsiniz."
   - q: "Fiş tanıma ne kadar doğru?"
     a: "Net fişler iyi okunur, ama solmuş ya da buruşmuş kâğıtta yapay zekâ yanılabilir. Arka planda taranan fişler kontrol edebilmeniz için “Kontrol et” ile işaretlenir."
   - q: "Verilerimi nasıl silerim?"
