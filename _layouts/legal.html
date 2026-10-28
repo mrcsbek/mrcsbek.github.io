@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang }}">
+<html lang="{{ page.lang }}"{% if page.lang == "ar" %} dir="rtl"{% endif %}>
 <head>
 {%- capture head_title %}{{ page.title }} — {{ site.app_name }}{% endcapture %}
 {% include head.html %}
@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap">
+    {% if page.lang == "ar" %}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">{% endif %}
     <link rel="stylesheet" href="/assets/site.css">
     <style>
       .legal { padding-block: 56px 80px; }
@@ -29,6 +31,7 @@
       .langs { margin-top: 40px; display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 14px; }
       .langs a { color: var(--muted); text-decoration: none; }
       .langs a[aria-current] { color: var(--ink); font-weight: 600; }
+      [dir="rtl"] .legal ul { padding-left: 0; padding-right: 22px; }
     </style>
 </head>
 <body>

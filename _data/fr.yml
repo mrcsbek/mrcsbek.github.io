@@ -1,0 +1,131 @@
+lang_name: "Français"
+lang_label: "Langue"
+skip: "Aller au contenu"
+nav_label: "Sections"
+nav_features: "Fonctions"
+nav_how: "Comment ça marche"
+nav_privacy: "Confidentialité"
+nav_faq: "Questions"
+
+version: "1.2.6"
+version_note: "Version 1.2.6 pour Android, gratuite"
+dl_text: "Télécharger l’APK"
+dl_short: "Télécharger"
+dl_link: "https://github.com/mrcsbek/mrcsbek.github.io/releases/latest/download/ClearSlip.apk"
+back_home: "Accueil"
+install_link: "Comment installer"
+
+hero_title: "Photographiez un ticket. La dépense se remplit toute seule."
+hero_sub: "ClearSlip est une application de finances personnelles pour Android. Elle lit les tickets grâce à l’IA, importe les relevés bancaires et garde chaque compte dans sa propre devise. Sans publicité."
+hero_note: "Pas encore sur Google Play. Installez l’APK depuis cette page."
+
+demo_label: "Un ticket Migros transformé en dépense"
+demo_cat: "Courses"
+demo_account: "Carte principale"
+
+features_title: "Tout ce qu’un ticket peut vous dire"
+features_lead: "ClearSlip retire la saisie du budget. La plupart des écritures viennent d’une photo, d’un fichier bancaire ou d’une seule touche."
+features:
+  - icon: receipt
+    title: "Scanner les tickets"
+    text: "Montant, date, magasin, articles et catégorie sont remplis à partir d’une photo. Un ticket dans une autre devise est converti dans la devise du compte."
+  - icon: bank
+    title: "Importer les relevés bancaires"
+    text: "Chargez un relevé Ziraat Bankası ou VakıfBank (Excel ou PDF) : chaque ligne est rapprochée de vos tickets, frais bancaires compris. Les justificatifs de virement en PDF de toute banque sont lus aussi."
+  - icon: currency
+    title: "Toutes les devises, et l’or"
+    text: "Gardez espèces, cartes, épargne et cartes de crédit dans différentes devises. Les totaux utilisent les taux actuels, qui sont approximatifs."
+  - icon: budget
+    title: "Budgets et abonnements"
+    text: "Fixez une limite mensuelle par catégorie et voyez ce qu’il reste. Marquez un paiement récurrent comme payé et la dépense est ajoutée pour vous."
+  - icon: chart
+    title: "Des analyses claires"
+    text: "Voyez vos dépenses par catégorie, par magasin et par produit, y compris l’évolution du prix d’un produit d’un ticket à l’autre."
+  - icon: cart
+    title: "Liste de courses"
+    text: "Planifiez vos achats avec des estimations de prix tirées de vos propres tickets, et partagez une liste avec votre groupe : chacun voit qui achète quoi."
+  - icon: users
+    title: "Dépenses partagées et dettes"
+    text: "Partagez un achat avec la famille ou des amis, à parts égales ou par articles du ticket, voyez qui doit quoi à qui et suivez l’argent prêté ou emprunté."
+  - icon: bolt
+    title: "Saisie en une touche"
+    text: "Enregistrez les paiements réguliers, comme un ticket de bus, en modèles. Ajoutez-les dans l’application ou depuis un widget de l’écran d’accueil."
+
+interface_title: "À quoi ça ressemble"
+shots: ["Comptes", "Nouvelle dépense", "Abonnements", "Opérations"]
+
+how_title: "Du ticket au budget en trois étapes"
+how:
+  - title: "Prenez une photo"
+    text: "Visez le ticket avec l’appareil photo, ou partagez une photo ou un PDF vers ClearSlip depuis n’importe quelle application."
+  - title: "Vérifiez les détails"
+    text: "Le montant, la date, le magasin et la catégorie sont déjà remplis. Corrigez ce qu’il faut d’une touche."
+  - title: "Enregistrez"
+    text: "La dépense va sur le bon compte et la photo du ticket y reste attachée."
+
+privacy_title: "Vos données restent à vous"
+privacy_lead: "ClearSlip est développé par une seule personne et n’affiche aucune publicité. Voici exactement ce qu’il advient de vos données."
+privacy_more: "Lire la politique de confidentialité"
+privacy:
+  - "Les données sont conservées sur le propre serveur du développeur, dans une base séparée pour chaque utilisateur. Ni publicité ni traceurs publicitaires."
+  - "Pour lire un ticket ou une note vocale, la photo ou l’enregistrement est envoyé à Google Gemini, ou à un modèle d’IA de secours via OpenRouter. Saisissez la dépense à la main si vous préférez ne pas l’envoyer."
+  - "Les rapports de plantage (Sentry) ne contiennent ni montants, ni noms, ni photos de tickets."
+  - "Vous pouvez supprimer votre compte et toutes ses données depuis l’application à tout moment."
+
+install_title: "Comment installer"
+install_note: "ClearSlip n’est pas encore sur Google Play, Android vous demande donc de confirmer l’installation une fois. Les nouvelles versions sont publiées sur cette page."
+install:
+  - "Téléchargez l’APK sur votre téléphone Android."
+  - "Ouvrez le fichier téléchargé. Si Android le demande, autorisez votre navigateur ou gestionnaire de fichiers à installer des applications."
+  - "Si Google Play Protect signale une application inconnue, touchez « Plus de détails », puis « Installer quand même »."
+  - "Ouvrez ClearSlip et créez un compte avec un nom d’utilisateur et un mot de passe."
+
+faq_title: "Questions"
+faq:
+  - q: "ClearSlip est-il gratuit ?"
+    a: "Oui. Ni publicité ni abonnement. La reconnaissance des tickets est limitée à 20 scans par jour et par compte pour que le service reste gratuit. Si vous voulez aider, utilisez le bouton de soutien ci-dessous."
+  - q: "Existe-t-il une version iPhone ?"
+    a: "Pas encore. Pour l’instant, ClearSlip n’est disponible que sur Android."
+  - q: "Fonctionne-t-il sans internet ?"
+    a: "Oui. Comptes et opérations s’ouvrent depuis le téléphone, et tout ce que vous ajoutez, modifiez ou supprimez hors ligne est conservé puis envoyé dès le retour de la connexion. Scanner des tickets et importer des relevés nécessitent internet."
+  - q: "Quelles banques sont prises en charge ?"
+    a: "L’import complet des relevés fonctionne avec Ziraat Bankası et VakıfBank ; les relevés PDF d’autres banques sont lus quand ils contiennent un tableau. Les justificatifs de virement en PDF sont lus par l’IA, et les comptes de n’importe quelle banque peuvent être tenus à la main."
+  - q: "La reconnaissance des tickets est-elle fiable ?"
+    a: "Les tickets nets sont bien lus, mais l’IA peut se tromper sur un papier effacé ou froissé. Les tickets envoyés en analyse de fond sont marqués « À vérifier » pour que vous puissiez les contrôler."
+  - q: "Comment supprimer mes données ?"
+    a: "Ouvrez l’écran Compte dans l’application et choisissez de supprimer votre compte. Opérations, tickets et comptes sont effacés immédiatement. Vous pouvez aussi écrire au développeur."
+
+changelog_title: "Nouveautés"
+changelog:
+  - date: "1.2.6, octobre 2026"
+    text: "Mode hors ligne complet : comptes, opérations et le reste s’ouvrent instantanément, et toute modification — édition, suppression, liste de courses — est conservée sur le téléphone puis envoyée automatiquement au retour de la connexion. Partage d’un ticket par articles, liste de courses commune au groupe avec « qui achète », pièces ou kilos dans la liste. Import des relevés VakıfBank et PDF. Courte présentation au premier lancement. Application disponible en français et en arabe."
+  - date: "1.2.4, octobre 2026"
+    text: "Fonctionnement hors ligne : opérations, dettes, virements et tickets sont enregistrés sur le téléphone et envoyés automatiquement ; un total qui clignote indique l’absence de connexion. Archives des comptes, filtre par catégorie, règlement d’une dette en une touche, taux et montant reçu pour les virements entre devises. Corrections des achats partagés, modèles, lieux et dizaines de détails."
+  - date: "1.2.1, octobre 2026"
+    text: "Archives des comptes et filtre des opérations par catégorie. La suppression par balayage demande confirmation. Les rappels arrivent à l’heure, avec une nouvelle icône de notification. Protection renforcée des données et du serveur."
+  - date: "1.2.0, octobre 2026"
+    text: "Corrections issues de la bêta : bon compte et bonne devise à l’ajout, saisie de date fiable, virements qui restent appariés, « Marquer comme payé » et « Effacer l’historique » fonctionnels. Application traduite en six langues. Bouton de déconnexion et nouvelle adresse du serveur."
+  - date: "1.1.0, septembre 2026"
+    text: "Widgets d’écran d’accueil en 4×1, 1×4 et 1×1. Analyse des tickets en arrière-plan avec la marque « À vérifier ». Pavé numérique pour corriger les soldes. Application plus légère."
+  - date: "1.0, septembre 2026"
+    text: "Listes de courses avec estimations de prix. Démarrage instantané sans internet. Modèles synchronisés avec le compte. Import de fichiers via le menu Partager du système."
+  - date: "0.9, septembre 2026"
+    text: "Analyses par produit et comparaison des prix entre magasins. L’or comme devise. Dettes en plusieurs devises, logos des banques et six langues."
+  - date: "0.8, août 2026"
+    text: "Import des relevés Ziraat Bankası qui trie virements et frais et les rapproche des tickets papier."
+  - date: "0.5 à 0.7, été 2026"
+    text: "Comptes, cartes et épargne. Première version de la reconnaissance des tickets par IA, conversion aux taux en direct et limites de budget."
+
+beta_note: "ClearSlip est en bêta. Des erreurs sont possibles : vérifiez vos soldes de temps en temps et dites-moi si quelque chose ne va pas."
+feedback_text: "Questions, idées et signalements de bugs :"
+support_btn: "Soutenir le projet"
+
+footer_nav: "Mentions légales et contact"
+footer_privacy: "Politique de confidentialité"
+footer_terms: "Conditions d’utilisation"
+footer_support: "Assistance"
+
+# ── SEO (résultats de recherche et aperçus de liens) ──
+og_locale: "fr_FR"
+seo_title: "Scanner de tickets par IA et suivi des dépenses pour Android"
+seo_desc: "Suivi des dépenses gratuit pour Android : scan des tickets par IA, comptes multi-devises, budgets, import de relevés bancaires et mode hors ligne. Sans pub ni traceurs. Téléchargez l’APK."

@@ -264,3 +264,22 @@ p { margin: 0; }
   .lead { font-size: 17px; }
   .cta-row .btn { flex: 1 1 100%; }
 }
+
+/* ── Арабский: письмо справа налево ───────────────────── */
+[dir="rtl"] { --font: "IBM Plex Sans Arabic", "Onest", system-ui, sans-serif; }
+[dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] .brand { letter-spacing: 0; }
+[dir="rtl"] .nav { margin-right: 0; margin-left: auto; }
+[dir="rtl"] .top-actions { margin-left: 0; margin-right: auto; }
+[dir="rtl"] .lang select { background-position: left 12px center; padding: 8px 12px 8px 32px; }
+[dir="rtl"] .slip { direction: ltr; transform: rotate(2.2deg); }
+[dir="rtl"] .steps-compact li { padding: 16px 44px 16px 0; }
+[dir="rtl"] .steps-compact li::before { left: auto; right: 0; }
+[dir="rtl"] .checks li { padding: 18px 36px 18px 0; }
+[dir="rtl"] .checks li::before { left: auto; right: 2px; }
+[dir="rtl"] .faq summary { padding: 20px 0 20px 40px; }
+[dir="rtl"] .faq summary::after { right: auto; left: 6px; }
+[dir="rtl"] .footer nav { margin-right: 0; margin-left: auto; }
+[dir="rtl"] .skip { left: auto; right: -999px; }
+[dir="rtl"] .skip:focus { right: 12px; }
+[dir="rtl"] .entry-amount { direction: ltr; unicode-bidi: isolate; }
+@media (max-width: 980px) { [dir="rtl"] .top-actions { margin-left: 0; margin-right: auto; } }
