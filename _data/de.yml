@@ -7,8 +7,8 @@ nav_how: "So funktioniert's"
 nav_privacy: "Datenschutz"
 nav_faq: "Fragen"
 
-version: "1.2.6"
-version_note: "Version 1.2.6 für Android, kostenlos"
+version: "1.2.7"
+version_note: "Version 1.2.7 für Android, kostenlos"
 dl_text: "APK herunterladen"
 dl_short: "Herunterladen"
 dl_link: "https://github.com/mrcsbek/mrcsbek.github.io/releases/latest/download/ClearSlip.apk"
@@ -97,6 +97,8 @@ faq:
 
 changelog_title: "Neuigkeiten"
 changelog:
+  - date: "1.2.7, Oktober 2026"
+    text: "Die App gibt es jetzt auf Französisch und Arabisch, mit vollständig gespiegelter Oberfläche von rechts nach links für Arabisch. Datenschutzerklärung und Nutzungsbedingungen aktualisiert: Spracheingabe und Offline-Modus sind genau beschrieben. Gemeinsame Ausgaben haben jetzt einen „Beglichen“-Button, der eine Schuld mit einem Tipp schließt; der Ausgleich lässt sich rückgängig machen."
   - date: "1.2.6, Oktober 2026"
     text: "Vollständiger Offline-Modus: Konten, Buchungen und alles andere öffnen sofort, und jede Änderung — Bearbeiten, Löschen, die Einkaufsliste — bleibt auf dem Telefon und wird automatisch gesendet, sobald du wieder online bist. Gemeinsame Bons nach Positionen teilen, gemeinsame Einkaufsliste der Gruppe mit „wer kauft“, Stück oder Kilogramm in der Liste. Import von VakıfBank- und PDF-Auszügen. Kurze Einführung beim ersten Start."
   - date: "1.2.4, Oktober 2026"

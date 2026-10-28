@@ -7,8 +7,8 @@ nav_how: "Cómo funciona"
 nav_privacy: "Privacidad"
 nav_faq: "Preguntas"
 
-version: "1.2.6"
-version_note: "Versión 1.2.6 para Android, gratis"
+version: "1.2.7"
+version_note: "Versión 1.2.7 para Android, gratis"
 dl_text: "Descargar APK"
 dl_short: "Descargar"
 dl_link: "https://github.com/mrcsbek/mrcsbek.github.io/releases/latest/download/ClearSlip.apk"
@@ -97,6 +97,8 @@ faq:
 
 changelog_title: "Novedades"
 changelog:
+  - date: "1.2.7, octubre de 2026"
+    text: "La app ya está en francés y árabe, con la interfaz totalmente reflejada de derecha a izquierda para el árabe. Política de privacidad y condiciones de uso actualizadas: describen con precisión la entrada por voz y el modo sin conexión. Los gastos compartidos tienen ahora un botón «Saldado» que cierra una deuda con un toque; el pago se puede deshacer."
   - date: "1.2.6, octubre de 2026"
     text: "Modo sin conexión completo: cuentas, movimientos y todo lo demás se abren al instante, y cualquier cambio —ediciones, borrados, la lista de compras— se guarda en el teléfono y se envía solo al recuperar la conexión. Dividir un ticket compartido por artículos, lista de compras del grupo con «quién compra», unidades o kilos en la lista. Importación de extractos de VakıfBank y en PDF. Breve introducción al primer inicio."
   - date: "1.2.4, octubre de 2026"

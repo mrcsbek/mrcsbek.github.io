@@ -7,8 +7,8 @@ nav_how: "How it works"
 nav_privacy: "Privacy"
 nav_faq: "Questions"
 
-version: "1.2.6"
-version_note: "Version 1.2.6 for Android, free"
+version: "1.2.7"
+version_note: "Version 1.2.7 for Android, free"
 dl_text: "Download APK"
 dl_short: "Download"
 dl_link: "https://github.com/mrcsbek/mrcsbek.github.io/releases/latest/download/ClearSlip.apk"
@@ -97,6 +97,8 @@ faq:
 
 changelog_title: "What's new"
 changelog:
+  - date: "1.2.7, October 2026"
+    text: "The app is now available in French and Arabic, with a fully mirrored right-to-left interface for Arabic. Updated privacy policy and terms of use that accurately describe voice input and offline mode. Shared expenses now have a “Settled” button that closes a debt in one tap; a settlement can be undone."
   - date: "1.2.6, October 2026"
     text: "Full offline mode: accounts, transactions and everything else open instantly, and any change — edits, deletions, the shopping list — is kept on the phone and sent automatically once you are back online. Split a shared receipt by items, a shared group shopping list with “who buys”, pieces or kilograms in the list. Import of VakıfBank and PDF statements. A short intro on first launch."
   - date: "1.2.4, October 2026"

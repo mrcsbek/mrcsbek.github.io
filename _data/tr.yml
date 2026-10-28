@@ -7,8 +7,8 @@ nav_how: "Nasıl çalışır"
 nav_privacy: "Gizlilik"
 nav_faq: "Sorular"
 
-version: "1.2.6"
-version_note: "Android için sürüm 1.2.6, ücretsiz"
+version: "1.2.7"
+version_note: "Android için sürüm 1.2.7, ücretsiz"
 dl_text: "APK'yı indir"
 dl_short: "İndir"
 dl_link: "https://github.com/mrcsbek/mrcsbek.github.io/releases/latest/download/ClearSlip.apk"
@@ -97,6 +97,8 @@ faq:
 
 changelog_title: "Yenilikler"
 changelog:
+  - date: "1.2.7, Ekim 2026"
+    text: "Uygulama artık Fransızca ve Arapça; Arapça için arayüz tamamen sağdan sola çevrildi. Gizlilik politikası ve kullanım koşulları güncellendi: sesli giriş ve çevrimdışı çalışma doğru şekilde anlatılıyor. Ortak harcamalarda “Ödeşildi” düğmesi: borç tek dokunuşla kapanır, ödeşme geri alınabilir."
   - date: "1.2.6, Ekim 2026"
     text: "Tam çevrimdışı çalışma: hesaplar, işlemler ve diğer her şey anında açılır; düzenleme, silme, alışveriş listesi gibi her değişiklik telefonda saklanır ve bağlantı gelince kendiliğinden gönderilir. Ortak fişi kalemlere göre bölme, grup için “kim alacak” işaretli ortak alışveriş listesi, listede adet veya kilogram. VakıfBank ve PDF ekstre içe aktarma. İlk girişte kısa tanıtım."
   - date: "1.2.4, Ekim 2026"
