@@ -139,7 +139,7 @@
       {%- for f in files %}
       <figure class="phone">
         <div class="device">
-          <img src="/screen/{{ f }}.jpeg" alt="{{ site.app_name }}: {{ d.shots[forloop.index0] }}" width="270" height="527" loading="lazy">
+          <img src="/screen/{{ f }}.jpeg" alt="{{ site.app_name }}: {{ d.shots[forloop.index0] }}" width="360" height="702" loading="lazy">
           <span class="cam" aria-hidden="true"></span>
         </div>
         <figcaption>{{ d.shots[forloop.index0] }}</figcaption>
@@ -277,7 +277,7 @@
 })();
 </script>
 <script>
-/* Листание скриншотов кнопками: по два телефона за раз, в арабском — в обратную сторону */
+/* Листание скриншотов кнопками: на ширину видимых телефонов, в арабском — в обратную сторону */
 (function () {
   var box = document.querySelector('.screens');
   if (!box) return;
@@ -285,7 +285,8 @@
   document.querySelectorAll('.screens-btn').forEach(function (b) {
     b.addEventListener('click', function () {
       var ph = box.querySelector('.phone');
-      var step = ph ? (ph.getBoundingClientRect().width + 28) * 2 : 500;
+      var w = ph ? ph.getBoundingClientRect().width + parseFloat(getComputedStyle(box).columnGap || 28) : 300;
+      var step = Math.max(1, Math.round(box.clientWidth / w)) * w;
       box.scrollBy({ left: (+b.dataset.dir) * step * (rtl ? -1 : 1), behavior: 'smooth' });
     });
   });
