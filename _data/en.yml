@@ -53,6 +53,8 @@ features:
 
 interface_title: "What it looks like"
 shots: ["Accounts", "Transactions", "New expense", "Shared expenses", "Analytics", "Shopping list"]
+shots_prev: "Previous screenshots"
+shots_next: "Next screenshots"
 
 how_title: "From receipt to budget in three steps"
 how:

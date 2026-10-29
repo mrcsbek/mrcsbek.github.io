@@ -53,6 +53,8 @@ features:
 
 interface_title: "Así se ve"
 shots: ["Cuentas", "Movimientos", "Nuevo gasto", "Gastos compartidos", "Análisis", "Lista de compras"]
+shots_prev: "Pantallas anteriores"
+shots_next: "Pantallas siguientes"
 
 how_title: "Del ticket al presupuesto en tres pasos"
 how:

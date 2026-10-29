@@ -53,6 +53,8 @@ features:
 
 interface_title: "Görünümü"
 shots: ["Hesaplar", "İşlemler", "Yeni harcama", "Ortak harcamalar", "Analiz", "Alışveriş listesi"]
+shots_prev: "Önceki ekranlar"
+shots_next: "Sonraki ekranlar"
 
 how_title: "Fişten bütçeye üç adımda"
 how:
