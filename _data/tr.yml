@@ -52,7 +52,7 @@ features:
     text: "Otobüs ücreti gibi düzenli ödemeleri şablon olarak kaydedin. Uygulamadan ya da ana ekran widget'ından ekleyin."
 
 interface_title: "Görünümü"
-shots: ["Hesaplar", "İşlemler", "Yeni harcama", "Abonelikler", "Analiz", "Alışveriş listesi"]
+shots: ["Hesaplar", "İşlemler", "Yeni harcama", "Ortak harcamalar", "Analiz", "Alışveriş listesi"]
 
 how_title: "Fişten bütçeye üç adımda"
 how:

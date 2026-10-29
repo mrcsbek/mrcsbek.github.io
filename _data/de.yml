@@ -52,7 +52,7 @@ features:
     text: "Speichere regelmäßige Zahlungen wie eine Busfahrt als Vorlagen. Trage sie in der App oder über ein Widget auf dem Startbildschirm ein."
 
 interface_title: "So sieht es aus"
-shots: ["Konten", "Buchungen", "Neue Ausgabe", "Abos", "Auswertung", "Einkaufsliste"]
+shots: ["Konten", "Buchungen", "Neue Ausgabe", "Gemeinsame Ausgaben", "Auswertung", "Einkaufsliste"]
 
 how_title: "Vom Bon zum Budget in drei Schritten"
 how:
