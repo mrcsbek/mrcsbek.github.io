@@ -53,6 +53,8 @@ features:
 
 interface_title: "À quoi ça ressemble"
 shots: ["Comptes", "Opérations", "Nouvelle dépense", "Dépenses partagées", "Analyses", "Liste de courses"]
+shots_prev: "Écrans précédents"
+shots_next: "Écrans suivants"
 
 how_title: "Du ticket au budget en trois étapes"
 how:

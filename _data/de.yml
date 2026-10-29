@@ -53,6 +53,8 @@ features:
 
 interface_title: "So sieht es aus"
 shots: ["Konten", "Buchungen", "Neue Ausgabe", "Gemeinsame Ausgaben", "Auswertung", "Einkaufsliste"]
+shots_prev: "Vorherige Bildschirme"
+shots_next: "Nächste Bildschirme"
 
 how_title: "Vom Bon zum Budget in drei Schritten"
 how:

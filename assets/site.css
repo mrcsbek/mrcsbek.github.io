@@ -180,25 +180,47 @@ p { margin: 0; }
 
 /* Screenshots */
 .screens-section { padding-bottom: 60px; }
+.screens-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; }
+.screens-nav { display: flex; gap: 10px; flex: 0 0 auto; }
+.screens-nav[hidden] { display: none; }
+.screens-btn {
+  width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; cursor: pointer;
+  background: var(--surface); color: var(--ink); border: 1px solid var(--line);
+}
+.screens-btn:disabled { opacity: .35; cursor: default; }
+.screens-btn:not(:disabled):hover { border-color: var(--ink); }
 .screens {
-  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px 36px;
-  max-width: 1040px; margin: 0 auto; padding: 34px 20px 20px;
+  display: flex; gap: 28px; overflow-x: auto; overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  padding: 30px max(20px, calc((100vw - 1120px) / 2 + 20px)) 24px;
+  scroll-padding-inline: max(20px, calc((100vw - 1120px) / 2 + 20px));
 }
-.phone { margin: 0; min-width: 0; max-width: 320px; justify-self: center; width: 100%; }
-@media (max-width: 760px) {
-  .screens { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 18px; }
+.screens::-webkit-scrollbar { display: none; }
+.phone { margin: 0; flex: 0 0 auto; width: 250px; scroll-snap-align: start; }
+/* Корпус в духе Galaxy S: тонкая ровная рамка, камера-точка по центру, кнопки справа */
+.device {
+  position: relative; padding: 7px; border-radius: 40px;
+  background: linear-gradient(145deg, #2b2b30, #0e0e10 55%, #1f1f23);
+  box-shadow: 0 0 0 1px #3a3a40 inset, 0 22px 44px rgba(0, 0, 0, .28), 0 4px 10px rgba(0, 0, 0, .18);
 }
-@media (max-width: 520px) {
-  .screens {
-    display: flex; gap: 14px; overflow-x: auto; overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity; scroll-padding-inline: 20px;
-    padding: 28px 20px 16px; -webkit-overflow-scrolling: touch; scrollbar-width: none;
-  }
-  .screens::-webkit-scrollbar { display: none; }
-  .phone { flex: 0 0 78vw; max-width: 320px; scroll-snap-align: start; }
+.device::before, .device::after {
+  content: ""; position: absolute; right: -3px; width: 3px; border-radius: 0 3px 3px 0; background: #2c2c31;
 }
-.phone img { display: block; width: 100%; height: auto; border-radius: 30px; border: 7px solid #1c1c1f; background: #000; box-shadow: var(--shadow); }
+.device::before { top: 22%; height: 13%; }
+.device::after { top: 38%; height: 8%; }
+.device img { display: block; width: 100%; height: auto; border-radius: 33px; background: #000; }
+.cam {
+  position: absolute; top: 15px; left: 50%; width: 11px; height: 11px; margin-left: -5.5px; border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #2a3550 0 25%, #050506 45%); box-shadow: 0 0 0 2px #0a0a0b;
+}
 .phone figcaption { margin-top: 14px; font-size: 15px; color: var(--muted); text-align: center; }
+@media (max-width: 640px) {
+  .screens { gap: 16px; padding: 24px 20px 16px; scroll-padding-inline: 20px; }
+  .phone { width: 68vw; max-width: 250px; }
+  .screens-nav { display: none; }
+}
+[dir="rtl"] .screens-btn svg { transform: scaleX(-1); }
+[dir="rtl"] .device::before, [dir="rtl"] .device::after { right: auto; left: -3px; border-radius: 3px 0 0 3px; }
 
 /* Steps: a real sequence */
 .steps { list-style: none; counter-reset: step; padding: 0; margin: 40px 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
