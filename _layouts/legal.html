@@ -16,13 +16,15 @@
       .legal { padding-block: 56px 80px; }
       .legal h1 { font-size: clamp(30px, 4vw, 42px); letter-spacing: -.03em; line-height: 1.1; font-weight: 800; }
       .legal .effective-date { display: block; color: var(--muted); font-size: 15px; margin: 12px 0 40px; }
+      .legal h1 + p { margin-top: 18px; }
       .legal h2 { font-size: 21px; font-weight: 700; letter-spacing: -.01em; margin: 40px 0 12px; padding-top: 28px; border-top: 1px solid var(--line); }
       .legal h3 { font-size: 17px; margin: 0 0 8px; }
       .legal > * { max-width: 760px; }
       .legal p, .legal li { color: var(--muted); }
       .legal p { margin: 0 0 14px; }
-      .legal ul { padding-left: 22px; margin: 6px 0 16px; }
+      .legal ul, .legal ol { padding-left: 22px; margin: 6px 0 16px; }
       .legal li { margin-bottom: 8px; }
+      .legal ol li::marker { color: var(--ink); font-weight: 600; }
       .legal strong { color: var(--ink); font-weight: 600; }
       .legal a { color: var(--red); }
       .legal .note, .legal .warn, .legal .contact-box { background: var(--red-soft); border-radius: 14px; padding: 18px 20px; margin: 24px 0; }
@@ -31,7 +33,7 @@
       .langs { margin-top: 40px; display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 14px; }
       .langs a { color: var(--muted); text-decoration: none; }
       .langs a[aria-current] { color: var(--ink); font-weight: 600; }
-      [dir="rtl"] .legal ul { padding-left: 0; padding-right: 22px; }
+      [dir="rtl"] .legal ul, [dir="rtl"] .legal ol { padding-left: 0; padding-right: 22px; }
     </style>
 </head>
 <body>

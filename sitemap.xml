@@ -3,7 +3,7 @@ layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-{%- assign paths = "/|/pages_p/page_privacy.html|/pages_t/page_terms.html" | split: "|" -%}
+{%- assign paths = "/|/pages_p/page_privacy.html|/pages_t/page_terms.html|/delete-account.html" | split: "|" -%}
 {%- for p in paths -%}
 {%- for l in site.languages %}
   <url>

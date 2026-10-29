@@ -233,6 +233,7 @@
     <nav aria-label="{{ d.footer_nav }}">
       <a href="{% if page.lang == site.default_lang %}/pages_p/page_privacy.html{% else %}/{{ page.lang }}/pages_p/page_privacy.html{% endif %}">{{ d.footer_privacy }}</a>
       <a href="{% if page.lang == site.default_lang %}/pages_t/page_terms.html{% else %}/{{ page.lang }}/pages_t/page_terms.html{% endif %}">{{ d.footer_terms }}</a>
+      <a href="{% if page.lang == site.default_lang %}/delete-account.html{% else %}/{{ page.lang }}/delete-account.html{% endif %}">{{ d.footer_delete }}</a>
       <a href="mailto:support@clearslip.app">{{ d.footer_support }}</a>
     </nav>
     <p>© 2026 {{ site.app_name }}</p>
