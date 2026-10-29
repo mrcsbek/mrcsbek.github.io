@@ -52,7 +52,7 @@ features:
     text: "Guarda pagos habituales, como el billete de autobús, como plantillas. Añádelos desde la app o desde un widget de la pantalla de inicio."
 
 interface_title: "Así se ve"
-shots: ["Cuentas", "Movimientos", "Nuevo gasto", "Gastos compartidos", "Análisis", "Lista de compras"]
+shots: ["Cuentas", "Movimientos", "Nuevo gasto", "Entrada por voz", "Análisis", "Gastos compartidos", "Lista de compras", "Plantillas"]
 shots_prev: "Pantallas anteriores"
 shots_next: "Pantallas siguientes"
 
