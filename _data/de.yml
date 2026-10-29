@@ -7,8 +7,8 @@ nav_how: "So funktioniert's"
 nav_privacy: "Datenschutz"
 nav_faq: "Fragen"
 
-version: "1.2.8"
-version_note: "Version 1.2.8 für Android, kostenlos"
+version: "1.2.9"
+version_note: "Version 1.2.9 für Android, kostenlos"
 dl_text: "APK herunterladen"
 dl_short: "Herunterladen"
 dl_link: "https://github.com/mrcsbek/mrcsbek.github.io/releases/latest/download/ClearSlip.apk"
@@ -97,6 +97,8 @@ faq:
 
 changelog_title: "Neuigkeiten"
 changelog:
+  - date: "1.2.9, Oktober 2026"
+    text: "Vorlagen: Name, Betrag und Konto bearbeiten, eigene Währung mit Umrechnung zum Tageskurs, Symbole und Beträge mit Nachkommastellen. „Rückgängig“ nach einer Schnellvorlage funktioniert wieder. Löschen ohne Verbindung ändert den Saldo sofort, auch bei Überweisungen. Kleine Korrekturen an der Oberfläche."
   - date: "1.2.8, Oktober 2026"
     text: "Korrekturen nach dem Test auf dem Telefon: Buchungen lassen sich offline öffnen und bearbeiten, Löschen ohne Verbindung ändert den Saldo sofort, und die Tabelle der gemeinsamen Ausgaben bleibt nach „Beglichen“ korrekt. Bons tragen den Geschäftsnamen unter „Ort“ ein, Beträge immer mit zwei Nachkommastellen, und der erste Tipp bei offener Tastatur geht nicht mehr verloren."
   - date: "1.2.7, Oktober 2026"
