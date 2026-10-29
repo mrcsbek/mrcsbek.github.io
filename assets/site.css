@@ -35,6 +35,8 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+/* Переход к разделу не прячет заголовок под липкой шапкой */
+section[id] { scroll-margin-top: 76px; }
 body {
   margin: 0;
   background: var(--page);
