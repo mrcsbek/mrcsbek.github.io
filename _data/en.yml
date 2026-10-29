@@ -7,8 +7,8 @@ nav_how: "How it works"
 nav_privacy: "Privacy"
 nav_faq: "Questions"
 
-version: "1.2.8"
-version_note: "Version 1.2.8 for Android, free"
+version: "1.2.9"
+version_note: "Version 1.2.9 for Android, free"
 dl_text: "Download APK"
 dl_short: "Download"
 dl_link: "https://github.com/mrcsbek/mrcsbek.github.io/releases/latest/download/ClearSlip.apk"
@@ -97,6 +97,8 @@ faq:
 
 changelog_title: "What's new"
 changelog:
+  - date: "1.2.9, October 2026"
+    text: "Templates: edit the name, amount and account, keep a template in its own currency with conversion at the day’s rate, icons and amounts with decimals. “Undo” after a quick template works again. Deleting offline updates the balance right away, transfers included. Small interface fixes."
   - date: "1.2.8, October 2026"
     text: "Fixes after phone testing: a transaction opens and can be edited offline, deleting offline updates the balance right away, and the shared expenses table stays correct after “Settled”. Receipts put the store name into “Place”, amounts always show two decimals, and the first tap with the keyboard open is no longer lost."
   - date: "1.2.7, October 2026"

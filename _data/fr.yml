@@ -7,8 +7,8 @@ nav_how: "Comment ça marche"
 nav_privacy: "Confidentialité"
 nav_faq: "Questions"
 
-version: "1.2.8"
-version_note: "Version 1.2.8 pour Android, gratuite"
+version: "1.2.9"
+version_note: "Version 1.2.9 pour Android, gratuite"
 dl_text: "Télécharger l’APK"
 dl_short: "Télécharger"
 dl_link: "https://github.com/mrcsbek/mrcsbek.github.io/releases/latest/download/ClearSlip.apk"
@@ -97,6 +97,8 @@ faq:
 
 changelog_title: "Nouveautés"
 changelog:
+  - date: "1.2.9, octobre 2026"
+    text: "Modèles : modification du nom, du montant et du compte, devise propre avec conversion au taux du jour, icônes et montants avec décimales. « Annuler » après un modèle rapide fonctionne de nouveau. Une suppression hors ligne met le solde à jour aussitôt, virements compris. Petites corrections de l’interface."
   - date: "1.2.8, octobre 2026"
     text: "Corrections après les tests sur téléphone : une opération s’ouvre et se modifie hors ligne, une suppression hors ligne met le solde à jour aussitôt et le tableau des dépenses partagées reste juste après « Réglé ». Les tickets placent le nom du magasin dans « Lieu », les montants s’affichent toujours avec deux décimales et la première touche avec le clavier ouvert n’est plus perdue."
   - date: "1.2.7, octobre 2026"
