@@ -52,7 +52,7 @@ features:
     text: "Avtobus yo'l haqi kabi muntazam to'lovlarni shablon sifatida saqlang. Ularni ilovadan yoki bosh ekran vidjetidan qo'shing."
 
 interface_title: "Ko'rinishi"
-shots: ["Hisoblar", "Operatsiyalar", "Yangi xarajat", "Umumiy xarajatlar", "Tahlil", "Xaridlar ro'yxati"]
+shots: ["Hisoblar", "Operatsiyalar", "Yangi xarajat", "Ovozli kiritish", "Tahlil", "Umumiy xarajatlar", "Xaridlar ro'yxati", "Shablonlar"]
 shots_prev: "Oldingi ekranlar"
 shots_next: "Keyingi ekranlar"
 

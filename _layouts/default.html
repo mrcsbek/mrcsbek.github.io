@@ -135,11 +135,11 @@
       </div>
     </div>
     <div class="screens" tabindex="0" aria-label="{{ d.interface_title }}">
-      {%- assign files = "accounts|transactions|new_transaction|shared|analytics|shopping" | split: "|" -%}
+      {%- assign files = "accounts|transactions|new_transaction|voice|analytics|shared|shopping|templates" | split: "|" -%}
       {%- for f in files %}
       <figure class="phone">
         <div class="device">
-          <img src="/screen/{{ f }}.jpeg" alt="{{ site.app_name }}: {{ d.shots[forloop.index0] }}" width="360" height="702" loading="lazy">
+          <img src="/screen/{{ f }}.jpeg" alt="{{ site.app_name }}: {{ d.shots[forloop.index0] }}" width="360" height="798" loading="lazy">
           <span class="cam" aria-hidden="true"></span>
         </div>
         <figcaption>{{ d.shots[forloop.index0] }}</figcaption>
