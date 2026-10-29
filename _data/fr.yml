@@ -52,7 +52,7 @@ features:
     text: "Enregistrez les paiements réguliers, comme un ticket de bus, en modèles. Ajoutez-les dans l’application ou depuis un widget de l’écran d’accueil."
 
 interface_title: "À quoi ça ressemble"
-shots: ["Comptes", "Opérations", "Nouvelle dépense", "Abonnements", "Analyses", "Liste de courses"]
+shots: ["Comptes", "Opérations", "Nouvelle dépense", "Dépenses partagées", "Analyses", "Liste de courses"]
 
 how_title: "Du ticket au budget en trois étapes"
 how:

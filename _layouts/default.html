@@ -131,7 +131,7 @@
       <h2 id="screens-title">{{ d.interface_title }}</h2>
     </div>
     <div class="screens" tabindex="0" aria-label="{{ d.interface_title }}">
-      {%- assign files = "accounts|transactions|new_transaction|plans|analytics|shopping" | split: "|" -%}
+      {%- assign files = "accounts|transactions|new_transaction|shared|analytics|shopping" | split: "|" -%}
       {%- for f in files %}
       <figure class="phone">
         <img src="/screen/{{ f }}.jpeg" alt="{{ site.app_name }}: {{ d.shots[forloop.index0] }}" width="305" height="627" loading="lazy">
