@@ -14,8 +14,8 @@
       "softwareVersion": {{ d.version | jsonify }},
       "description": {{ d.seo_desc | jsonify }},
       "url": "{{ site.url }}{{ page.url }}",
-      "image": "{{ site.url }}/transp_icon.png",
-      "screenshot": "{{ site.url }}/screen/accounts.jpeg",
+      "image": "{{ site.url }}/assets/img/icon.png",
+      "screenshot": "{{ site.url }}/assets/screens/accounts.jpeg",
       "downloadUrl": {{ d.dl_link | jsonify }},
       "inLanguage": {{ site.languages | jsonify }},
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
@@ -35,7 +35,7 @@
 <header class="topbar">
   <div class="wrap topbar-in">
     <a class="brand" href="{{ home }}">
-      <img src="/transp_icon.png" alt="" width="34" height="34">
+      <img src="/assets/img/icon.png" alt="" width="34" height="34">
       <span>{{ site.app_name }}</span>
     </a>
     <nav class="nav" aria-label="{{ d.nav_label }}">
@@ -139,7 +139,7 @@
       {%- for f in files %}
       <figure class="phone">
         <div class="device">
-          <img src="/screen/{{ f }}.jpeg" alt="{{ site.app_name }}: {{ d.shots[forloop.index0] }}" width="360" height="798" loading="lazy">
+          <img src="/assets/screens/{{ f }}.jpeg" alt="{{ site.app_name }}: {{ d.shots[forloop.index0] }}" width="360" height="798" loading="lazy">
           <span class="cam" aria-hidden="true"></span>
         </div>
         <figcaption>{{ d.shots[forloop.index0] }}</figcaption>
@@ -229,7 +229,7 @@
 
 <footer class="footer">
   <div class="wrap footer-in">
-    <div class="brand brand-small"><img src="/transp_icon.png" alt="" width="24" height="24"><span>{{ site.app_name }}</span></div>
+    <div class="brand brand-small"><img src="/assets/img/icon.png" alt="" width="24" height="24"><span>{{ site.app_name }}</span></div>
     <nav aria-label="{{ d.footer_nav }}">
       <a href="{% if page.lang == site.default_lang %}/privacy{% else %}/{{ page.lang }}/privacy{% endif %}">{{ d.footer_privacy }}</a>
       <a href="{% if page.lang == site.default_lang %}/terms{% else %}/{{ page.lang }}/terms{% endif %}">{{ d.footer_terms }}</a>
