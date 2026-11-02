@@ -7,8 +7,8 @@ nav_how: "Cómo funciona"
 nav_privacy: "Privacidad"
 nav_faq: "Preguntas"
 
-version: "1.2.9"
-version_note: "Versión 1.2.9 para Android, gratis"
+version: "1.3.1"
+version_note: "Versión 1.3.1 para Android, gratis"
 dl_text: "Descargar APK"
 dl_short: "Descargar"
 dl_link: "https://github.com/mrcsbek/mrcsbek.github.io/releases/latest/download/ClearSlip.apk"
@@ -80,7 +80,7 @@ install:
   - "Descarga el APK en tu móvil Android."
   - "Abre el archivo descargado. Si Android lo pide, permite que tu navegador o gestor de archivos instale apps."
   - "Si Google Play Protect avisa de una app desconocida, toca «Más detalles» y luego «Instalar de todos modos»."
-  - "Abre ClearSlip y crea una cuenta con usuario y contraseña."
+  - "Abre ClearSlip y crea una cuenta, o toca “Continuar sin cuenta” y guárdala más tarde en Ajustes."
 
 faq_title: "Preguntas"
 faq:
@@ -99,6 +99,8 @@ faq:
 
 changelog_title: "Novedades"
 changelog:
+  - date: "1.3.1, noviembre de 2026"
+    text: "Usa ClearSlip sin cuenta y guárdala más tarde en Ajustes. Elige tu moneda principal en el primer inicio; UZS, TRY y USD siempre están arriba en la lista de monedas, y el so‘m uzbeko ya tiene su nombre correcto. Lista de idiomas más clara, nuevos consejos en Ajustes → Cómo usar y una app más ligera y rápida. Los pagos recurrentes en Planes se ven más ordenados, el botón PDF ya no abre el selector de archivos dos veces y la pantalla de inicio de sesión ya no parpadea al abrir la app por primera vez."
   - date: "1.2.9, octubre de 2026"
     text: "Plantillas: editar nombre, importe y cuenta, moneda propia con conversión al tipo del día, iconos e importes con decimales. «Deshacer» tras una plantilla rápida vuelve a funcionar. Borrar sin conexión actualiza el saldo al instante, transferencias incluidas. Pequeñas correcciones de la interfaz."
   - date: "1.2.8, octubre de 2026"

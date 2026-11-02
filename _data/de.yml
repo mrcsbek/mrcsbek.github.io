@@ -7,8 +7,8 @@ nav_how: "So funktioniert's"
 nav_privacy: "Datenschutz"
 nav_faq: "Fragen"
 
-version: "1.2.9"
-version_note: "Version 1.2.9 für Android, kostenlos"
+version: "1.3.1"
+version_note: "Version 1.3.1 für Android, kostenlos"
 dl_text: "APK herunterladen"
 dl_short: "Herunterladen"
 dl_link: "https://github.com/mrcsbek/mrcsbek.github.io/releases/latest/download/ClearSlip.apk"
@@ -80,7 +80,7 @@ install:
   - "Lade die APK auf dein Android-Telefon herunter."
   - "Öffne die heruntergeladene Datei. Wenn Android fragt, erlaube deinem Browser oder Dateimanager, Apps zu installieren."
   - "Warnt Google Play Protect vor einer unbekannten App, tippe auf „Weitere Details“ und dann auf „Trotzdem installieren“."
-  - "Öffne ClearSlip und erstelle ein Konto mit Benutzername und Passwort."
+  - "Öffne ClearSlip und erstelle ein Konto oder tippe auf „Ohne Konto fortfahren“ und speichere es später in den Einstellungen."
 
 faq_title: "Fragen"
 faq:
@@ -99,6 +99,8 @@ faq:
 
 changelog_title: "Neuigkeiten"
 changelog:
+  - date: "1.3.1, November 2026"
+    text: "ClearSlip ohne Konto nutzen und das Konto später in den Einstellungen speichern. Beim ersten Start die Hauptwährung wählen; UZS, TRY und USD stehen immer oben in der Währungsliste, und der usbekische So‘m heißt jetzt richtig. Übersichtlichere Sprachliste, neue Tipps unter Einstellungen → So funktioniert’s und eine kleinere, schnellere App. Regelmäßige Zahlungen in „Pläne“ sehen aufgeräumter aus, die PDF-Taste öffnet die Dateiauswahl nicht mehr doppelt, und der Anmeldebildschirm flackert beim ersten Start nicht mehr."
   - date: "1.2.9, Oktober 2026"
     text: "Vorlagen: Name, Betrag und Konto bearbeiten, eigene Währung mit Umrechnung zum Tageskurs, Symbole und Beträge mit Nachkommastellen. „Rückgängig“ nach einer Schnellvorlage funktioniert wieder. Löschen ohne Verbindung ändert den Saldo sofort, auch bei Überweisungen. Kleine Korrekturen an der Oberfläche."
   - date: "1.2.8, Oktober 2026"

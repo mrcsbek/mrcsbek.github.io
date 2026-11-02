@@ -7,8 +7,8 @@ nav_how: "Qanday ishlaydi"
 nav_privacy: "Maxfiylik"
 nav_faq: "Savollar"
 
-version: "1.2.9"
-version_note: "Android uchun 1.2.9 versiya, bepul"
+version: "1.3.1"
+version_note: "Android uchun 1.3.1 versiya, bepul"
 dl_text: "APK yuklab olish"
 dl_short: "Yuklab olish"
 dl_link: "https://github.com/mrcsbek/mrcsbek.github.io/releases/latest/download/ClearSlip.apk"
@@ -80,7 +80,7 @@ install:
   - "APK'ni Android telefoningizga yuklab oling."
   - "Yuklangan faylni oching. Android so'rasa, brauzer yoki fayl menejeriga ilova o'rnatishga ruxsat bering."
   - "Agar Google Play Himoya noma'lum ilova haqida ogohlantirsa, «Batafsil», keyin «Baribir o'rnatish» tugmasini bosing."
-  - "ClearSlip'ni oching va login hamda parol bilan hisob yarating."
+  - "ClearSlip’ni oching va akkaunt yarating yoki «Ro‘yxatdan o‘tmasdan davom etish» ni bosing — akkauntni keyinroq sozlamalarda saqlash mumkin."
 
 faq_title: "Savollar"
 faq:
@@ -99,6 +99,8 @@ faq:
 
 changelog_title: "Yangiliklar"
 changelog:
+  - date: "1.3.1, noyabr 2026"
+    text: "ClearSlip’dan ro‘yxatdan o‘tmasdan foydalaning va akkauntni keyinroq sozlamalarda saqlang. Birinchi ishga tushirishda asosiy valyutani tanlang; UZS, TRY va USD valyutalar ro‘yxatida doim yuqorida, o‘zbek so‘mi esa endi to‘g‘ri nomlanadi. Tillar ro‘yxati tushunarliroq, «Yana → Qanday foydalanish» bo‘limida yangi maslahatlar, ilova yengilroq va tezroq. «Rejalar»dagi muntazam to‘lovlar tartibliroq ko‘rinadi, PDF tugmasi fayl tanlashni endi ikki marta ochmaydi, kirish ekrani birinchi ishga tushirishda miltillamaydi."
   - date: "1.2.9, oktyabr 2026"
     text: "Shablonlar: nom, summa va hisobni tahrirlash, kun kursi bo'yicha o'giriladigan o'z valyutasi, ikonkalar va tiyinli summalar. Tezkor shablondan keyin «Bekor qilish» yana ishlaydi. Internetsiz o'chirish balansni darhol o'zgartiradi, o'tkazmalar ham. Interfeysdagi mayda tuzatishlar."
   - date: "1.2.8, oktyabr 2026"

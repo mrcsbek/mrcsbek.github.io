@@ -7,8 +7,8 @@ nav_how: "How it works"
 nav_privacy: "Privacy"
 nav_faq: "Questions"
 
-version: "1.2.9"
-version_note: "Version 1.2.9 for Android, free"
+version: "1.3.1"
+version_note: "Version 1.3.1 for Android, free"
 dl_text: "Download APK"
 dl_short: "Download"
 dl_link: "https://github.com/mrcsbek/mrcsbek.github.io/releases/latest/download/ClearSlip.apk"
@@ -80,7 +80,7 @@ install:
   - "Download the APK on your Android phone."
   - "Open the downloaded file. If Android asks, allow your browser or file manager to install apps."
   - "If Google Play Protect warns about an unknown app, tap “More details”, then “Install anyway”."
-  - "Open ClearSlip and create an account with a username and password."
+  - "Open ClearSlip and create an account, or tap “Continue without an account” and save it later in Settings."
 
 faq_title: "Questions"
 faq:
@@ -99,6 +99,8 @@ faq:
 
 changelog_title: "What's new"
 changelog:
+  - date: "1.3.1, November 2026"
+    text: "Use ClearSlip without an account and save it later in Settings. Choose your main currency on first launch; UZS, TRY and USD are always at the top of the currency list, and the Uzbek so‘m now has its proper name. A clearer language list, extra tips in Settings → How to use, and a smaller, faster app. Recurring payments in Plans look tidier, the PDF button no longer opens the file picker twice, and the sign-in screen no longer flickers on first launch."
   - date: "1.2.9, October 2026"
     text: "Templates: edit the name, amount and account, keep a template in its own currency with conversion at the day’s rate, icons and amounts with decimals. “Undo” after a quick template works again. Deleting offline updates the balance right away, transfers included. Small interface fixes."
   - date: "1.2.8, October 2026"

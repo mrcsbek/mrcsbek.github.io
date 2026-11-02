@@ -7,8 +7,8 @@ nav_how: "Nasıl çalışır"
 nav_privacy: "Gizlilik"
 nav_faq: "Sorular"
 
-version: "1.2.9"
-version_note: "Android için sürüm 1.2.9, ücretsiz"
+version: "1.3.1"
+version_note: "Android için sürüm 1.3.1, ücretsiz"
 dl_text: "APK'yı indir"
 dl_short: "İndir"
 dl_link: "https://github.com/mrcsbek/mrcsbek.github.io/releases/latest/download/ClearSlip.apk"
@@ -80,7 +80,7 @@ install:
   - "APK'yı Android telefonunuza indirin."
   - "İndirilen dosyayı açın. Android sorarsa tarayıcınıza veya dosya yöneticinize uygulama yükleme izni verin."
   - "Google Play Protect bilinmeyen uygulama uyarısı verirse “Diğer ayrıntılar”a, ardından “Yine de yükle”ye dokunun."
-  - "ClearSlip'i açın ve kullanıcı adı ile şifreyle hesap oluşturun."
+  - "ClearSlip’i açın ve hesap oluşturun ya da “Hesap olmadan devam et”e dokunun — hesabı daha sonra Ayarlar’dan kaydedebilirsiniz."
 
 faq_title: "Sorular"
 faq:
@@ -99,6 +99,8 @@ faq:
 
 changelog_title: "Yenilikler"
 changelog:
+  - date: "1.3.1, Kasım 2026"
+    text: "ClearSlip’i hesap olmadan kullanın, hesabınızı daha sonra Ayarlar’dan kaydedin. İlk açılışta ana para biriminizi seçin; UZS, TRY ve USD para birimi listesinde her zaman en üstte, Özbek somu da artık doğru adıyla görünüyor. Daha anlaşılır dil listesi, Ayarlar → Nasıl kullanılır bölümünde yeni ipuçları, daha küçük ve hızlı uygulama. Planlar’daki düzenli ödemeler daha düzenli görünüyor, PDF düğmesi dosya seçiciyi artık iki kez açmıyor ve giriş ekranı ilk açılışta titremiyor."
   - date: "1.2.9, Ekim 2026"
     text: "Şablonlar: ad, tutar ve hesap düzenleme, günün kuruyla çevrilen kendi para birimi, simgeler ve kuruşlu tutarlar. Hızlı şablondan sonra “Geri al” yeniden çalışıyor. Çevrimdışı silme, transferler dahil bakiyeyi hemen günceller. Küçük arayüz düzeltmeleri."
   - date: "1.2.8, Ekim 2026"
