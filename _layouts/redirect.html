@@ -6,7 +6,7 @@
 <link rel="canonical" href="{{ site.url }}{{ page.redirect_to }}">
 <meta name="robots" content="noindex">
 <meta http-equiv="refresh" content="0; url={{ page.redirect_to }}">
-<script>location.replace("{{ page.redirect_to }}" + location.hash);</script>
+<script>location.replace("{{ page.redirect_to }}" + location.search + location.hash);</script>
 </head>
 <body><a href="{{ page.redirect_to }}">{{ site.url }}{{ page.redirect_to }}</a></body>
 </html>
